@@ -1,0 +1,75 @@
+name: Daily & Weekly Generation
+
+on:
+  schedule:
+    - cron: '0 6 * * 1-5'   # 平日 UTC06:00 = JST15:00（日次）
+    - cron: '0 0 * * 6'     # 土曜 UTC00:00 = JST09:00（週次 + バックテスト）
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r shared/requirements-shared.txt
+          pip install -r scripts/requirements-scripts.txt
+
+      - name: Generate articles (daily/weekly)
+        env:
+          FMP_API_KEY:     ${{ secrets.FMP_API_KEY }}
+          OPENAI_API_KEY:  ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL:    ${{ secrets.OPENAI_MODEL }}
+        run: python scripts/generate_articles.py
+
+      - name: Generate strategies (daily)
+        env:
+          FMP_API_KEY:     ${{ secrets.FMP_API_KEY }}
+          OPENAI_API_KEY:  ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL:    ${{ secrets.OPENAI_MODEL }}
+        run: python scripts/generate_strategies.py
+
+      - name: Generate market analysis (daily)
+        env:
+          FMP_API_KEY:    ${{ secrets.FMP_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL:   ${{ secrets.OPENAI_MODEL }}
+        run: python scripts/generate_market.py
+
+      - name: Generate backtest (Saturdays only)
+        if: github.event.schedule == '0 0 * * 6' || github.event_name == 'workflow_dispatch'
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: python scripts/generate_backtest.py
+
+      - name: Generate sitemap & robots.txt
+        run: python scripts/generate_sitemap.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "sentinel-bot"
+          git config user.email "bot@sentinel-pro.app"
+          git add frontend/public/content/ \
+                  frontend/public/sitemap.xml \
+                  frontend/public/robots.txt
+          git diff --staged --quiet && echo "No changes" || \
+            git commit -m "📊 $(date +'%Y-%m-%d') update" && git push
+
+      - name: Trigger Vercel redeploy
+        if: success()
+        run: |
+          [ -n "${{ secrets.VERCEL_DEPLOY_HOOK }}" ] && \
+            curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" || true

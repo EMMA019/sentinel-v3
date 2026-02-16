@@ -1,0 +1,6 @@
+-r ../shared/requirements-shared.txt
+streamlit>=1.32
+mplfinance
+matplotlib
+altair
+pandas

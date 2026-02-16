@@ -1,0 +1,7 @@
+-r ../shared/requirements-shared.txt
+openai
+feedparser
+beautifulsoup4
+lxml
+mplfinance
+matplotlib
