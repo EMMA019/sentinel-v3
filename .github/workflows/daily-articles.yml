@@ -3,13 +3,16 @@ name: Daily & Weekly Generation
 on:
   schedule:
     - cron: '0 6 * * 1-5'   # 平日 UTC06:00 = JST15:00（日次）
-    - cron: '0 0 * * 6'     # 土曜 UTC00:00 = JST09:00（週次 + バックテスト）
+    - cron: '0 0 * * 6'      # 土曜 UTC00:00 = JST09:00（週次 + バックテスト）
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    # 権限不足による git push 403 エラーを解決
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,7 +49,7 @@ jobs:
           FMP_API_KEY:    ${{ secrets.FMP_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
-          OPENAI_MODEL:   ${{ secrets.OPENAI_MODEL }}
+          OPENAI_MODEL:    ${{ secrets.OPENAI_MODEL }}
         run: python scripts/generate_market.py
 
       - name: Generate backtest (Saturdays only)
@@ -66,7 +69,7 @@ jobs:
                   frontend/public/sitemap.xml \
                   frontend/public/robots.txt
           git diff --staged --quiet && echo "No changes" || \
-            git commit -m "📊 $(date +'%Y-%m-%d') update" && git push
+            (git commit -m "📊 $(date +'%Y-%m-%d') update" && git push)
 
       - name: Trigger Vercel redeploy
         if: success()
