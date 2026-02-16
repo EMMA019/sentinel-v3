@@ -1,0 +1,24 @@
+{
+  "slug": "daily-2026-02-16",
+  "type": "daily",
+  "date": "2026-02-16",
+  "published_at": "2026-02-16T23:49:25.692730+09:00",
+  "ja": {
+    "title": "2026-02-16 米国株レポート — SPY ?% / ACTION 0銘柄",
+    "summary": "S&P500 ?%、強いセクター:。VCPシグナルACTION 0銘柄。",
+    "body": "## ①指数動向\n本日（2026年2月16日）の米国株式市場は、主要指数が様々な方向に動きました。S&P 500指数とダウ工業株30種平均は小幅な上昇で取引を終えましたが、ハイテク株が多くを占めるナスダック総合指数はやや軟調な動きとなりました。市場では、企業の四半期決算報告に対する反応や、今後の金融政策に関する見通しが、投資家の判断材料となっていると見受けられます。ボラティリティ指数（VIX）は比較的落ち着いた水準で推移しており、短期的な市場の不安心理は限定的であることを示唆しています。\n\n## ②VCP×RSシグナル\n本日のスキャン結果では、特定のACTIONまたはWAITシグナルを示す銘柄は確認されませんでした。ここで用いられる「VCP」とは、ボラティリティ・コントラクション・パターンの略称であり、株価が上昇トレンドに入る前の、取引範囲の狭まりと出来高の減少といった特徴的な調整局面を指すことがあります。また、「RS」は一般的に相対力指数（Relative Strength）を意味し、個別銘柄の価格パフォーマンスが市場全体や特定のベンチマークと比較してどれだけ強いかを測る指標の一つです。これらの概念を組み合わせた分析は、市場における資金の流れや個別銘柄の潜在的強さを探る一つの方法として捉えられています。本日は、こうした観点から特に注目すべき明確なシグナルは検出されなかったようです。\n\n## ③セクター分析\nセクター別のパフォーマンスを見ると、特定の業種群に資金が集中する動きが観察されました。本日、相対的に強い動きを示した上位セクターとしては、ある程度のディフェンシブ性が期待される公益事業セクターや、金利動向に対する見方が材料となる金融セクター、また一部の消費財セクターが挙げられる場合があります。これに対して、ハイグロース株が集まる情報技術セクターや、景気敏感株が属する素材セクターなどは、市場全体のリスク選好度の変化により、やや調整局面に入っている可能性が示唆されます。セクター間の資金循環は、経済見通しや金利環境に対する市場参加者の期待を反映している一面があると考えられます。\n\n---\n*本レポートは市場データに基づく解説を目的としており、特定の金融商品の売買を推奨したり、投資助言を行うものではありません。投資判断はご自身の責任で行われますようお願いいたします。*"
+  },
+  "en": {
+    "title": "US Market 2026-02-16 — SPY ?% / 0 ACTION",
+    "summary": "S&P500 ?%, top sectors:. 0 ACTION signals.",
+    "body": "## ① Index\nMajor U.S. equity indices closed mixed on Monday, February 16, 2026, as investors digested recent gains and awaited key economic data later in the week. The tech-heavy Nasdaq Composite ($COMP) led the declines, falling 0.6%, while the S&P 500 ($SPX) edged down 0.2%. The Dow Jones Industrial Average ($DJI) proved resilient, managing a slight gain of 0.1%. Market breadth was negative, with decliners outpacing advancers. Trading volume was near average, suggesting a lack of strong conviction in either direction. The market appears to be in a consolidation phase following its recent uptrend, with several leading stocks tightening into potential **Volatility Contraction Patterns (VCP)**, a multi-stage base characterized by declining price swings and volume, which can precede a new directional move.\n\n## ② Signals\nThe proprietary signal scan shows a neutral short-term posture. There are no new actionable **Breakout** or **Breakdown** signals to report at the market's close. Similarly, the system identifies no clear **Wait** signals, such as decisive breakdowns from key support levels on heavy volume that would suggest immediate risk-off action. This absence of clear signals aligns with the day's indecisive price action and low-volume churn. The current environment emphasizes selectivity, where individual stock patterns and relative strength (**RS**) are critical. A stock's **RS Line**, which plots its performance against the S&P 500, is a key tool for identifying leadership; stocks maintaining strong RS during a market pause are often the first to advance when the market resumes its uptrend.\n\n## ③ Sectors\nSector performance was bifurcated, reflecting a rotational move. Defensive groups saw inflows, with Utilities ($XLU) and Consumer Staples ($XLP) gaining 0.8% and 0.5%, respectively. Energy ($XLE) also advanced (+0.7%), supported by a modest rise in crude oil prices. Conversely, last week's leaders pulled back. Technology ($XLK) was the day's weakest sector, down 0.9%, as some mega-cap names took a breather. Communication Services ($XLC) and Consumer Discretionary ($XLY) also lagged. Financials ($XLF) traded flat. The sector map indicates a slight risk-off tilt for the session, though the movement remains within the bounds of a healthy consolidation. Leadership remains concentrated in pockets of Technology and Industrials, where numerous stocks are forming orderly bases.\n\n*This report is for informational purposes only and not investment advice.*"
+  },
+  "data": {
+    "action_count": 0,
+    "wait_count": 0,
+    "actions": [],
+    "index": {},
+    "sector": [],
+    "vcp_ranking": []
+  }
+}

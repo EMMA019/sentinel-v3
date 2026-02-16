@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "slug": "daily-2026-02-16",
+    "type": "daily",
+    "date": "2026-02-16",
+    "published_at": "2026-02-16T23:49:25.692730+09:00",
+    "ja": {
+      "title": "2026-02-16 米国株レポート — SPY ?% / ACTION 0銘柄",
+      "summary": "S&P500 ?%、強いセクター:。VCPシグナルACTION 0銘柄。"
+    },
+    "en": {
+      "title": "US Market 2026-02-16 — SPY ?% / 0 ACTION",
+      "summary": "S&P500 ?%, top sectors:. 0 ACTION signals."
+    },
+    "data": {
+      "action_count": 0,
+      "wait_count": 0,
+      "index": {}
+    }
+  }
+]

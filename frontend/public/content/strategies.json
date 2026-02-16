@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-02-16",
+  "ticker_count": 0,
+  "action_count": 0,
+  "wait_count": 0,
+  "rankings": {
+    "vcp_rs": [],
+    "ecr": [],
+    "canslim": [],
+    "ses": [],
+    "composite": [],
+    "consensus": []
+  },
+  "ecr_phases": {},
+  "method_comparison": [
+    {
+      "method": "VCP×RS",
+      "top_tickers": [],
+      "avg_scores": {
+        "vcp": 0.0,
+        "ecr": 0.0,
+        "canslim": 0.0,
+        "ses": 0.0
+      }
+    },
+    {
+      "method": "ECR",
+      "top_tickers": [],
+      "avg_scores": {
+        "vcp": 0.0,
+        "ecr": 0.0,
+        "canslim": 0.0,
+        "ses": 0.0
+      }
+    },
+    {
+      "method": "CANSLIM",
+      "top_tickers": [],
+      "avg_scores": {
+        "vcp": 0.0,
+        "ecr": 0.0,
+        "canslim": 0.0,
+        "ses": 0.0
+      }
+    },
+    {
+      "method": "SES",
+      "top_tickers": [],
+      "avg_scores": {
+        "vcp": 0.0,
+        "ecr": 0.0,
+        "canslim": 0.0,
+        "ses": 0.0
+      }
+    }
+  ]
+}

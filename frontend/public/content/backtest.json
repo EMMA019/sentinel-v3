@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-02-16",
+  "lookback_days": 365,
+  "ticker_count": 120,
+  "signal_count_total": 0,
+  "method_stats": {
+    "vcp_rs": {
+      "d5": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d10": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d20": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      }
+    },
+    "ecr": {
+      "d5": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d10": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d20": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      }
+    },
+    "canslim": {
+      "d5": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d10": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d20": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      }
+    },
+    "ses": {
+      "d5": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d10": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      },
+      "d20": {
+        "signal_count": 0,
+        "win_rate": null,
+        "avg_return": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "profit_factor": null,
+        "max_loss": null,
+        "expectancy": null
+      }
+    }
+  },
+  "comparison": {
+    "d5": [],
+    "d10": [],
+    "d20": []
+  },
+  "distributions": {
+    "vcp_rs": {
+      "vcp_bins": [],
+      "rs_bins": []
+    },
+    "ecr": {
+      "rank_bins": []
+    },
+    "canslim": {
+      "score_bins": []
+    },
+    "ses": {
+      "score_bins": []
+    }
+  },
+  "ecr_phase_stats": {},
+  "canslim_grade_stats": {},
+  "multi_method_stats": {},
+  "recent_signals": [],
+  "stats": {
+    "d5": {
+      "signal_count": 0,
+      "win_rate": null,
+      "avg_return": null,
+      "avg_win": null,
+      "avg_loss": null,
+      "profit_factor": null,
+      "max_loss": null,
+      "expectancy": null
+    },
+    "d10": {
+      "signal_count": 0,
+      "win_rate": null,
+      "avg_return": null,
+      "avg_win": null,
+      "avg_loss": null,
+      "profit_factor": null,
+      "max_loss": null,
+      "expectancy": null
+    },
+    "d20": {
+      "signal_count": 0,
+      "win_rate": null,
+      "avg_return": null,
+      "avg_win": null,
+      "avg_loss": null,
+      "profit_factor": null,
+      "max_loss": null,
+      "expectancy": null
+    }
+  }
+}

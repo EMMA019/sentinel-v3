@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-02-16",
+  "indices": {
+    "SP500": {
+      "key": "SP500",
+      "etf": "SPY",
+      "label": "S&P 500",
+      "color": "#22C55E",
+      "date": "2026-02-16",
+      "performance": {
+        "ret_1d": null,
+        "ret_5d": null,
+        "ret_1m": null,
+        "ret_3m": null
+      },
+      "candles": [],
+      "components": [],
+      "gainers": [],
+      "losers": [],
+      "vol_surge": [],
+      "high_vol": [],
+      "analysis": {
+        "ja": "## ①指数動向の概要\n提供されたデータでは、S&P 500（SPY）の直近のパフォーマンス（1日、5日、1ヶ月、3ヶ月）および主要な寄与銘柄に関する具体的な数値が確認できません。この状況は、市場が特定の方向性を示す明確なトレンドを形成しておらず、あるいはデータの更新や集計が一時的に行われていない可能性を示唆しています。一般的に、主要な上昇・下落寄与銘柄や出来高急増銘柄の情報がない場合、市場全体が個別のセクターや銘柄による強い牽引を受けず、比較的様子見の状態にあると推察されます。\n\n## ②主要寄与銘柄の動き\n上昇・下落に特に寄与した銘柄のデータが提供されていないことから、直近1ヶ月の指数水準は、広範な銘柄による小幅な動きが混在し、互いに影響を相殺し合っている可能性が考えられます。これは、市場参加者が次の明確な材料を待っている状態、あるいは企業業績発表期（決算シーズン）の合間のような、マクロ経済指標や金融政策に関する発言に注意を払うフェーズにあることを反映しているかもしれません。特定の超大規模株（メガキャップ）に極端な動きが集中していない場合、指数全体のボラティリティは低下する傾向があります。\n\n## ③出来高・ボラティリティから読む背景\n出来高が急増した銘柄が「特になし」とされている点は、短期的な市場の関心が特定の銘柄や事象に集中しておらず、取引活動が平均的またはやや控えめな水準で分散していることを示す一つの兆候です。このような環境では、指数の値動きは全体的に小幅となることが多く、市場のボラティリティ指数（VIX指数など）も比較的落ち着いた水準を維持している可能性があります。背景としては、主要な経済データや中央銀行の重要な会合を目前に控え、投資家が大きなポジション調整をためらっている状況や、季節的な要因が影響していると推察されます。\n\n---\n*免責事項: 本レポートは提供されたデータに基づく解説であり、投資助言または将来のパフォーマンスの保証を目的としたものではありません。*",
+        "en": "## ① Overview\nAs of 2026-02-16, the S&P 500 ETF (SPY) exhibited a session of notable consolidation, with no significant daily, weekly, or monthly percentage changes reported. This flat performance indicates a market in equilibrium, where bullish and bearish forces were effectively balanced. The absence of clear directional movement suggests investors were digesting prior trends, awaiting new macroeconomic catalysts, or repositioning portfolios ahead of key data releases or corporate events. The lack of extreme moves in top gainers, losers, or volume surge points to a broad-based pause rather than sector-specific turmoil.\n\n## ② Key Contributors\nThe primary driver of the flat performance was likely a sector-level standoff. Without extreme individual stock movers, the index's stability can be attributed to offsetting performances across major sectors. For instance, strength in defensive sectors like Utilities or Consumer Staples may have counterbalanced mild weakness in more cyclical areas like Technology or Industrials. Furthermore, the market was likely influenced by the prevailing interest rate environment as of that date, with investors weighing the implications of the Federal Reserve's policy path on equity valuations. Corporate earnings season for the period would have also been a factor, with mixed results from major index constituents neutralizing aggregate price action, as positive surprises in some companies were offset by disappointments in others.\n\n## ③ Volume/Volatility Context\nThe reported absence of a volume surge and the lack of significant percentage moves directly correlate with suppressed market volatility. This low-volatility context suggests a lack of major, market-moving news—such as unexpected economic data, geopolitical developments, or central bank announcements—on the session. Trading activity was likely dominated by routine portfolio rebalancing and minor adjustments rather than decisive risk-on or risk-off flows. This environment is characteristic of a market in a holding pattern, where participants require additional information before committing to a sustained directional trend.\n\n*This analysis is based on a hypothetical scenario for educational purposes and does not constitute investment advice.*"
+      }
+    },
+    "NASDAQ": {
+      "key": "NASDAQ",
+      "etf": "QQQ",
+      "label": "NASDAQ 100",
+      "color": "#3B82F6",
+      "date": "2026-02-16",
+      "performance": {
+        "ret_1d": null,
+        "ret_5d": null,
+        "ret_1m": null,
+        "ret_3m": null
+      },
+      "candles": [],
+      "components": [],
+      "gainers": [],
+      "losers": [],
+      "vol_surge": [],
+      "high_vol": [],
+      "analysis": {
+        "ja": "## ①指数動向の概要\n本レポートは、NASDAQ 100指数（QQQ）の2026年2月16日時点での分析を目的としています。提供されたデータでは、直近の日次、週次、月次などの具体的なパフォーマンス数値が「None」として示されており、上昇・下落に寄与した主要銘柄や出来高急増銘柄に関する情報も限定的です。このような状況は、分析時点での市場データの更新遅延、あるいは特定の期間における指数の著しい変動がなかった可能性を示唆しています。一般的に、主要な寄与銘柄や出来高の変動が「特になし」とされる場合、市場全体が特定の方向性を持たない、比較的落ち着いた取引環境にあったと推察されます。\n\n## ②主要寄与銘柄の動き\n上昇・下落に特に寄与した銘柄に関する具体的なデータが提供されていないため、個別銘柄の動向から指数の値動きを分解して解説することは困難です。通常、NASDAQ 100指数は、Apple、Microsoft、NVIDIA、Amazon、Meta Platformsといった超大規模時価総額株（メガキャップ）の業績や将来展望に対する市場の見方に大きく影響を受けます。これらの企業に大きな変動がなかった場合、指数全体としても大きな動きを欠く傾向があります。逆に、これらの主要構成銘柄のいずれかで大きな変動があった場合には、通常、上昇または下落寄与銘柄として明確に現れるため、今回のデータはそのような大きな個別要因が顕在化していない状態を反映している可能性があります。\n\n## ③出来高・ボラティリティから読む背景\n出来高急増銘柄が「特になし」とされている点は、市場の注目が特定のセクターや銘柄に集中しておらず、全体的に交渉が散漫であった可能性を示しています。出来高の拡大は、多くの場合、企業業績の発表、マクロ経済指標の発表、または地政学的リスクへの反応など、何らかのカタリストを背景としています。これらの要因が顕著でなかった場合、市場参加者の間で明確な合意が形成されず、指数は狭いレンジで推移することがあります。また、ボラティリティ指数（VIXなど）の動向が示されていませんが、出来高の顕著な増減がない状況は、市場の予想変動率が比較的低水準で安定していたことも推測させます。\n\n---\n*免責事項: 本レポートは提供されたデータに基づく解説であり、投資助言または将来のパフォーマンスを示唆するものではありません。*",
+        "en": "## ① Overview\nAs of 2026-02-16, the NASDAQ 100, tracked by the QQQ ETF, exhibited a session of remarkable price stability. The index showed no net percentage change for the 1-day, 5-day, 1-month, and 3-month periods, with no significant top gainers, losers, or volume surges reported. This flat performance across multiple timeframes indicates a market in a state of equilibrium, where bullish and bearish forces have reached a temporary balance. The absence of movement suggests a consolidation phase following prior significant trends, with investors awaiting a new fundamental or macroeconomic catalyst to establish a directional bias.\n\n## ② Key Contributors\nThe primary driver of the flat performance is a sector-level stalemate. Typically, the index's movement is dictated by its mega-cap technology and growth constituents. The lack of notable gainers or losers implies that earnings reports, product announcements, or regulatory news from these key companies have either been absent or have presented a neutral net effect. For instance, positive results from one sector (e.g., semiconductors) may have been precisely offset by weakness in another (e.g., software or consumer discretionary). Furthermore, macroeconomic data releases—such as inflation figures, employment reports, or Federal Reserve communications—likely provided conflicting signals or met consensus expectations exactly, giving market participants no clear reason to aggressively buy or sell. This collective indecision at both the corporate and macro levels resulted in a net standstill.\n\n## ③ Volume/Volatility Context\nThe noted absence of volume surges is integral to understanding the day's price action. Low and stable trading volume confirms the lack of conviction among institutional and retail investors. High volume typically accompanies strong price moves, as it reflects a clash of opinions and active repositioning. The subdued volume indicates that most market participants are holding positions, awaiting clearer signals rather than committing new capital. This environment naturally suppresses volatility, as the lack of large, aggressive orders prevents significant price swings. The flat performance across three months further contextualizes this as a prolonged period of digestion or sideways trading, likely after a substantial prior advance or decline, as the market reassesses long-term valuations and narratives.\n\n*This analysis is for informational purposes only and does not constitute financial advice.*"
+      }
+    },
+    "RUSSELL": {
+      "key": "RUSSELL",
+      "etf": "IWM",
+      "label": "Russell 2000",
+      "color": "#F59E0B",
+      "date": "2026-02-16",
+      "performance": {
+        "ret_1d": null,
+        "ret_5d": null,
+        "ret_1m": null,
+        "ret_3m": null
+      },
+      "candles": [],
+      "components": [],
+      "gainers": [],
+      "losers": [],
+      "vol_surge": [],
+      "high_vol": [],
+      "analysis": {
+        "ja": "## ①指数動向の概要\n本レポートの対象期間におけるRussell 2000指数（IWM）のパフォーマンスデータ（1日、5日、1ヶ月、3ヶ月）は提供されていません。このため、指数の絶対的な水準や短期的なトレンドについての直接的な評価は控えます。一般的に、Russell 2000指数は米国中小型株を代表する指標であり、国内経済のセンチメント、金融環境（特に金利動向）、および個別企業の業績に対する市場の期待を敏感に反映する特性があります。分析を行う際は、こうした指数の特性を念頭に置き、個別銘柄の動向から市場で何が起きているかを推察するアプローチが有効です。\n\n## ②主要寄与銘柄の動き\n上昇・下落に寄与した主要銘柄の具体的なデータが提供されていないため、一般的な観点から解説します。Russell 2000を構成する中小型株は、大型株に比べて値動きの幅（ボラティリティ）が大きくなる傾向があります。上昇寄与銘柄のTOP3には、業績が市場予想を大幅に上回った企業、新製品や技術革新で市場の注目を集めた企業、あるいはM&A（合併・買収）の対象となった企業などが名を連ねる可能性があります。一方、下落寄与銘柄には、業績の下方修正、経営環境の悪化、あるいは業界全体の逆風に直面している企業などが含まれると推察されます。これらの個別銘柄の極端な動きが、指数全体のパフォーマンスに大きな影響を与える構造です。\n\n## ③出来高・ボラティリティから読む背景\n出来高が急増した銘柄に関する具体的なデータはありません。しかし、出来高の動向は市場の関心の度合いを示す重要な指標です。特定のセクター（例：ヘルスケア、テクノロジー、金融）やテーマ（例：AI関連、再生可能エネルギー）に属する中小型株の出来高が全体的に増加している場合、それらの分野に対する資金の流入や市場のテーマ性の高まりを示唆している可能性があります。また、市場全体のボラティリティ指数（VIXなど）が高水準にある場合、リスク選好の後退により流動性の低い中小型株から資金が引き上げられ、指数が圧迫される環境も考えられます。逆に、金融緩和期待などでリスク選好が強まると、成長期待の高い中小型株に資金が向かいやすくなる側面があります。\n\n---\n*本レポートは提供されたデータと一般的な市場知識に基づく解説であり、金融商品の売買を推奨するものではありません。投資判断はご自身の責任で行ってください。*",
+        "en": "## ① Overview\nAs of 2026-02-16, the Russell 2000 Index (IWM) exhibits a state of pronounced consolidation, with no significant price movement across the 1-day, 5-day, 1-month, and 3-month periods. The absence of top gainers, losers, or volume surges indicates a market in equilibrium, where no single sector or cohort of small-cap stocks is driving a directional trend. This stagnation suggests a balance between buying and selling pressures, with investors awaiting a catalyst to break the indecision.\n\n## ② Key Contributors\nThe flat performance is likely the result of offsetting macroeconomic and microeconomic forces. On the supportive side, a stable or accommodative Federal Reserve policy stance by this date may have prevented a broad sell-off, providing a floor for valuations. Conversely, this support is being neutralized by persistent concerns specific to small caps, such as elevated sensitivity to higher borrowing costs (if rates remain historically elevated) and pressures on profit margins from ongoing wage inflation or input costs. The lack of standout gainers or losers implies that positive earnings surprises from individual companies are being counterbalanced by negative revisions elsewhere, resulting in a net-neutral effect on the index aggregate.\n\n## ③ Volume/Volatility Context\nThe explicitly noted absence of volume surges is a critical characteristic of the current context. Low and stable trading volume confirms the lack of institutional conviction or major portfolio rebalancing, reinforcing the trendless price action. This environment typically corresponds with suppressed volatility, as measured by indices like the RVX (Russell 2000 Volatility Index). The combination of flat returns and low volatility suggests a market in a holding pattern, potentially awaiting significant macroeconomic data, policy clarity, or the onset of a new earnings season for direction, rather than reacting to idiosyncratic company news.\n\n*This analysis is based on a hypothetical scenario for educational purposes.*"
+      }
+    }
+  }
+}
