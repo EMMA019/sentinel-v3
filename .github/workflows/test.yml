@@ -18,4 +18,4 @@ jobs:
       - name: Test FMP API
         env:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-        run: python scripts/test_fmp.py
+        run: python scripts/test.py
