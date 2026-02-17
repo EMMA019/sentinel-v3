@@ -31,13 +31,25 @@ def _get(url: str, params: dict = None, cache_key: str = None, ttl: int = 3600):
 
     try:
         resp = requests.get(url, params={**params, "apikey": FMP_API_KEY}, timeout=15)
+        
+        # レート制限対応: 429エラーなら20秒待機してリトライ
+        if resp.status_code == 429:
+            print(f"⏳ Rate limit (429), sleeping 20s...")
+            time.sleep(20)
+            resp = requests.get(url, params={**params, "apikey": FMP_API_KEY}, timeout=15)
+        
         if resp.status_code == 403:
             print(f"HTTP 403: {url}")
             return None
+        
         resp.raise_for_status()
         data = resp.json()
         if cache_key and data:
             cache_file.write_text(json.dumps(data))
+        
+        # レート制限予防: 全リクエスト間に0.21秒スリープ（300/分 = 5/秒）
+        time.sleep(0.21)
+        
         return data
     except Exception as e:
         print(f"FMP error {url}: {e}")
