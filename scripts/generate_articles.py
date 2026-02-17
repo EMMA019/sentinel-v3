@@ -3,7 +3,7 @@
 scripts/generate_articles.py — 毎日実行
 ====================================
 VCP×RSスキャン + AI記事生成
-修正: DataFrameをJSONに含めないように修正
+修正点: JSON化できないDataFrameオブジェクトを保存データから除外
 """
 import sys, json, os, time
 from pathlib import Path
@@ -160,7 +160,7 @@ def scan_all_tickers(report_date: str):
 
         profile = core_fmp.get_company_profile(item["ticker"]) or {}
 
-        # 【修正】ここで "df" を含めないようにしました（JSON化エラーの回避）
+        # 【修正】JSON化できない "df" (DataFrame) を除外しました
         row = {
             "ticker":  item["ticker"],
             "status":  status,
@@ -171,7 +171,7 @@ def scan_all_tickers(report_date: str):
             "industry":profile.get("industry","N/A"),
             "name":    profile.get("companyName", item["ticker"]),
             "vcp_detail": vcp,
-            # "df": item["df"],  <-- これを削除しました
+            # "df": item["df"],  <-- ここにあったDataFrameを削除
             "atr_pct":        atr_pct,
             "pivot_dist_pct": pivot_dist_pct,
             "stop_atr_mult":  stop_atr_mult,
@@ -419,5 +419,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
