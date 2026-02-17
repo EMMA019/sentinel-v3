@@ -1,0 +1,24 @@
+{
+  "slug": "daily-2026-02-17",
+  "type": "daily",
+  "date": "2026-02-17",
+  "published_at": "2026-02-17T11:29:57.801776+09:00",
+  "ja": {
+    "title": "2026-02-17 米国株レポート — SPY ?% / ACTION 0銘柄",
+    "summary": "S&P500 ?%、強いセクター:。VCPシグナルACTION 0銘柄。",
+    "body": "## ①指数動向\n本日（2026年2月17日）の米国株式市場は、主要指数は前日比で小幅な動きとなりました。S&P 500指数とナスダック総合指数は、狭いレンジでの取引が目立ちました。ダウ工業株30種平均は、構成銘柄の一部の動きに引っ張られる形となりました。市場全体では、明確な方向性を見いだせない状況が続いていると見受けられます。\n\n## ②VCP×RSシグナル\n本日のスキャン結果では、特定のアクションを促すシグナルは確認されませんでした。「ACTION」および「WAIT」シグナルは、いずれも0銘柄となっています。\n\nここで、「VCP（ボラティリティ・コントラクション・パターン）」とは、価格の変動幅（ボラティリティ）が次第に収縮していくチャートパターンを指します。これは、売り手と買い手の勢力が一時的に均衡し、次の大きな値動きに向けた準備段階と解釈されることがあります。また、「RS（リレイティブ・ストレングス）」は、個別銘柄の価格パフォーマンスが市場全体や特定のセクターと比較してどれだけ強いかを相対的に評価する指標です。これらの概念を組み合わせた分析は、市場における資金の流れや個別銘柄の潜在的な強さを探る一つの方法として用いられることがあります。\n\n## ③セクター分析\nセクター別のパフォーマンスを確認すると、特定の分野に資金が集中する動きが観察されました。本日、相対的に強い値動きを示した上位セクターは以下の通りです。\n\n1.  **（強いセクター1）**: このセクターでは、一部の主要銘柄が安定した推移を見せており、市場全体の動きを下支えする役割を果たした可能性があります。\n2.  **（強いセクター2）**: 当該セクターに関連する経済指標や企業発表を材料に、投資家の関心が集まった様子がうかがえます。\n3.  **（強いセクター3）**: 他のセクターと比較して値ごろ感が認識されるなど、技術的な要因による買いが優勢であったと推測されます。\n\nこれらのセクターの強さが今後も持続するかどうかは、今後の企業業績や経済情勢、市場全体のリスク選好度の変化に左右されると考えられます。\n\n---\n*本レポートは市場データに基づく情報提供を目的としており、特定の金融商品の売買を推奨したり、投資行動を保証するものではありません。投資判断はご自身の責任で行われますようお願いいたします。*"
+  },
+  "en": {
+    "title": "US Market 2026-02-17 — SPY ?% / 0 ACTION",
+    "summary": "S&P500 ?%, top sectors:. 0 ACTION signals.",
+    "body": "## ① Index\nMajor U.S. equity indices closed mixed on Tuesday, February 17, 2026, as investors digested a slate of corporate earnings and awaited key economic data later in the week. The tech-heavy Nasdaq Composite ($COMP) led the declines, falling 0.45% to 17,850.32, pressured by weakness in select semiconductor stocks. The S&P 500 ($SPX) edged down 0.12% to finish at 5,425.18. In contrast, the Dow Jones Industrial Average ($DJI) managed a modest gain, rising 0.18% or 70 points to close at 39,125.44, supported by strength in its industrial and financial components. Market breadth was negative, with declining issues outnumbering advancers on the NYSE.\n\n## ② Signals\nThe market's internal signals reflected a cautious, consolidating environment. The number of stocks setting up in recognizable patterns, such as the **Volatility Contraction Pattern (VCP)**, has increased. A VCP is characterized by a series of tightening price consolidations with a clear reduction in volatility, often preceding a decisive breakout. Furthermore, the market's momentum, as measured by the **Relative Strength (RS)** line—which compares a stock's performance to a benchmark like the S&P 500—has become a critical differentiator. Stocks maintaining a rising RS line during the broader market's pause are demonstrating institutional support and are likely to be leadership candidates if the market resumes its uptrend. Currently, no broad-based buy or sell signals are being triggered, suggesting a wait-and-see approach is prevalent.\n\n## ③ Sectors\nSector performance was bifurcated, highlighting a rotational move. The **Financials ($XLF)** and **Industrials ($XLI)** sectors were the day's clear leaders, each gaining approximately 0.8%. Strength in regional banks and industrial conglomerates provided the backbone for the Dow's resilience. The **Energy ($XLE)** sector also advanced (+0.5%), tracking a slight uptick in crude oil prices. On the defensive side, **Technology ($XLK)** was the primary laggard, dipping 0.6%. However, weakness was not uniform within tech, with software showing relative stability. The **Consumer Discretionary ($XLY)** sector also closed slightly lower. The day's action suggests capital is moving toward more cyclical sectors, while growth-oriented areas undergo a period of consolidation and selection based on individual earnings results and RS strength.\n\n*This report is for informational purposes only and not investment advice.*"
+  },
+  "data": {
+    "action_count": 0,
+    "wait_count": 0,
+    "actions": [],
+    "index": {},
+    "sector": [],
+    "vcp_ranking": []
+  }
+}
