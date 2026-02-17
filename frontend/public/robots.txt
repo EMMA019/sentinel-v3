@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 Sitemap: https://your-site.vercel.app/sitemap.xml
-Disallow: /dashboard
-Disallow: /settings
+Disallow: /api/
+Disallow: /_next/

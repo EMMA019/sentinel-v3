@@ -8,20 +8,1580 @@
       "color": "#22C55E",
       "date": "2026-02-17",
       "performance": {
-        "ret_1d": null,
-        "ret_5d": null,
-        "ret_1m": null,
-        "ret_3m": null
+        "ret_1d": 0.07,
+        "ret_5d": -1.28,
+        "ret_1m": -1.25,
+        "ret_3m": 1.44
       },
-      "candles": [],
-      "components": [],
-      "gainers": [],
-      "losers": [],
-      "vol_surge": [],
-      "high_vol": [],
+      "candles": [
+        {
+          "date": "2025-08-25",
+          "open": 644.04,
+          "high": 645.29,
+          "low": 642.35,
+          "close": 642.47,
+          "volume": 51274332
+        },
+        {
+          "date": "2025-08-26",
+          "open": 642.2,
+          "high": 645.51,
+          "low": 641.57,
+          "close": 645.16,
+          "volume": 51581600
+        },
+        {
+          "date": "2025-08-27",
+          "open": 644.57,
+          "high": 647.37,
+          "low": 644.42,
+          "close": 646.63,
+          "volume": 48341100
+        },
+        {
+          "date": "2025-08-28",
+          "open": 647.24,
+          "high": 649.48,
+          "low": 645.34,
+          "close": 648.92,
+          "volume": 61519500
+        },
+        {
+          "date": "2025-08-29",
+          "open": 647.47,
+          "high": 647.84,
+          "low": 643.14,
+          "close": 645.05,
+          "volume": 74522200
+        },
+        {
+          "date": "2025-09-02",
+          "open": 637.5,
+          "high": 640.49,
+          "low": 634.92,
+          "close": 640.27,
+          "volume": 81983545
+        },
+        {
+          "date": "2025-09-03",
+          "open": 642.67,
+          "high": 644.21,
+          "low": 640.46,
+          "close": 643.74,
+          "volume": 70820900
+        },
+        {
+          "date": "2025-09-04",
+          "open": 644.42,
+          "high": 649.15,
+          "low": 643.51,
+          "close": 649.12,
+          "volume": 65219228
+        },
+        {
+          "date": "2025-09-05",
+          "open": 651.48,
+          "high": 652.21,
+          "low": 643.33,
+          "close": 647.24,
+          "volume": 85178935
+        },
+        {
+          "date": "2025-09-08",
+          "open": 648.62,
+          "high": 649.84,
+          "low": 647.23,
+          "close": 648.83,
+          "volume": 63133104
+        },
+        {
+          "date": "2025-09-09",
+          "open": 648.97,
+          "high": 650.86,
+          "low": 647.22,
+          "close": 650.33,
+          "volume": 66133900
+        },
+        {
+          "date": "2025-09-10",
+          "open": 653.62,
+          "high": 654.55,
+          "low": 650.63,
+          "close": 652.21,
+          "volume": 78034529
+        },
+        {
+          "date": "2025-09-11",
+          "open": 654.18,
+          "high": 658.33,
+          "low": 653.59,
+          "close": 657.63,
+          "volume": 69934400
+        },
+        {
+          "date": "2025-09-12",
+          "open": 657.6,
+          "high": 659.11,
+          "low": 656.9,
+          "close": 657.41,
+          "volume": 72780135
+        },
+        {
+          "date": "2025-09-15",
+          "open": 659.64,
+          "high": 661.04,
+          "low": 659.34,
+          "close": 660.91,
+          "volume": 63772412
+        },
+        {
+          "date": "2025-09-16",
+          "open": 661.47,
+          "high": 661.78,
+          "low": 659.21,
+          "close": 660.0,
+          "volume": 61169000
+        },
+        {
+          "date": "2025-09-17",
+          "open": 660.01,
+          "high": 661.72,
+          "low": 654.3,
+          "close": 659.18,
+          "volume": 101952244
+        },
+        {
+          "date": "2025-09-18",
+          "open": 661.89,
+          "high": 664.89,
+          "low": 660.27,
+          "close": 662.26,
+          "volume": 90459242
+        },
+        {
+          "date": "2025-09-19",
+          "open": 662.33,
+          "high": 664.55,
+          "low": 660.37,
+          "close": 663.7,
+          "volume": 97945620
+        },
+        {
+          "date": "2025-09-22",
+          "open": 662.2,
+          "high": 667.29,
+          "low": 662.17,
+          "close": 666.84,
+          "volume": 69452201
+        },
+        {
+          "date": "2025-09-23",
+          "open": 666.72,
+          "high": 667.34,
+          "low": 661.98,
+          "close": 663.21,
+          "volume": 81708900
+        },
+        {
+          "date": "2025-09-24",
+          "open": 664.51,
+          "high": 664.61,
+          "low": 659.67,
+          "close": 661.1,
+          "volume": 68082229
+        },
+        {
+          "date": "2025-09-25",
+          "open": 657.94,
+          "high": 659.41,
+          "low": 654.41,
+          "close": 658.05,
+          "volume": 89622100
+        },
+        {
+          "date": "2025-09-26",
+          "open": 659.51,
+          "high": 662.37,
+          "low": 657.88,
+          "close": 661.82,
+          "volume": 69179209
+        },
+        {
+          "date": "2025-09-29",
+          "open": 664.36,
+          "high": 665.28,
+          "low": 661.86,
+          "close": 663.68,
+          "volume": 73499015
+        },
+        {
+          "date": "2025-09-30",
+          "open": 662.93,
+          "high": 666.65,
+          "low": 661.61,
+          "close": 666.18,
+          "volume": 94151106
+        },
+        {
+          "date": "2025-10-01",
+          "open": 663.17,
+          "high": 669.37,
+          "low": 663.06,
+          "close": 668.45,
+          "volume": 72545400
+        },
+        {
+          "date": "2025-10-02",
+          "open": 670.45,
+          "high": 670.57,
+          "low": 666.78,
+          "close": 669.22,
+          "volume": 56896000
+        },
+        {
+          "date": "2025-10-03",
+          "open": 669.99,
+          "high": 672.68,
+          "low": 668.16,
+          "close": 669.21,
+          "volume": 70494400
+        },
+        {
+          "date": "2025-10-06",
+          "open": 671.62,
+          "high": 672.51,
+          "low": 669.46,
+          "close": 671.61,
+          "volume": 54623300
+        },
+        {
+          "date": "2025-10-07",
+          "open": 672.54,
+          "high": 672.99,
+          "low": 667.67,
+          "close": 669.12,
+          "volume": 72020100
+        },
+        {
+          "date": "2025-10-08",
+          "open": 670.25,
+          "high": 673.21,
+          "low": 669.42,
+          "close": 673.11,
+          "volume": 60702241
+        },
+        {
+          "date": "2025-10-09",
+          "open": 673.53,
+          "high": 673.94,
+          "low": 669.21,
+          "close": 671.16,
+          "volume": 66501941
+        },
+        {
+          "date": "2025-10-10",
+          "open": 672.13,
+          "high": 673.95,
+          "low": 652.84,
+          "close": 653.02,
+          "volume": 159422600
+        },
+        {
+          "date": "2025-10-13",
+          "open": 660.65,
+          "high": 665.13,
+          "low": 659.77,
+          "close": 663.04,
+          "volume": 79560517
+        },
+        {
+          "date": "2025-10-14",
+          "open": 657.17,
+          "high": 665.83,
+          "low": 653.17,
+          "close": 662.23,
+          "volume": 88779600
+        },
+        {
+          "date": "2025-10-15",
+          "open": 666.82,
+          "high": 670.23,
+          "low": 658.93,
+          "close": 665.17,
+          "volume": 81702600
+        },
+        {
+          "date": "2025-10-16",
+          "open": 666.82,
+          "high": 668.71,
+          "low": 657.11,
+          "close": 660.64,
+          "volume": 110563346
+        },
+        {
+          "date": "2025-10-17",
+          "open": 659.5,
+          "high": 665.76,
+          "low": 658.14,
+          "close": 664.39,
+          "volume": 96500900
+        },
+        {
+          "date": "2025-10-20",
+          "open": 667.32,
+          "high": 672.21,
+          "low": 667.27,
+          "close": 671.3,
+          "volume": 60493400
+        },
+        {
+          "date": "2025-10-21",
+          "open": 671.44,
+          "high": 672.99,
+          "low": 669.98,
+          "close": 671.29,
+          "volume": 56249034
+        },
+        {
+          "date": "2025-10-22",
+          "open": 672.0,
+          "high": 672.0,
+          "low": 663.3,
+          "close": 667.8,
+          "volume": 80564006
+        },
+        {
+          "date": "2025-10-23",
+          "open": 668.12,
+          "high": 672.71,
+          "low": 667.8,
+          "close": 671.76,
+          "volume": 65604500
+        },
+        {
+          "date": "2025-10-24",
+          "open": 676.46,
+          "high": 678.47,
+          "low": 675.65,
+          "close": 677.25,
+          "volume": 74356527
+        },
+        {
+          "date": "2025-10-27",
+          "open": 682.73,
+          "high": 685.54,
+          "low": 682.12,
+          "close": 685.24,
+          "volume": 63339800
+        },
+        {
+          "date": "2025-10-28",
+          "open": 687.05,
+          "high": 688.91,
+          "low": 684.83,
+          "close": 687.06,
+          "volume": 61738100
+        },
+        {
+          "date": "2025-10-29",
+          "open": 688.72,
+          "high": 689.7,
+          "low": 682.87,
+          "close": 687.39,
+          "volume": 85657100
+        },
+        {
+          "date": "2025-10-30",
+          "open": 683.9,
+          "high": 685.94,
+          "low": 679.83,
+          "close": 679.83,
+          "volume": 76335800
+        },
+        {
+          "date": "2025-10-31",
+          "open": 685.04,
+          "high": 685.08,
+          "low": 679.24,
+          "close": 682.06,
+          "volume": 87164122
+        },
+        {
+          "date": "2025-11-03",
+          "open": 685.67,
+          "high": 685.8,
+          "low": 679.94,
+          "close": 683.34,
+          "volume": 57315025
+        },
+        {
+          "date": "2025-11-04",
+          "open": 676.11,
+          "high": 679.96,
+          "low": 674.58,
+          "close": 675.24,
+          "volume": 78427000
+        },
+        {
+          "date": "2025-11-05",
+          "open": 674.98,
+          "high": 680.86,
+          "low": 674.17,
+          "close": 677.58,
+          "volume": 74402400
+        },
+        {
+          "date": "2025-11-06",
+          "open": 676.47,
+          "high": 677.38,
+          "low": 668.72,
+          "close": 670.31,
+          "volume": 85035300
+        },
+        {
+          "date": "2025-11-07",
+          "open": 667.91,
+          "high": 671.08,
+          "low": 661.21,
+          "close": 670.97,
+          "volume": 100592443
+        },
+        {
+          "date": "2025-11-10",
+          "open": 677.24,
+          "high": 682.18,
+          "low": 675.03,
+          "close": 681.44,
+          "volume": 75842900
+        },
+        {
+          "date": "2025-11-11",
+          "open": 679.95,
+          "high": 683.57,
+          "low": 678.73,
+          "close": 683.0,
+          "volume": 58953400
+        },
+        {
+          "date": "2025-11-12",
+          "open": 684.79,
+          "high": 684.96,
+          "low": 680.95,
+          "close": 683.38,
+          "volume": 62312500
+        },
+        {
+          "date": "2025-11-13",
+          "open": 680.5,
+          "high": 680.86,
+          "low": 670.52,
+          "close": 672.04,
+          "volume": 103457800
+        },
+        {
+          "date": "2025-11-14",
+          "open": 665.38,
+          "high": 675.66,
+          "low": 663.27,
+          "close": 671.93,
+          "volume": 96846700
+        },
+        {
+          "date": "2025-11-17",
+          "open": 669.7,
+          "high": 673.71,
+          "low": 662.17,
+          "close": 665.67,
+          "volume": 90456105
+        },
+        {
+          "date": "2025-11-18",
+          "open": 662.1,
+          "high": 665.12,
+          "low": 655.86,
+          "close": 660.08,
+          "volume": 114467500
+        },
+        {
+          "date": "2025-11-19",
+          "open": 660.78,
+          "high": 667.34,
+          "low": 658.75,
+          "close": 662.63,
+          "volume": 94703000
+        },
+        {
+          "date": "2025-11-20",
+          "open": 672.91,
+          "high": 675.56,
+          "low": 651.89,
+          "close": 652.53,
+          "volume": 165293521
+        },
+        {
+          "date": "2025-11-21",
+          "open": 655.05,
+          "high": 664.55,
+          "low": 650.85,
+          "close": 659.03,
+          "volume": 123956203
+        },
+        {
+          "date": "2025-11-24",
+          "open": 662.69,
+          "high": 670.06,
+          "low": 661.59,
+          "close": 668.73,
+          "volume": 80437940
+        },
+        {
+          "date": "2025-11-25",
+          "open": 668.63,
+          "high": 676.21,
+          "low": 664.48,
+          "close": 675.02,
+          "volume": 81077100
+        },
+        {
+          "date": "2025-11-26",
+          "open": 677.63,
+          "high": 681.7,
+          "low": 676.72,
+          "close": 679.68,
+          "volume": 71879600
+        },
+        {
+          "date": "2025-11-28",
+          "open": 680.86,
+          "high": 683.67,
+          "low": 680.5,
+          "close": 683.39,
+          "volume": 49212030
+        },
+        {
+          "date": "2025-12-01",
+          "open": 678.81,
+          "high": 682.99,
+          "low": 678.74,
+          "close": 680.27,
+          "volume": 61201200
+        },
+        {
+          "date": "2025-12-02",
+          "open": 681.92,
+          "high": 683.82,
+          "low": 679.33,
+          "close": 681.53,
+          "volume": 62953844
+        },
+        {
+          "date": "2025-12-03",
+          "open": 680.57,
+          "high": 684.91,
+          "low": 679.69,
+          "close": 683.89,
+          "volume": 57238500
+        },
+        {
+          "date": "2025-12-04",
+          "open": 685.3,
+          "high": 685.37,
+          "low": 681.34,
+          "close": 684.39,
+          "volume": 61970336
+        },
+        {
+          "date": "2025-12-05",
+          "open": 685.47,
+          "high": 688.39,
+          "low": 684.58,
+          "close": 685.69,
+          "volume": 79241045
+        },
+        {
+          "date": "2025-12-08",
+          "open": 686.59,
+          "high": 686.64,
+          "low": 681.57,
+          "close": 683.63,
+          "volume": 55231500
+        },
+        {
+          "date": "2025-12-09",
+          "open": 683.15,
+          "high": 685.39,
+          "low": 682.59,
+          "close": 683.04,
+          "volume": 58310100
+        },
+        {
+          "date": "2025-12-10",
+          "open": 682.56,
+          "high": 688.97,
+          "low": 681.31,
+          "close": 687.57,
+          "volume": 85671334
+        },
+        {
+          "date": "2025-12-11",
+          "open": 685.14,
+          "high": 689.25,
+          "low": 682.17,
+          "close": 689.17,
+          "volume": 86173700
+        },
+        {
+          "date": "2025-12-12",
+          "open": 688.17,
+          "high": 688.88,
+          "low": 679.17,
+          "close": 681.76,
+          "volume": 113160347
+        },
+        {
+          "date": "2025-12-15",
+          "open": 685.74,
+          "high": 685.76,
+          "low": 679.25,
+          "close": 680.73,
+          "volume": 90811000
+        },
+        {
+          "date": "2025-12-16",
+          "open": 679.23,
+          "high": 681.08,
+          "low": 674.98,
+          "close": 678.87,
+          "volume": 122030631
+        },
+        {
+          "date": "2025-12-17",
+          "open": 679.89,
+          "high": 680.44,
+          "low": 671.2,
+          "close": 671.4,
+          "volume": 110625200
+        },
+        {
+          "date": "2025-12-18",
+          "open": 677.6,
+          "high": 680.74,
+          "low": 674.9,
+          "close": 676.47,
+          "volume": 108650128
+        },
+        {
+          "date": "2025-12-19",
+          "open": 676.59,
+          "high": 681.09,
+          "low": 676.47,
+          "close": 680.59,
+          "volume": 103599543
+        },
+        {
+          "date": "2025-12-22",
+          "open": 683.94,
+          "high": 685.36,
+          "low": 680.59,
+          "close": 684.83,
+          "volume": 69556733
+        },
+        {
+          "date": "2025-12-23",
+          "open": 683.92,
+          "high": 688.2,
+          "low": 683.87,
+          "close": 687.96,
+          "volume": 64840000
+        },
+        {
+          "date": "2025-12-24",
+          "open": 687.95,
+          "high": 690.83,
+          "low": 687.8,
+          "close": 690.38,
+          "volume": 39445600
+        },
+        {
+          "date": "2025-12-26",
+          "open": 690.64,
+          "high": 691.66,
+          "low": 689.27,
+          "close": 690.31,
+          "volume": 41613347
+        },
+        {
+          "date": "2025-12-29",
+          "open": 687.54,
+          "high": 689.2,
+          "low": 686.07,
+          "close": 687.85,
+          "volume": 62559503
+        },
+        {
+          "date": "2025-12-30",
+          "open": 687.45,
+          "high": 688.56,
+          "low": 686.58,
+          "close": 687.01,
+          "volume": 47160700
+        },
+        {
+          "date": "2025-12-31",
+          "open": 687.14,
+          "high": 687.36,
+          "low": 681.71,
+          "close": 681.92,
+          "volume": 74144801
+        },
+        {
+          "date": "2026-01-02",
+          "open": 685.71,
+          "high": 686.87,
+          "low": 679.82,
+          "close": 683.17,
+          "volume": 89377203
+        },
+        {
+          "date": "2026-01-05",
+          "open": 686.54,
+          "high": 689.43,
+          "low": 686.38,
+          "close": 687.72,
+          "volume": 71927200
+        },
+        {
+          "date": "2026-01-06",
+          "open": 687.93,
+          "high": 692.32,
+          "low": 687.78,
+          "close": 691.81,
+          "volume": 69273827
+        },
+        {
+          "date": "2026-01-07",
+          "open": 692.19,
+          "high": 693.96,
+          "low": 689.32,
+          "close": 689.58,
+          "volume": 75588337
+        },
+        {
+          "date": "2026-01-08",
+          "open": 688.82,
+          "high": 690.62,
+          "low": 687.49,
+          "close": 689.51,
+          "volume": 64019200
+        },
+        {
+          "date": "2026-01-09",
+          "open": 690.63,
+          "high": 695.31,
+          "low": 689.18,
+          "close": 694.07,
+          "volume": 80125500
+        },
+        {
+          "date": "2026-01-12",
+          "open": 690.68,
+          "high": 696.09,
+          "low": 690.63,
+          "close": 695.16,
+          "volume": 63976002
+        },
+        {
+          "date": "2026-01-13",
+          "open": 695.49,
+          "high": 696.09,
+          "low": 691.35,
+          "close": 693.77,
+          "volume": 78309726
+        },
+        {
+          "date": "2026-01-14",
+          "open": 691.0,
+          "high": 691.72,
+          "low": 686.04,
+          "close": 690.36,
+          "volume": 94676700
+        },
+        {
+          "date": "2026-01-15",
+          "open": 694.57,
+          "high": 695.45,
+          "low": 691.25,
+          "close": 692.24,
+          "volume": 77862000
+        },
+        {
+          "date": "2026-01-16",
+          "open": 693.66,
+          "high": 694.25,
+          "low": 690.1,
+          "close": 691.66,
+          "volume": 79289200
+        },
+        {
+          "date": "2026-01-20",
+          "open": 681.49,
+          "high": 684.77,
+          "low": 676.57,
+          "close": 677.58,
+          "volume": 111623300
+        },
+        {
+          "date": "2026-01-21",
+          "open": 679.65,
+          "high": 688.74,
+          "low": 678.13,
+          "close": 685.4,
+          "volume": 127844500
+        },
+        {
+          "date": "2026-01-22",
+          "open": 689.85,
+          "high": 691.13,
+          "low": 686.92,
+          "close": 688.98,
+          "volume": 77112243
+        },
+        {
+          "date": "2026-01-23",
+          "open": 688.15,
+          "high": 690.96,
+          "low": 687.16,
+          "close": 689.23,
+          "volume": 63059600
+        },
+        {
+          "date": "2026-01-26",
+          "open": 690.49,
+          "high": 694.13,
+          "low": 689.92,
+          "close": 692.73,
+          "volume": 60473813
+        },
+        {
+          "date": "2026-01-27",
+          "open": 694.18,
+          "high": 696.53,
+          "low": 693.57,
+          "close": 695.49,
+          "volume": 55506147
+        },
+        {
+          "date": "2026-01-28",
+          "open": 697.05,
+          "high": 697.84,
+          "low": 693.94,
+          "close": 695.42,
+          "volume": 61172200
+        },
+        {
+          "date": "2026-01-29",
+          "open": 696.39,
+          "high": 697.06,
+          "low": 684.83,
+          "close": 694.04,
+          "volume": 97486200
+        },
+        {
+          "date": "2026-01-30",
+          "open": 691.79,
+          "high": 694.21,
+          "low": 687.12,
+          "close": 691.97,
+          "volume": 101835131
+        },
+        {
+          "date": "2026-02-02",
+          "open": 689.58,
+          "high": 696.93,
+          "low": 689.42,
+          "close": 695.41,
+          "volume": 79286521
+        },
+        {
+          "date": "2026-02-03",
+          "open": 696.21,
+          "high": 696.96,
+          "low": 684.03,
+          "close": 689.53,
+          "volume": 107904611
+        },
+        {
+          "date": "2026-02-04",
+          "open": 690.35,
+          "high": 691.45,
+          "low": 681.76,
+          "close": 686.19,
+          "volume": 105204600
+        },
+        {
+          "date": "2026-02-05",
+          "open": 680.94,
+          "high": 683.69,
+          "low": 675.79,
+          "close": 677.62,
+          "volume": 113610812
+        },
+        {
+          "date": "2026-02-06",
+          "open": 681.46,
+          "high": 692.31,
+          "low": 680.85,
+          "close": 690.62,
+          "volume": 89127600
+        },
+        {
+          "date": "2026-02-09",
+          "open": 689.42,
+          "high": 695.87,
+          "low": 688.34,
+          "close": 693.95,
+          "volume": 73885200
+        },
+        {
+          "date": "2026-02-10",
+          "open": 694.95,
+          "high": 696.54,
+          "low": 691.66,
+          "close": 692.12,
+          "volume": 65185725
+        },
+        {
+          "date": "2026-02-11",
+          "open": 696.39,
+          "high": 697.14,
+          "low": 689.18,
+          "close": 691.96,
+          "volume": 76353900
+        },
+        {
+          "date": "2026-02-12",
+          "open": 694.24,
+          "high": 695.35,
+          "low": 680.37,
+          "close": 681.27,
+          "volume": 118829000
+        },
+        {
+          "date": "2026-02-13",
+          "open": 681.69,
+          "high": 686.28,
+          "low": 677.52,
+          "close": 681.75,
+          "volume": 96267487
+        }
+      ],
+      "components": [
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "sector": "Technology",
+          "price": 182.81,
+          "ret_1d": -2.21,
+          "ret_5d": -1.4,
+          "ret_1m": -0.18,
+          "vol_ratio": 0.96,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "sector": "Technology",
+          "price": 401.32,
+          "ret_1d": -0.13,
+          "ret_5d": 0.04,
+          "ret_1m": -12.64,
+          "vol_ratio": 1.0,
+          "atr_pct": 2.9
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "sector": "Technology",
+          "price": 255.78,
+          "ret_1d": -2.27,
+          "ret_5d": -8.03,
+          "ret_1m": -1.61,
+          "vol_ratio": 0.94,
+          "atr_pct": 2.5
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 198.79,
+          "ret_1d": -0.41,
+          "ret_5d": -5.48,
+          "ret_1m": -16.0,
+          "vol_ratio": 1.45,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "sector": "Technology",
+          "price": 639.77,
+          "ret_1d": -1.55,
+          "ret_5d": -3.28,
+          "ret_1m": 3.94,
+          "vol_ratio": 0.7,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "sector": "Technology",
+          "price": 305.72,
+          "ret_1d": -1.06,
+          "ret_5d": -5.31,
+          "ret_1m": -8.97,
+          "vol_ratio": 1.13,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 417.44,
+          "ret_1d": 0.09,
+          "ret_5d": 1.54,
+          "ret_1m": -4.95,
+          "vol_ratio": 0.93,
+          "atr_pct": 3.6
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "sector": "Technology",
+          "price": 325.17,
+          "ret_1d": -1.81,
+          "ret_5d": -2.33,
+          "ret_1m": -4.33,
+          "vol_ratio": 0.76,
+          "atr_pct": 4.4
+        },
+        {
+          "ticker": "BRK-B",
+          "name": "Berkshire Hathaway Inc.",
+          "sector": "Financial Services",
+          "price": 497.55,
+          "ret_1d": -0.49,
+          "ret_5d": -2.07,
+          "ret_1m": 0.89,
+          "vol_ratio": 0.81,
+          "atr_pct": 1.5
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "sector": "Financial Services",
+          "price": 302.55,
+          "ret_1d": -0.03,
+          "ret_5d": -6.16,
+          "ret_1m": -1.73,
+          "vol_ratio": 0.83,
+          "atr_pct": 2.5
+        },
+        {
+          "ticker": "LLY",
+          "name": "Eli Lilly and Company",
+          "sector": "Healthcare",
+          "price": 1040.0,
+          "ret_1d": 0.17,
+          "ret_5d": -1.72,
+          "ret_1m": -3.1,
+          "vol_ratio": 0.91,
+          "atr_pct": 3.3
+        },
+        {
+          "ticker": "UNH",
+          "name": "UnitedHealth Group Incorporate",
+          "sector": "Healthcare",
+          "price": 293.19,
+          "ret_1d": 3.1,
+          "ret_5d": 5.98,
+          "ret_1m": -12.47,
+          "vol_ratio": 0.74,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "V",
+          "name": "Visa Inc.",
+          "sector": "Financial Services",
+          "price": 314.08,
+          "ret_1d": -3.12,
+          "ret_5d": -5.28,
+          "ret_1m": -4.58,
+          "vol_ratio": 0.97,
+          "atr_pct": 2.3
+        },
+        {
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corporation",
+          "sector": "Energy",
+          "price": 148.45,
+          "ret_1d": -0.99,
+          "ret_5d": -0.4,
+          "ret_1m": 14.02,
+          "vol_ratio": 1.04,
+          "atr_pct": 2.0
+        },
+        {
+          "ticker": "COST",
+          "name": "Costco Wholesale Corporation",
+          "sector": "Consumer Defensive",
+          "price": 1018.48,
+          "ret_1d": 1.96,
+          "ret_5d": 1.73,
+          "ret_1m": 7.1,
+          "vol_ratio": 0.83,
+          "atr_pct": 2.0
+        },
+        {
+          "ticker": "MA",
+          "name": "Mastercard Incorporated",
+          "sector": "Financial Services",
+          "price": 518.36,
+          "ret_1d": -1.73,
+          "ret_5d": -5.54,
+          "ret_1m": -5.2,
+          "vol_ratio": 0.76,
+          "atr_pct": 2.3
+        },
+        {
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "sector": "Healthcare",
+          "price": 243.45,
+          "ret_1d": -0.45,
+          "ret_5d": 1.44,
+          "ret_1m": 11.39,
+          "vol_ratio": 0.94,
+          "atr_pct": 1.6
+        },
+        {
+          "ticker": "HD",
+          "name": "The Home Depot, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 391.05,
+          "ret_1d": 0.21,
+          "ret_5d": 1.53,
+          "ret_1m": 4.02,
+          "vol_ratio": 0.72,
+          "atr_pct": 2.1
+        },
+        {
+          "ticker": "WMT",
+          "name": "Walmart Inc.",
+          "sector": "Consumer Defensive",
+          "price": 133.89,
+          "ret_1d": 0.19,
+          "ret_5d": 2.07,
+          "ret_1m": 11.54,
+          "vol_ratio": 0.54,
+          "atr_pct": 2.3
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America Corporation",
+          "sector": "Financial Services",
+          "price": 52.55,
+          "ret_1d": 0.06,
+          "ret_5d": -7.04,
+          "ret_1m": 0.13,
+          "vol_ratio": 1.05,
+          "atr_pct": 2.4
+        },
+        {
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "sector": "Consumer Defensive",
+          "price": 160.07,
+          "ret_1d": -0.71,
+          "ret_5d": 0.57,
+          "ret_1m": 9.37,
+          "vol_ratio": 0.96,
+          "atr_pct": 1.7
+        },
+        {
+          "ticker": "ABBV",
+          "name": "AbbVie Inc.",
+          "sector": "Healthcare",
+          "price": 231.5,
+          "ret_1d": 1.76,
+          "ret_5d": 3.61,
+          "ret_1m": 4.33,
+          "vol_ratio": 1.01,
+          "atr_pct": 2.6
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "sector": "Communication Services",
+          "price": 76.87,
+          "ret_1d": 1.33,
+          "ret_5d": -6.48,
+          "ret_1m": -13.19,
+          "vol_ratio": 0.89,
+          "atr_pct": 3.1
+        },
+        {
+          "ticker": "CRM",
+          "name": "Salesforce, Inc.",
+          "sector": "Technology",
+          "price": 189.72,
+          "ret_1d": 2.31,
+          "ret_5d": -0.85,
+          "ret_1m": -20.81,
+          "vol_ratio": 1.2,
+          "atr_pct": 4.2
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron Corporation",
+          "sector": "Energy",
+          "price": 183.74,
+          "ret_1d": 0.73,
+          "ret_5d": 1.59,
+          "ret_1m": 9.87,
+          "vol_ratio": 0.8,
+          "atr_pct": 1.6
+        },
+        {
+          "ticker": "MRK",
+          "name": "Merck & Co., Inc.",
+          "sector": "Healthcare",
+          "price": 121.41,
+          "ret_1d": 1.82,
+          "ret_5d": -0.43,
+          "ret_1m": 9.37,
+          "vol_ratio": 0.9,
+          "atr_pct": 2.5
+        },
+        {
+          "ticker": "KO",
+          "name": "The Coca-Cola Company",
+          "sector": "Consumer Defensive",
+          "price": 78.68,
+          "ret_1d": -0.41,
+          "ret_5d": -0.44,
+          "ret_1m": 10.13,
+          "vol_ratio": 1.2,
+          "atr_pct": 1.7
+        },
+        {
+          "ticker": "PEP",
+          "name": "PepsiCo, Inc.",
+          "sector": "Consumer Defensive",
+          "price": 165.94,
+          "ret_1d": -0.75,
+          "ret_5d": -2.67,
+          "ret_1m": 13.72,
+          "vol_ratio": 0.95,
+          "atr_pct": 2.1
+        },
+        {
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "sector": "Technology",
+          "price": 160.14,
+          "ret_1d": 2.34,
+          "ret_5d": 12.13,
+          "ret_1m": -17.29,
+          "vol_ratio": 1.06,
+          "atr_pct": 5.0
+        },
+        {
+          "ticker": "ACN",
+          "name": "Accenture plc",
+          "sector": "Technology",
+          "price": 224.23,
+          "ret_1d": 0.98,
+          "ret_5d": -6.81,
+          "ret_1m": -22.29,
+          "vol_ratio": 1.35,
+          "atr_pct": 4.3
+        }
+      ],
+      "gainers": [
+        {
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corporation",
+          "sector": "Energy",
+          "price": 148.45,
+          "ret_1d": -0.99,
+          "ret_5d": -0.4,
+          "ret_1m": 14.02,
+          "vol_ratio": 1.04,
+          "atr_pct": 2.0
+        },
+        {
+          "ticker": "PEP",
+          "name": "PepsiCo, Inc.",
+          "sector": "Consumer Defensive",
+          "price": 165.94,
+          "ret_1d": -0.75,
+          "ret_5d": -2.67,
+          "ret_1m": 13.72,
+          "vol_ratio": 0.95,
+          "atr_pct": 2.1
+        },
+        {
+          "ticker": "WMT",
+          "name": "Walmart Inc.",
+          "sector": "Consumer Defensive",
+          "price": 133.89,
+          "ret_1d": 0.19,
+          "ret_5d": 2.07,
+          "ret_1m": 11.54,
+          "vol_ratio": 0.54,
+          "atr_pct": 2.3
+        },
+        {
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "sector": "Healthcare",
+          "price": 243.45,
+          "ret_1d": -0.45,
+          "ret_5d": 1.44,
+          "ret_1m": 11.39,
+          "vol_ratio": 0.94,
+          "atr_pct": 1.6
+        },
+        {
+          "ticker": "KO",
+          "name": "The Coca-Cola Company",
+          "sector": "Consumer Defensive",
+          "price": 78.68,
+          "ret_1d": -0.41,
+          "ret_5d": -0.44,
+          "ret_1m": 10.13,
+          "vol_ratio": 1.2,
+          "atr_pct": 1.7
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron Corporation",
+          "sector": "Energy",
+          "price": 183.74,
+          "ret_1d": 0.73,
+          "ret_5d": 1.59,
+          "ret_1m": 9.87,
+          "vol_ratio": 0.8,
+          "atr_pct": 1.6
+        },
+        {
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "sector": "Consumer Defensive",
+          "price": 160.07,
+          "ret_1d": -0.71,
+          "ret_5d": 0.57,
+          "ret_1m": 9.37,
+          "vol_ratio": 0.96,
+          "atr_pct": 1.7
+        },
+        {
+          "ticker": "MRK",
+          "name": "Merck & Co., Inc.",
+          "sector": "Healthcare",
+          "price": 121.41,
+          "ret_1d": 1.82,
+          "ret_5d": -0.43,
+          "ret_1m": 9.37,
+          "vol_ratio": 0.9,
+          "atr_pct": 2.5
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "ACN",
+          "name": "Accenture plc",
+          "sector": "Technology",
+          "price": 224.23,
+          "ret_1d": 0.98,
+          "ret_5d": -6.81,
+          "ret_1m": -22.29,
+          "vol_ratio": 1.35,
+          "atr_pct": 4.3
+        },
+        {
+          "ticker": "CRM",
+          "name": "Salesforce, Inc.",
+          "sector": "Technology",
+          "price": 189.72,
+          "ret_1d": 2.31,
+          "ret_5d": -0.85,
+          "ret_1m": -20.81,
+          "vol_ratio": 1.2,
+          "atr_pct": 4.2
+        },
+        {
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "sector": "Technology",
+          "price": 160.14,
+          "ret_1d": 2.34,
+          "ret_5d": 12.13,
+          "ret_1m": -17.29,
+          "vol_ratio": 1.06,
+          "atr_pct": 5.0
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 198.79,
+          "ret_1d": -0.41,
+          "ret_5d": -5.48,
+          "ret_1m": -16.0,
+          "vol_ratio": 1.45,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "sector": "Communication Services",
+          "price": 76.87,
+          "ret_1d": 1.33,
+          "ret_5d": -6.48,
+          "ret_1m": -13.19,
+          "vol_ratio": 0.89,
+          "atr_pct": 3.1
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "sector": "Technology",
+          "price": 401.32,
+          "ret_1d": -0.13,
+          "ret_5d": 0.04,
+          "ret_1m": -12.64,
+          "vol_ratio": 1.0,
+          "atr_pct": 2.9
+        },
+        {
+          "ticker": "UNH",
+          "name": "UnitedHealth Group Incorporate",
+          "sector": "Healthcare",
+          "price": 293.19,
+          "ret_1d": 3.1,
+          "ret_5d": 5.98,
+          "ret_1m": -12.47,
+          "vol_ratio": 0.74,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "sector": "Technology",
+          "price": 305.72,
+          "ret_1d": -1.06,
+          "ret_5d": -5.31,
+          "ret_1m": -8.97,
+          "vol_ratio": 1.13,
+          "atr_pct": 3.2
+        }
+      ],
+      "vol_surge": [
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 198.79,
+          "ret_1d": -0.41,
+          "ret_5d": -5.48,
+          "ret_1m": -16.0,
+          "vol_ratio": 1.45,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "ACN",
+          "name": "Accenture plc",
+          "sector": "Technology",
+          "price": 224.23,
+          "ret_1d": 0.98,
+          "ret_5d": -6.81,
+          "ret_1m": -22.29,
+          "vol_ratio": 1.35,
+          "atr_pct": 4.3
+        }
+      ],
+      "high_vol": [
+        {
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "sector": "Technology",
+          "price": 160.14,
+          "ret_1d": 2.34,
+          "ret_5d": 12.13,
+          "ret_1m": -17.29,
+          "vol_ratio": 1.06,
+          "atr_pct": 5.0
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "sector": "Technology",
+          "price": 325.17,
+          "ret_1d": -1.81,
+          "ret_5d": -2.33,
+          "ret_1m": -4.33,
+          "vol_ratio": 0.76,
+          "atr_pct": 4.4
+        },
+        {
+          "ticker": "ACN",
+          "name": "Accenture plc",
+          "sector": "Technology",
+          "price": 224.23,
+          "ret_1d": 0.98,
+          "ret_5d": -6.81,
+          "ret_1m": -22.29,
+          "vol_ratio": 1.35,
+          "atr_pct": 4.3
+        },
+        {
+          "ticker": "CRM",
+          "name": "Salesforce, Inc.",
+          "sector": "Technology",
+          "price": 189.72,
+          "ret_1d": 2.31,
+          "ret_5d": -0.85,
+          "ret_1m": -20.81,
+          "vol_ratio": 1.2,
+          "atr_pct": 4.2
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 417.44,
+          "ret_1d": 0.09,
+          "ret_5d": 1.54,
+          "ret_1m": -4.95,
+          "vol_ratio": 0.93,
+          "atr_pct": 3.6
+        },
+        {
+          "ticker": "LLY",
+          "name": "Eli Lilly and Company",
+          "sector": "Healthcare",
+          "price": 1040.0,
+          "ret_1d": 0.17,
+          "ret_5d": -1.72,
+          "ret_1m": -3.1,
+          "vol_ratio": 0.91,
+          "atr_pct": 3.3
+        }
+      ],
       "analysis": {
-        "ja": "## ①指数動向の概要\n提供されたデータでは、S&P 500（SPY）の直近のパフォーマンス（1日、5日、1ヶ月、3ヶ月）および主要な寄与銘柄に関する具体的な数値が確認できません。この状況は、市場が休場であったか、あるいはデータ収集・更新の過程で一時的な空白が生じている可能性を示唆しています。一般的に、主要な上昇・下落寄与銘柄の情報がない状態では、指数の動きを個別銘柄の業績やセクター動向から詳細に分解して解説することは困難です。分析の第一歩は、信頼できるソースから最新の価格データと構成銘柄のパフォーマンスを取得することです。\n\n## ②主要寄与銘柄の動き\n今回のデータでは、上昇・下落に特に寄与した銘柄のリストが空欄となっています。S&P 500のような時価総額加重指数において、指数の方向性は通常、時価総額の大きいメガキャップ株（例：アップル、マイクロソフト、ナビディア、アマゾン、メタなど）のパフォーマンスに大きく左右されます。これらの銘柄の動向が不明である場合、指数全体の変動要因を特定することはできません。例えば、ハイテク株の一斉上昇が指数を押し上げることもあれば、金融や消費関連株の軟調が下落圧力となることもあります。寄与度データは、そうした市場内部のセクター・ローテーションや資金の流れを理解する上で不可欠な情報です。\n\n## ③出来高・ボラティリティから読む背景\n出来高に関するデータでは、「特になし」と記載されています。出来高は市場参加者の関心の高さや取引の活発さを示す重要な指標です。通常、指数が大きく動く日には、主要構成銘柄や特定セクターで出来高が急増する傾向があります。また、ボラティリティ指数（VIX指数など）の水準は、市場の予想変動率や不安心理を測る手がかりとなります。これらのデータが得られない場合、現在の市場が「静観モード」にあるのか、それとも何らかの重要な経済指標発表や企業業績発表を控えて緊張感が高まっているのかを判断する材料が限られます。今後の分析では、出来高の推移とボラティリティの変化にも注目し、市場の「温度感」を測ることが有用です。\n\n---\n*免責事項：本レポートは提供された限定的なデータに基づく解説であり、投資助言を目的としたものではありません。*",
-        "en": "## ① Overview\nAs of the close on February 17, 2026, the S&P 500 ETF (SPY) exhibited a session of remarkable price stability, with no percentage change recorded for the 1-day, 5-day, 1-month, and 3-month periods. The absence of top gainers, losers, or volume surges indicates a market in a state of equilibrium and consolidation. This flat performance likely stems from a balance between opposing macroeconomic forces and a market pause following a significant prior move, as participants await new catalytic information.\n\n## ② Key Contributors\nThe primary driver of this static price action is a market equilibrium where bullish and bearish narratives are in near-perfect balance. On the supportive side, resilient corporate earnings, anticipated monetary policy easing from the Federal Reserve, and stable economic data may have provided a floor for prices. Conversely, these factors were likely offset by significant headwinds, such as elevated equity valuations demanding digestion, lingering geopolitical tensions, or concerns over the sustainability of economic growth. The lack of any single sector leading as a top gainer or loser suggests a broad-based, sector-neutral stalemate, where incremental buying and selling pressure across the index's major constituents effectively canceled each other out.\n\n## ③ Volume/Volatility Context\nThe noted absence of a volume surge is a critical characteristic of this trading session. Low and normalized trading volume typically accompanies directionless price action, indicating a lack of conviction from both institutional and retail participants. This environment suggests that major market players are positioned and are not actively initiating large new positions ahead of potential catalysts, such as upcoming economic data releases, Federal Reserve meeting minutes, or the tail end of the Q4 2025 earnings season. The low volatility implied by the flat returns across multiple timeframes further confirms a market in a holding pattern, with the VIX likely trading at subdued levels as near-term uncertainty is perceived to be contained.\n\n*Past performance is not indicative of future results.*"
+        "ja": "## ①指数動向の概要\n2026年2月17日時点のS&P 500は、短期・中期で複雑な動きを示しています。直近1ヶ月および5日間では小幅な下落（約-1.3%）を記録している一方、3ヶ月スパンではプラス（+1.44%）を維持しています。このパフォーマンスは、指数が一定のレジリエンス（回復力）を示しつつも、直近では調整圧力に直面している可能性を示唆しています。上昇と下落の両方に寄与した銘柄の動向が、このもみ合いの一因と考えられます。\n\n## ②主要寄与銘柄の動き\n直近1ヶ月の指数動向を銘柄レベルで分析すると、セクター間でのパフォーマンスの二極化が読み取れます。\n\n**上昇側では、** エネルギー（XOM）や消費必需品（PEP, WMT）といったディフェンシブ（防衛的）と見なされがちなセクターの銘柄が上位を占めています。これらの銘柄の堅調な動きは、市場参加者のリスク選好が一部で後退し、景気動向に対する慎重な見方や安定配当を求める資金の動きが影響している可能性が考えられます。\n\n**下落側では、** 情報技術サービスやクラウド関連（ACN, CRM, ORCL）の銘柄が大きく値を下げています。特にACNとCRMの大幅な下落は、指数に対する強い下押し圧力となっています。この動きは、当該セクターに対する企業業績や将来成長予想の見直し、あるいは特定の企業に固有の要因が市場で評価されている可能性を示しています。\n\n## ③出来高・ボラティリティから読む背景\n出来高の動向からは、特定銘柄を中心とした活発な売買が指数変動の背景にあると推察されます。AMZNとACNは共に平均出来高を大きく上回る取引が行われており、市場の注目が集中していることが分かります。AMZNの出来高急増は同銘柄の大きな価格変動を伴わなかった可能性もありますが、市場の関心の高さを示すシグナルと言えます。一方、ACNは出来高急増と大幅な価格下落が同時に発生しており、同銘柄に対する何らかの強い売り圧力やニュースが指数全体の動きに影響を与えた一因と考えられます。これらの活発な取引は、市場全体のボラティリティ（変動率）を高め、指数の短期的なもみ合いを助長している側面があるかもしれません。\n\n---\n*本レポートは過去のデータに基づく解説であり、将来のパフォーマンスや投資行動を保証するものではありません。*",
+        "en": "## ① Overview\nAs of February 17, 2026, the S&P 500 (SPY) exhibits a market in consolidation with a slight near-term downward bias. The index is essentially flat over the last trading day (+0.07%) but shows modest declines over the past week (-1.28%) and month (-1.25%). The three-month return remains positive at +1.44%, suggesting the recent weakness follows a period of gains. The movement reflects a rotational shift and sector-specific pressures rather than a broad-based market sell-off, with defensive and energy stocks outperforming while technology-related sectors face significant headwinds.\n\n## ② Key Contributors\nThe index's muted performance is a result of opposing forces from major sectors. **Strong outperformance in Energy and Consumer Staples** provided crucial support. Exxon Mobil (XOM, +14.0%) likely rallied on elevated geopolitical risk premiums or supply constraints boosting oil prices. Walmart (WMT, +11.5%) and PepsiCo (PEP, +13.7%) gained as investors rotated into defensive, cash-flow-heavy companies amid economic uncertainty or a flight to safety. Conversely, **sharp losses in the Information Technology and Services sectors** acted as a major drag. Significant declines in Accenture (ACN, -22.3%), Salesforce (CRM, -20.8%), and Oracle (ORCL, -17.3%) indicate severe pressure on enterprise software and consulting services, possibly due to disappointing earnings, reduced corporate IT spending forecasts, or competitive disruptions.\n\n## ③ Volume/Volatility Context\nTrading activity highlights concentrated stress points. The surge in volume for Amazon (AMZN, ×1.45) and Accenture (ACN, ×1.35) indicates **high-conviction, news-driven trading** in these specific names. For AMZN, elevated volume on a day with a modest price move suggests a major mixed news event or sector rotation. For ACN, the volume spike alongside a severe price drop points to a capitulatory sell-off, likely triggered by a fundamental negative catalyst such as an earnings miss or guidance cut. This pattern confirms that the market's current volatility is not uniform but is focused on dramatic re-pricing in specific high-profile stocks, which offsets steadier trading in other sectors.\n\n*This analysis is for informational purposes only and does not constitute financial advice.*"
       }
     },
     "NASDAQ": {
@@ -31,20 +1591,1624 @@
       "color": "#3B82F6",
       "date": "2026-02-17",
       "performance": {
-        "ret_1d": null,
-        "ret_5d": null,
-        "ret_1m": null,
-        "ret_3m": null
+        "ret_1d": 0.21,
+        "ret_5d": -1.27,
+        "ret_1m": -2.85,
+        "ret_3m": -1.07
       },
-      "candles": [],
-      "components": [],
-      "gainers": [],
-      "losers": [],
-      "vol_surge": [],
-      "high_vol": [],
+      "candles": [
+        {
+          "date": "2025-08-25",
+          "open": 570.4,
+          "high": 573.29,
+          "low": 569.16,
+          "close": 570.32,
+          "volume": 34044749
+        },
+        {
+          "date": "2025-08-26",
+          "open": 569.83,
+          "high": 572.92,
+          "low": 568.8,
+          "close": 572.61,
+          "volume": 34103014
+        },
+        {
+          "date": "2025-08-27",
+          "open": 571.59,
+          "high": 574.41,
+          "low": 570.37,
+          "close": 573.49,
+          "volume": 36927144
+        },
+        {
+          "date": "2025-08-28",
+          "open": 574.11,
+          "high": 578.0,
+          "low": 572.46,
+          "close": 577.08,
+          "volume": 46787900
+        },
+        {
+          "date": "2025-08-29",
+          "open": 574.66,
+          "high": 575.03,
+          "low": 568.54,
+          "close": 570.4,
+          "volume": 56030409
+        },
+        {
+          "date": "2025-09-02",
+          "open": 561.31,
+          "high": 565.97,
+          "low": 559.54,
+          "close": 565.62,
+          "volume": 65876800
+        },
+        {
+          "date": "2025-09-03",
+          "open": 569.23,
+          "high": 571.7,
+          "low": 566.73,
+          "close": 570.07,
+          "volume": 54230213
+        },
+        {
+          "date": "2025-09-04",
+          "open": 570.74,
+          "high": 575.6,
+          "low": 569.03,
+          "close": 575.23,
+          "volume": 47526300
+        },
+        {
+          "date": "2025-09-05",
+          "open": 580.49,
+          "high": 581.12,
+          "low": 571.53,
+          "close": 576.06,
+          "volume": 68342532
+        },
+        {
+          "date": "2025-09-08",
+          "open": 578.37,
+          "high": 580.84,
+          "low": 577.77,
+          "close": 578.87,
+          "volume": 46371400
+        },
+        {
+          "date": "2025-09-09",
+          "open": 579.67,
+          "high": 580.94,
+          "low": 577.04,
+          "close": 580.51,
+          "volume": 44007600
+        },
+        {
+          "date": "2025-09-10",
+          "open": 583.74,
+          "high": 583.77,
+          "low": 578.55,
+          "close": 580.7,
+          "volume": 49308000
+        },
+        {
+          "date": "2025-09-11",
+          "open": 583.24,
+          "high": 584.88,
+          "low": 581.62,
+          "close": 584.08,
+          "volume": 44745800
+        },
+        {
+          "date": "2025-09-12",
+          "open": 585.04,
+          "high": 587.86,
+          "low": 584.1,
+          "close": 586.66,
+          "volume": 50745900
+        },
+        {
+          "date": "2025-09-15",
+          "open": 588.44,
+          "high": 591.79,
+          "low": 588.29,
+          "close": 591.68,
+          "volume": 44360315
+        },
+        {
+          "date": "2025-09-16",
+          "open": 592.61,
+          "high": 592.86,
+          "low": 590.49,
+          "close": 591.18,
+          "volume": 36942130
+        },
+        {
+          "date": "2025-09-17",
+          "open": 591.1,
+          "high": 591.75,
+          "low": 584.37,
+          "close": 590.0,
+          "volume": 69384820
+        },
+        {
+          "date": "2025-09-18",
+          "open": 594.91,
+          "high": 598.14,
+          "low": 592.96,
+          "close": 595.32,
+          "volume": 61069300
+        },
+        {
+          "date": "2025-09-19",
+          "open": 597.33,
+          "high": 600.05,
+          "low": 595.85,
+          "close": 599.35,
+          "volume": 58196109
+        },
+        {
+          "date": "2025-09-22",
+          "open": 597.74,
+          "high": 602.87,
+          "low": 597.72,
+          "close": 602.2,
+          "volume": 57154800
+        },
+        {
+          "date": "2025-09-23",
+          "open": 602.37,
+          "high": 602.57,
+          "low": 596.98,
+          "close": 598.2,
+          "volume": 64635500
+        },
+        {
+          "date": "2025-09-24",
+          "open": 599.58,
+          "high": 599.9,
+          "low": 593.36,
+          "close": 596.1,
+          "volume": 49850301
+        },
+        {
+          "date": "2025-09-25",
+          "open": 592.2,
+          "high": 595.12,
+          "low": 588.5,
+          "close": 593.53,
+          "volume": 70920209
+        },
+        {
+          "date": "2025-09-26",
+          "open": 594.35,
+          "high": 596.3,
+          "low": 591.06,
+          "close": 595.97,
+          "volume": 54337416
+        },
+        {
+          "date": "2025-09-29",
+          "open": 599.11,
+          "high": 602.05,
+          "low": 597.41,
+          "close": 598.73,
+          "volume": 48332934
+        },
+        {
+          "date": "2025-09-30",
+          "open": 598.43,
+          "high": 600.71,
+          "low": 596.1,
+          "close": 600.37,
+          "volume": 46533814
+        },
+        {
+          "date": "2025-10-01",
+          "open": 597.17,
+          "high": 603.79,
+          "low": 596.34,
+          "close": 603.25,
+          "volume": 46899612
+        },
+        {
+          "date": "2025-10-02",
+          "open": 607.06,
+          "high": 607.16,
+          "low": 602.93,
+          "close": 605.73,
+          "volume": 43765410
+        },
+        {
+          "date": "2025-10-03",
+          "open": 606.51,
+          "high": 607.33,
+          "low": 601.39,
+          "close": 603.18,
+          "volume": 46482100
+        },
+        {
+          "date": "2025-10-06",
+          "open": 608.45,
+          "high": 609.36,
+          "low": 605.97,
+          "close": 607.71,
+          "volume": 41962115
+        },
+        {
+          "date": "2025-10-07",
+          "open": 609.02,
+          "high": 609.71,
+          "low": 603.03,
+          "close": 604.51,
+          "volume": 58209500
+        },
+        {
+          "date": "2025-10-08",
+          "open": 605.41,
+          "high": 611.75,
+          "low": 605.26,
+          "close": 611.44,
+          "volume": 50629800
+        },
+        {
+          "date": "2025-10-09",
+          "open": 611.48,
+          "high": 611.61,
+          "low": 607.48,
+          "close": 610.7,
+          "volume": 45551000
+        },
+        {
+          "date": "2025-10-10",
+          "open": 611.4,
+          "high": 613.18,
+          "low": 589.05,
+          "close": 589.5,
+          "volume": 97614800
+        },
+        {
+          "date": "2025-10-13",
+          "open": 599.68,
+          "high": 602.95,
+          "low": 597.23,
+          "close": 602.01,
+          "volume": 65872600
+        },
+        {
+          "date": "2025-10-14",
+          "open": 595.31,
+          "high": 602.69,
+          "low": 590.13,
+          "close": 598.0,
+          "volume": 69203200
+        },
+        {
+          "date": "2025-10-15",
+          "open": 604.01,
+          "high": 606.7,
+          "low": 595.93,
+          "close": 602.22,
+          "volume": 62805500
+        },
+        {
+          "date": "2025-10-16",
+          "open": 605.11,
+          "high": 608.31,
+          "low": 595.5,
+          "close": 599.99,
+          "volume": 70982000
+        },
+        {
+          "date": "2025-10-17",
+          "open": 597.95,
+          "high": 605.51,
+          "low": 596.37,
+          "close": 603.93,
+          "volume": 72024900
+        },
+        {
+          "date": "2025-10-20",
+          "open": 607.14,
+          "high": 612.8,
+          "low": 607.07,
+          "close": 611.54,
+          "volume": 45761700
+        },
+        {
+          "date": "2025-10-21",
+          "open": 611.64,
+          "high": 612.72,
+          "low": 609.32,
+          "close": 611.38,
+          "volume": 44538200
+        },
+        {
+          "date": "2025-10-22",
+          "open": 610.82,
+          "high": 611.41,
+          "low": 599.74,
+          "close": 605.49,
+          "volume": 61478802
+        },
+        {
+          "date": "2025-10-23",
+          "open": 604.91,
+          "high": 611.37,
+          "low": 604.52,
+          "close": 610.58,
+          "volume": 42844300
+        },
+        {
+          "date": "2025-10-24",
+          "open": 615.99,
+          "high": 618.42,
+          "low": 615.13,
+          "close": 617.1,
+          "volume": 47632500
+        },
+        {
+          "date": "2025-10-27",
+          "open": 624.52,
+          "high": 628.55,
+          "low": 624.03,
+          "close": 628.09,
+          "volume": 54098611
+        },
+        {
+          "date": "2025-10-28",
+          "open": 630.36,
+          "high": 634.68,
+          "low": 629.25,
+          "close": 632.92,
+          "volume": 61195733
+        },
+        {
+          "date": "2025-10-29",
+          "open": 635.59,
+          "high": 637.01,
+          "low": 630.25,
+          "close": 635.77,
+          "volume": 67422806
+        },
+        {
+          "date": "2025-10-30",
+          "open": 632.17,
+          "high": 633.5,
+          "low": 625.94,
+          "close": 626.05,
+          "volume": 61628621
+        },
+        {
+          "date": "2025-10-31",
+          "open": 634.17,
+          "high": 634.2,
+          "low": 626.69,
+          "close": 629.07,
+          "volume": 66305147
+        },
+        {
+          "date": "2025-11-03",
+          "open": 635.11,
+          "high": 635.82,
+          "low": 629.85,
+          "close": 632.08,
+          "volume": 37154307
+        },
+        {
+          "date": "2025-11-04",
+          "open": 623.28,
+          "high": 626.95,
+          "low": 618.46,
+          "close": 619.25,
+          "volume": 63830800
+        },
+        {
+          "date": "2025-11-05",
+          "open": 618.49,
+          "high": 626.6,
+          "low": 617.21,
+          "close": 623.28,
+          "volume": 48688500
+        },
+        {
+          "date": "2025-11-06",
+          "open": 621.79,
+          "high": 622.04,
+          "low": 610.3,
+          "close": 611.67,
+          "volume": 72115128
+        },
+        {
+          "date": "2025-11-07",
+          "open": 608.31,
+          "high": 609.95,
+          "low": 598.67,
+          "close": 609.74,
+          "volume": 81835400
+        },
+        {
+          "date": "2025-11-10",
+          "open": 618.92,
+          "high": 624.31,
+          "low": 616.89,
+          "close": 623.23,
+          "volume": 55919931
+        },
+        {
+          "date": "2025-11-11",
+          "open": 620.57,
+          "high": 622.72,
+          "low": 617.52,
+          "close": 621.57,
+          "volume": 44868841
+        },
+        {
+          "date": "2025-11-12",
+          "open": 624.84,
+          "high": 624.86,
+          "low": 617.81,
+          "close": 621.08,
+          "volume": 47444400
+        },
+        {
+          "date": "2025-11-13",
+          "open": 617.54,
+          "high": 618.12,
+          "low": 606.08,
+          "close": 608.4,
+          "volume": 71333634
+        },
+        {
+          "date": "2025-11-14",
+          "open": 599.55,
+          "high": 613.35,
+          "low": 597.17,
+          "close": 608.86,
+          "volume": 80087300
+        },
+        {
+          "date": "2025-11-17",
+          "open": 606.3,
+          "high": 612.48,
+          "low": 599.87,
+          "close": 603.66,
+          "volume": 63850400
+        },
+        {
+          "date": "2025-11-18",
+          "open": 599.62,
+          "high": 602.31,
+          "low": 591.34,
+          "close": 596.31,
+          "volume": 83327300
+        },
+        {
+          "date": "2025-11-19",
+          "open": 597.07,
+          "high": 606.16,
+          "low": 594.59,
+          "close": 599.87,
+          "volume": 73111500
+        },
+        {
+          "date": "2025-11-20",
+          "open": 611.62,
+          "high": 614.03,
+          "low": 584.75,
+          "close": 585.67,
+          "volume": 117743200
+        },
+        {
+          "date": "2025-11-21",
+          "open": 587.47,
+          "high": 596.98,
+          "low": 580.74,
+          "close": 590.07,
+          "volume": 103344200
+        },
+        {
+          "date": "2025-11-24",
+          "open": 595.28,
+          "high": 606.68,
+          "low": 595.16,
+          "close": 605.16,
+          "volume": 60168149
+        },
+        {
+          "date": "2025-11-25",
+          "open": 603.51,
+          "high": 610.26,
+          "low": 597.32,
+          "close": 608.89,
+          "volume": 57560900
+        },
+        {
+          "date": "2025-11-26",
+          "open": 612.51,
+          "high": 616.19,
+          "low": 610.39,
+          "close": 614.27,
+          "volume": 42393600
+        },
+        {
+          "date": "2025-11-28",
+          "open": 616.11,
+          "high": 619.32,
+          "low": 615.42,
+          "close": 619.25,
+          "volume": 23034400
+        },
+        {
+          "date": "2025-12-01",
+          "open": 613.63,
+          "high": 619.44,
+          "low": 612.52,
+          "close": 617.17,
+          "volume": 40957600
+        },
+        {
+          "date": "2025-12-02",
+          "open": 619.46,
+          "high": 623.75,
+          "low": 617.59,
+          "close": 622.0,
+          "volume": 54541834
+        },
+        {
+          "date": "2025-12-03",
+          "open": 619.62,
+          "high": 624.22,
+          "low": 618.03,
+          "close": 623.52,
+          "volume": 47841627
+        },
+        {
+          "date": "2025-12-04",
+          "open": 624.93,
+          "high": 624.94,
+          "low": 619.54,
+          "close": 622.94,
+          "volume": 47067800
+        },
+        {
+          "date": "2025-12-05",
+          "open": 624.38,
+          "high": 628.92,
+          "low": 623.71,
+          "close": 625.48,
+          "volume": 53614200
+        },
+        {
+          "date": "2025-12-08",
+          "open": 627.21,
+          "high": 628.84,
+          "low": 621.69,
+          "close": 624.28,
+          "volume": 43462406
+        },
+        {
+          "date": "2025-12-09",
+          "open": 623.01,
+          "high": 625.87,
+          "low": 621.0,
+          "close": 625.05,
+          "volume": 37156000
+        },
+        {
+          "date": "2025-12-10",
+          "open": 623.85,
+          "high": 629.21,
+          "low": 620.99,
+          "close": 627.61,
+          "volume": 55031400
+        },
+        {
+          "date": "2025-12-11",
+          "open": 623.82,
+          "high": 625.78,
+          "low": 617.72,
+          "close": 625.58,
+          "volume": 58272844
+        },
+        {
+          "date": "2025-12-12",
+          "open": 622.08,
+          "high": 623.54,
+          "low": 611.36,
+          "close": 613.62,
+          "volume": 75158726
+        },
+        {
+          "date": "2025-12-15",
+          "open": 618.37,
+          "high": 618.42,
+          "low": 609.32,
+          "close": 610.54,
+          "volume": 49538200
+        },
+        {
+          "date": "2025-12-16",
+          "open": 608.26,
+          "high": 613.51,
+          "low": 606.91,
+          "close": 611.75,
+          "volume": 55152819
+        },
+        {
+          "date": "2025-12-17",
+          "open": 613.06,
+          "high": 613.65,
+          "low": 600.28,
+          "close": 600.41,
+          "volume": 70654327
+        },
+        {
+          "date": "2025-12-18",
+          "open": 609.8,
+          "high": 612.93,
+          "low": 606.92,
+          "close": 609.11,
+          "volume": 78875824
+        },
+        {
+          "date": "2025-12-19",
+          "open": 611.95,
+          "high": 617.62,
+          "low": 611.87,
+          "close": 617.05,
+          "volume": 60369829
+        },
+        {
+          "date": "2025-12-22",
+          "open": 621.35,
+          "high": 621.65,
+          "low": 617.77,
+          "close": 619.21,
+          "volume": 43703101
+        },
+        {
+          "date": "2025-12-23",
+          "open": 618.2,
+          "high": 622.41,
+          "low": 617.78,
+          "close": 622.11,
+          "volume": 41120445
+        },
+        {
+          "date": "2025-12-24",
+          "open": 621.99,
+          "high": 624.28,
+          "low": 621.72,
+          "close": 623.93,
+          "volume": 18468707
+        },
+        {
+          "date": "2025-12-26",
+          "open": 624.66,
+          "high": 625.52,
+          "low": 623.14,
+          "close": 623.89,
+          "volume": 28959800
+        },
+        {
+          "date": "2025-12-29",
+          "open": 620.1,
+          "high": 622.78,
+          "low": 618.73,
+          "close": 620.87,
+          "volume": 32458308
+        },
+        {
+          "date": "2025-12-30",
+          "open": 619.84,
+          "high": 622.18,
+          "low": 619.22,
+          "close": 619.43,
+          "volume": 31226800
+        },
+        {
+          "date": "2025-12-31",
+          "open": 619.65,
+          "high": 619.96,
+          "low": 614.05,
+          "close": 614.31,
+          "volume": 40746527
+        },
+        {
+          "date": "2026-01-02",
+          "open": 620.06,
+          "high": 622.85,
+          "low": 610.15,
+          "close": 613.12,
+          "volume": 61859200
+        },
+        {
+          "date": "2026-01-05",
+          "open": 619.32,
+          "high": 620.81,
+          "low": 616.72,
+          "close": 617.99,
+          "volume": 46828400
+        },
+        {
+          "date": "2026-01-06",
+          "open": 619.23,
+          "high": 624.02,
+          "low": 618.54,
+          "close": 623.42,
+          "volume": 43137520
+        },
+        {
+          "date": "2026-01-07",
+          "open": 623.04,
+          "high": 627.94,
+          "low": 622.56,
+          "close": 624.02,
+          "volume": 44880339
+        },
+        {
+          "date": "2026-01-08",
+          "open": 623.03,
+          "high": 623.42,
+          "low": 617.8,
+          "close": 620.47,
+          "volume": 50435941
+        },
+        {
+          "date": "2026-01-09",
+          "open": 621.41,
+          "high": 627.89,
+          "low": 619.06,
+          "close": 626.65,
+          "volume": 49688734
+        },
+        {
+          "date": "2026-01-12",
+          "open": 622.31,
+          "high": 628.85,
+          "low": 622.26,
+          "close": 627.17,
+          "volume": 37388700
+        },
+        {
+          "date": "2026-01-13",
+          "open": 627.27,
+          "high": 629.47,
+          "low": 623.7,
+          "close": 626.24,
+          "volume": 44481400
+        },
+        {
+          "date": "2026-01-14",
+          "open": 622.24,
+          "high": 623.45,
+          "low": 614.56,
+          "close": 619.55,
+          "volume": 72598700
+        },
+        {
+          "date": "2026-01-15",
+          "open": 626.6,
+          "high": 630.0,
+          "low": 620.75,
+          "close": 621.78,
+          "volume": 53934900
+        },
+        {
+          "date": "2026-01-16",
+          "open": 625.5,
+          "high": 626.08,
+          "low": 618.88,
+          "close": 621.26,
+          "volume": 61058100
+        },
+        {
+          "date": "2026-01-20",
+          "open": 610.53,
+          "high": 615.05,
+          "low": 607.05,
+          "close": 608.06,
+          "volume": 81988900
+        },
+        {
+          "date": "2026-01-21",
+          "open": 609.47,
+          "high": 620.42,
+          "low": 607.86,
+          "close": 616.28,
+          "volume": 79837900
+        },
+        {
+          "date": "2026-01-22",
+          "open": 622.35,
+          "high": 622.46,
+          "low": 617.78,
+          "close": 620.76,
+          "volume": 42254800
+        },
+        {
+          "date": "2026-01-23",
+          "open": 619.73,
+          "high": 625.4,
+          "low": 618.65,
+          "close": 622.72,
+          "volume": 43645825
+        },
+        {
+          "date": "2026-01-26",
+          "open": 623.21,
+          "high": 627.61,
+          "low": 622.12,
+          "close": 625.46,
+          "volume": 35983008
+        },
+        {
+          "date": "2026-01-27",
+          "open": 628.91,
+          "high": 632.04,
+          "low": 627.34,
+          "close": 631.13,
+          "volume": 38997212
+        },
+        {
+          "date": "2026-01-28",
+          "open": 635.46,
+          "high": 636.6,
+          "low": 631.81,
+          "close": 633.22,
+          "volume": 50691700
+        },
+        {
+          "date": "2026-01-29",
+          "open": 632.65,
+          "high": 633.67,
+          "low": 618.27,
+          "close": 629.43,
+          "volume": 79944047
+        },
+        {
+          "date": "2026-01-30",
+          "open": 625.71,
+          "high": 628.26,
+          "low": 619.3,
+          "close": 621.87,
+          "volume": 65650714
+        },
+        {
+          "date": "2026-02-02",
+          "open": 618.7,
+          "high": 628.49,
+          "low": 618.66,
+          "close": 626.14,
+          "volume": 49020300
+        },
+        {
+          "date": "2026-02-03",
+          "open": 628.3,
+          "high": 629.98,
+          "low": 610.96,
+          "close": 616.52,
+          "volume": 81234000
+        },
+        {
+          "date": "2026-02-04",
+          "open": 615.02,
+          "high": 615.1,
+          "low": 600.47,
+          "close": 605.75,
+          "volume": 81850748
+        },
+        {
+          "date": "2026-02-05",
+          "open": 600.21,
+          "high": 604.81,
+          "low": 594.76,
+          "close": 597.03,
+          "volume": 89354500
+        },
+        {
+          "date": "2026-02-06",
+          "open": 600.19,
+          "high": 611.41,
+          "low": 598.77,
+          "close": 609.65,
+          "volume": 78019338
+        },
+        {
+          "date": "2026-02-09",
+          "open": 607.54,
+          "high": 616.46,
+          "low": 605.07,
+          "close": 614.32,
+          "volume": 56797600
+        },
+        {
+          "date": "2026-02-10",
+          "open": 615.3,
+          "high": 617.02,
+          "low": 611.01,
+          "close": 611.47,
+          "volume": 53938900
+        },
+        {
+          "date": "2026-02-11",
+          "open": 616.38,
+          "high": 617.52,
+          "low": 607.69,
+          "close": 613.11,
+          "volume": 58575101
+        },
+        {
+          "date": "2026-02-12",
+          "open": 614.71,
+          "high": 615.81,
+          "low": 599.57,
+          "close": 600.64,
+          "volume": 81378903
+        },
+        {
+          "date": "2026-02-13",
+          "open": 600.43,
+          "high": 606.48,
+          "low": 596.42,
+          "close": 601.92,
+          "volume": 69237547
+        }
+      ],
+      "components": [
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "sector": "Technology",
+          "price": 182.81,
+          "ret_1d": -2.21,
+          "ret_5d": -1.4,
+          "ret_1m": -0.18,
+          "vol_ratio": 0.96,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "sector": "Technology",
+          "price": 401.32,
+          "ret_1d": -0.13,
+          "ret_5d": 0.04,
+          "ret_1m": -12.64,
+          "vol_ratio": 1.0,
+          "atr_pct": 2.9
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "sector": "Technology",
+          "price": 255.78,
+          "ret_1d": -2.27,
+          "ret_5d": -8.03,
+          "ret_1m": -1.61,
+          "vol_ratio": 0.94,
+          "atr_pct": 2.5
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 198.79,
+          "ret_1d": -0.41,
+          "ret_5d": -5.48,
+          "ret_1m": -16.0,
+          "vol_ratio": 1.45,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "sector": "Technology",
+          "price": 639.77,
+          "ret_1d": -1.55,
+          "ret_5d": -3.28,
+          "ret_1m": 3.94,
+          "vol_ratio": 0.7,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "sector": "Technology",
+          "price": 305.72,
+          "ret_1d": -1.06,
+          "ret_5d": -5.31,
+          "ret_1m": -8.97,
+          "vol_ratio": 1.13,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "GOOG",
+          "name": "Alphabet Inc.",
+          "sector": "Technology",
+          "price": 306.02,
+          "ret_1d": -1.08,
+          "ret_5d": -5.29,
+          "ret_1m": -9.01,
+          "vol_ratio": 1.03,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 417.44,
+          "ret_1d": 0.09,
+          "ret_5d": 1.54,
+          "ret_1m": -4.95,
+          "vol_ratio": 0.93,
+          "atr_pct": 3.6
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "sector": "Technology",
+          "price": 325.17,
+          "ret_1d": -1.81,
+          "ret_5d": -2.33,
+          "ret_1m": -4.33,
+          "vol_ratio": 0.76,
+          "atr_pct": 4.4
+        },
+        {
+          "ticker": "COST",
+          "name": "Costco Wholesale Corporation",
+          "sector": "Consumer Defensive",
+          "price": 1018.48,
+          "ret_1d": 1.96,
+          "ret_5d": 1.73,
+          "ret_1m": 7.1,
+          "vol_ratio": 0.83,
+          "atr_pct": 2.0
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "sector": "Communication Services",
+          "price": 76.87,
+          "ret_1d": 1.33,
+          "ret_5d": -6.48,
+          "ret_1m": -13.19,
+          "vol_ratio": 0.89,
+          "atr_pct": 3.1
+        },
+        {
+          "ticker": "TMUS",
+          "name": "T-Mobile US, Inc.",
+          "sector": "Communication Services",
+          "price": 219.5,
+          "ret_1d": 2.25,
+          "ret_5d": 11.2,
+          "ret_1m": 14.31,
+          "vol_ratio": 1.45,
+          "atr_pct": 2.4
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices, Inc.",
+          "sector": "Technology",
+          "price": 207.32,
+          "ret_1d": 0.67,
+          "ret_5d": -0.54,
+          "ret_1m": -7.28,
+          "vol_ratio": 0.69,
+          "atr_pct": 5.7
+        },
+        {
+          "ticker": "ADBE",
+          "name": "Adobe Inc.",
+          "sector": "Technology",
+          "price": 263.97,
+          "ret_1d": 0.56,
+          "ret_5d": -1.64,
+          "ret_1m": -13.29,
+          "vol_ratio": 1.28,
+          "atr_pct": 3.3
+        },
+        {
+          "ticker": "INTU",
+          "name": "Intuit Inc.",
+          "sector": "Technology",
+          "price": 399.4,
+          "ret_1d": 0.36,
+          "ret_5d": -10.0,
+          "ret_1m": -29.51,
+          "vol_ratio": 1.31,
+          "atr_pct": 5.2
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems, Inc.",
+          "sector": "Technology",
+          "price": 76.85,
+          "ret_1d": 2.47,
+          "ret_5d": -9.4,
+          "ret_1m": 3.28,
+          "vol_ratio": 1.8,
+          "atr_pct": 2.9
+        },
+        {
+          "ticker": "TXN",
+          "name": "Texas Instruments Incorporated",
+          "sector": "Technology",
+          "price": 226.16,
+          "ret_1d": 1.42,
+          "ret_5d": 2.13,
+          "ret_1m": 16.91,
+          "vol_ratio": 0.76,
+          "atr_pct": 2.8
+        },
+        {
+          "ticker": "QCOM",
+          "name": "QUALCOMM Incorporated",
+          "sector": "Technology",
+          "price": 140.7,
+          "ret_1d": 1.61,
+          "ret_5d": 2.45,
+          "ret_1m": -14.49,
+          "vol_ratio": 0.98,
+          "atr_pct": 2.7
+        },
+        {
+          "ticker": "AMAT",
+          "name": "Applied Materials, Inc.",
+          "sector": "Technology",
+          "price": 354.91,
+          "ret_1d": 8.08,
+          "ret_5d": 10.05,
+          "ret_1m": 17.56,
+          "vol_ratio": 1.1,
+          "atr_pct": 4.3
+        },
+        {
+          "ticker": "ISRG",
+          "name": "Intuitive Surgical, Inc.",
+          "sector": "Healthcare",
+          "price": 485.84,
+          "ret_1d": 1.51,
+          "ret_5d": -0.47,
+          "ret_1m": -11.14,
+          "vol_ratio": 0.91,
+          "atr_pct": 2.7
+        },
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "sector": "Technology",
+          "price": 166.95,
+          "ret_1d": 2.54,
+          "ret_5d": 4.79,
+          "ret_1m": -12.56,
+          "vol_ratio": 3.52,
+          "atr_pct": 4.1
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "sector": "Technology",
+          "price": 411.66,
+          "ret_1d": -0.56,
+          "ret_5d": 4.3,
+          "ret_1m": 23.49,
+          "vol_ratio": 1.01,
+          "atr_pct": 6.3
+        },
+        {
+          "ticker": "LRCX",
+          "name": "Lam Research Corporation",
+          "sector": "Technology",
+          "price": 235.53,
+          "ret_1d": 1.83,
+          "ret_5d": 1.96,
+          "ret_1m": 12.81,
+          "vol_ratio": 0.69,
+          "atr_pct": 5.1
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell Technology, Inc.",
+          "sector": "Technology",
+          "price": 78.61,
+          "ret_1d": 0.49,
+          "ret_5d": -2.08,
+          "ret_1m": -3.2,
+          "vol_ratio": 0.76,
+          "atr_pct": 4.5
+        },
+        {
+          "ticker": "KLAC",
+          "name": "KLA Corporation",
+          "sector": "Technology",
+          "price": 1464.13,
+          "ret_1d": 0.92,
+          "ret_5d": 1.47,
+          "ret_1m": 2.07,
+          "vol_ratio": 0.8,
+          "atr_pct": 4.7
+        },
+        {
+          "ticker": "ON",
+          "name": "ON Semiconductor Corporation",
+          "sector": "Technology",
+          "price": 72.21,
+          "ret_1d": 2.24,
+          "ret_5d": 10.75,
+          "ret_1m": 19.2,
+          "vol_ratio": 1.47,
+          "atr_pct": 3.7
+        },
+        {
+          "ticker": "REGN",
+          "name": "Regeneron Pharmaceuticals, Inc",
+          "sector": "Healthcare",
+          "price": 803.17,
+          "ret_1d": 2.49,
+          "ret_5d": 2.25,
+          "ret_1m": 6.5,
+          "vol_ratio": 0.96,
+          "atr_pct": 2.8
+        },
+        {
+          "ticker": "SNPS",
+          "name": "Synopsys, Inc.",
+          "sector": "Technology",
+          "price": 437.09,
+          "ret_1d": 3.25,
+          "ret_5d": 2.39,
+          "ret_1m": -13.51,
+          "vol_ratio": 0.96,
+          "atr_pct": 4.4
+        },
+        {
+          "ticker": "CDNS",
+          "name": "Cadence Design Systems, Inc.",
+          "sector": "Technology",
+          "price": 299.46,
+          "ret_1d": 3.86,
+          "ret_5d": 5.62,
+          "ret_1m": -4.38,
+          "vol_ratio": 1.26,
+          "atr_pct": 3.6
+        },
+        {
+          "ticker": "CRWD",
+          "name": "CrowdStrike Holdings, Inc.",
+          "sector": "Technology",
+          "price": 429.64,
+          "ret_1d": 4.4,
+          "ret_5d": 8.63,
+          "ret_1m": -6.74,
+          "vol_ratio": 0.98,
+          "atr_pct": 4.2
+        }
+      ],
+      "gainers": [
+        {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "sector": "Technology",
+          "price": 411.66,
+          "ret_1d": -0.56,
+          "ret_5d": 4.3,
+          "ret_1m": 23.49,
+          "vol_ratio": 1.01,
+          "atr_pct": 6.3
+        },
+        {
+          "ticker": "ON",
+          "name": "ON Semiconductor Corporation",
+          "sector": "Technology",
+          "price": 72.21,
+          "ret_1d": 2.24,
+          "ret_5d": 10.75,
+          "ret_1m": 19.2,
+          "vol_ratio": 1.47,
+          "atr_pct": 3.7
+        },
+        {
+          "ticker": "AMAT",
+          "name": "Applied Materials, Inc.",
+          "sector": "Technology",
+          "price": 354.91,
+          "ret_1d": 8.08,
+          "ret_5d": 10.05,
+          "ret_1m": 17.56,
+          "vol_ratio": 1.1,
+          "atr_pct": 4.3
+        },
+        {
+          "ticker": "TXN",
+          "name": "Texas Instruments Incorporated",
+          "sector": "Technology",
+          "price": 226.16,
+          "ret_1d": 1.42,
+          "ret_5d": 2.13,
+          "ret_1m": 16.91,
+          "vol_ratio": 0.76,
+          "atr_pct": 2.8
+        },
+        {
+          "ticker": "TMUS",
+          "name": "T-Mobile US, Inc.",
+          "sector": "Communication Services",
+          "price": 219.5,
+          "ret_1d": 2.25,
+          "ret_5d": 11.2,
+          "ret_1m": 14.31,
+          "vol_ratio": 1.45,
+          "atr_pct": 2.4
+        },
+        {
+          "ticker": "LRCX",
+          "name": "Lam Research Corporation",
+          "sector": "Technology",
+          "price": 235.53,
+          "ret_1d": 1.83,
+          "ret_5d": 1.96,
+          "ret_1m": 12.81,
+          "vol_ratio": 0.69,
+          "atr_pct": 5.1
+        },
+        {
+          "ticker": "COST",
+          "name": "Costco Wholesale Corporation",
+          "sector": "Consumer Defensive",
+          "price": 1018.48,
+          "ret_1d": 1.96,
+          "ret_5d": 1.73,
+          "ret_1m": 7.1,
+          "vol_ratio": 0.83,
+          "atr_pct": 2.0
+        },
+        {
+          "ticker": "REGN",
+          "name": "Regeneron Pharmaceuticals, Inc",
+          "sector": "Healthcare",
+          "price": 803.17,
+          "ret_1d": 2.49,
+          "ret_5d": 2.25,
+          "ret_1m": 6.5,
+          "vol_ratio": 0.96,
+          "atr_pct": 2.8
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "INTU",
+          "name": "Intuit Inc.",
+          "sector": "Technology",
+          "price": 399.4,
+          "ret_1d": 0.36,
+          "ret_5d": -10.0,
+          "ret_1m": -29.51,
+          "vol_ratio": 1.31,
+          "atr_pct": 5.2
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 198.79,
+          "ret_1d": -0.41,
+          "ret_5d": -5.48,
+          "ret_1m": -16.0,
+          "vol_ratio": 1.45,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "QCOM",
+          "name": "QUALCOMM Incorporated",
+          "sector": "Technology",
+          "price": 140.7,
+          "ret_1d": 1.61,
+          "ret_5d": 2.45,
+          "ret_1m": -14.49,
+          "vol_ratio": 0.98,
+          "atr_pct": 2.7
+        },
+        {
+          "ticker": "SNPS",
+          "name": "Synopsys, Inc.",
+          "sector": "Technology",
+          "price": 437.09,
+          "ret_1d": 3.25,
+          "ret_5d": 2.39,
+          "ret_1m": -13.51,
+          "vol_ratio": 0.96,
+          "atr_pct": 4.4
+        },
+        {
+          "ticker": "ADBE",
+          "name": "Adobe Inc.",
+          "sector": "Technology",
+          "price": 263.97,
+          "ret_1d": 0.56,
+          "ret_5d": -1.64,
+          "ret_1m": -13.29,
+          "vol_ratio": 1.28,
+          "atr_pct": 3.3
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "sector": "Communication Services",
+          "price": 76.87,
+          "ret_1d": 1.33,
+          "ret_5d": -6.48,
+          "ret_1m": -13.19,
+          "vol_ratio": 0.89,
+          "atr_pct": 3.1
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "sector": "Technology",
+          "price": 401.32,
+          "ret_1d": -0.13,
+          "ret_5d": 0.04,
+          "ret_1m": -12.64,
+          "vol_ratio": 1.0,
+          "atr_pct": 2.9
+        },
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "sector": "Technology",
+          "price": 166.95,
+          "ret_1d": 2.54,
+          "ret_5d": 4.79,
+          "ret_1m": -12.56,
+          "vol_ratio": 3.52,
+          "atr_pct": 4.1
+        }
+      ],
+      "vol_surge": [
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "sector": "Technology",
+          "price": 166.95,
+          "ret_1d": 2.54,
+          "ret_5d": 4.79,
+          "ret_1m": -12.56,
+          "vol_ratio": 3.52,
+          "atr_pct": 4.1
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems, Inc.",
+          "sector": "Technology",
+          "price": 76.85,
+          "ret_1d": 2.47,
+          "ret_5d": -9.4,
+          "ret_1m": 3.28,
+          "vol_ratio": 1.8,
+          "atr_pct": 2.9
+        },
+        {
+          "ticker": "ON",
+          "name": "ON Semiconductor Corporation",
+          "sector": "Technology",
+          "price": 72.21,
+          "ret_1d": 2.24,
+          "ret_5d": 10.75,
+          "ret_1m": 19.2,
+          "vol_ratio": 1.47,
+          "atr_pct": 3.7
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 198.79,
+          "ret_1d": -0.41,
+          "ret_5d": -5.48,
+          "ret_1m": -16.0,
+          "vol_ratio": 1.45,
+          "atr_pct": 3.2
+        },
+        {
+          "ticker": "TMUS",
+          "name": "T-Mobile US, Inc.",
+          "sector": "Communication Services",
+          "price": 219.5,
+          "ret_1d": 2.25,
+          "ret_5d": 11.2,
+          "ret_1m": 14.31,
+          "vol_ratio": 1.45,
+          "atr_pct": 2.4
+        },
+        {
+          "ticker": "INTU",
+          "name": "Intuit Inc.",
+          "sector": "Technology",
+          "price": 399.4,
+          "ret_1d": 0.36,
+          "ret_5d": -10.0,
+          "ret_1m": -29.51,
+          "vol_ratio": 1.31,
+          "atr_pct": 5.2
+        }
+      ],
+      "high_vol": [
+        {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "sector": "Technology",
+          "price": 411.66,
+          "ret_1d": -0.56,
+          "ret_5d": 4.3,
+          "ret_1m": 23.49,
+          "vol_ratio": 1.01,
+          "atr_pct": 6.3
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices, Inc.",
+          "sector": "Technology",
+          "price": 207.32,
+          "ret_1d": 0.67,
+          "ret_5d": -0.54,
+          "ret_1m": -7.28,
+          "vol_ratio": 0.69,
+          "atr_pct": 5.7
+        },
+        {
+          "ticker": "INTU",
+          "name": "Intuit Inc.",
+          "sector": "Technology",
+          "price": 399.4,
+          "ret_1d": 0.36,
+          "ret_5d": -10.0,
+          "ret_1m": -29.51,
+          "vol_ratio": 1.31,
+          "atr_pct": 5.2
+        },
+        {
+          "ticker": "LRCX",
+          "name": "Lam Research Corporation",
+          "sector": "Technology",
+          "price": 235.53,
+          "ret_1d": 1.83,
+          "ret_5d": 1.96,
+          "ret_1m": 12.81,
+          "vol_ratio": 0.69,
+          "atr_pct": 5.1
+        },
+        {
+          "ticker": "KLAC",
+          "name": "KLA Corporation",
+          "sector": "Technology",
+          "price": 1464.13,
+          "ret_1d": 0.92,
+          "ret_5d": 1.47,
+          "ret_1m": 2.07,
+          "vol_ratio": 0.8,
+          "atr_pct": 4.7
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell Technology, Inc.",
+          "sector": "Technology",
+          "price": 78.61,
+          "ret_1d": 0.49,
+          "ret_5d": -2.08,
+          "ret_1m": -3.2,
+          "vol_ratio": 0.76,
+          "atr_pct": 4.5
+        }
+      ],
       "analysis": {
-        "ja": "## ①指数動向の概要\n本レポートは、NASDAQ 100指数（QQQ）の2026年2月17日時点での分析を試みるものです。提供されたデータでは、直近の日次、週次、月次、四半期のパフォーマンス数値が「None」となっており、指数の具体的な方向性（上昇または下落）やその程度を定量的に評価することはできません。このような状況は、市場が休場であったり、データの集計や提供に遅延が生じている可能性を示唆しています。分析に当たっては、指数を構成する主要銘柄の個別動向や、市場全体のマクロ環境に注目することが一つのアプローチとなり得ます。\n\n## ②主要寄与銘柄の動き\n上昇・下落に寄与した銘柄の具体的なデータが提供されていないため、個別銘柄レベルでの直接的影響を特定することは困難です。一般的に、NASDAQ 100指数は時価総額加重平均であるため、大型株の値動きが指数全体に与える影響は極めて大きくなります。例えば、Apple、Microsoft、Nvidia、Amazon、Meta Platformsといった「マグニフィセント・セブン」に代表される超大規模時価総額株の業績発表、製品発表、またはそれらに関する市場の期待や懸念が、指数の動きを主導する主要因となることが多々あります。データが欠如している状況下では、これらの主要構成銘柄における当該期間の企業ニュースやセクター別の動向を検証することが、指数の潜在的動きを理解する手がかりとなり得ます。\n\n## ③出来高・ボラティリティから読む背景\n出来高急増銘柄に関する具体的なデータも「特になし」とされています。出来高の急増は、通常、その銘柄に関する重要なニュース（決算発表、M&A報道、規制環境の変化など）を反映しており、それがセクター全体や指数への波及効果を持つ場合があります。データが得られないことから、特定の銘柄に異常な資金流入・流出があったかどうかを判断することはできません。ただし、ボラティリティ（価格変動率）の水準や市場全体の出来高動向は、市場参加者のリスク選好度や不安感を示す重要な指標です。仮想の分析として、当該期間にマクロ経済指標（雇用統計、物価指数、連邦準備制度理事会（FRB）の金融政策に関する発言等）の発表があった場合、それがハイテク成長株に敏感なNASDAQ 100指数のボラティリティを高め、出来高を増加させる一因となった可能性が考えられます。\n\n---\n*免責事項：本レポートは教育目的のための仮定に基づく分析であり、投資助言を目的としたものではありません。*",
-        "en": "## ① Overview\nAs of 2026-02-17, the NASDAQ 100 (QQQ) exhibited a session of notable consolidation, with no significant percentage changes reported across the 1-day, 5-day, 1-month, and 3-month periods. The absence of clear top gainers, losers, or volume surges indicates a market in a state of equilibrium, where bullish and bearish forces were broadly balanced. This flat performance likely stems from the market digesting a mix of opposing macroeconomic signals and awaiting fresh catalysts, following a period of significant movement in prior years driven by technological disruption and monetary policy shifts.\n\n## ② Key Contributors\nThe equilibrium in the index can be attributed to offsetting sectoral movements and a lack of unifying market-wide news. It is probable that strength in key mega-cap sectors like Artificial Intelligence and cloud computing was counterbalanced by weakness in other areas such as consumer discretionary or semiconductor stocks, resulting in a net neutral effect on the index. Furthermore, the market was likely processing fully valued valuations, with investors requiring new evidence of earnings growth or technological breakthroughs to drive the next leg higher. Concurrently, the absence of major losers suggests that while conviction to buy was low, there was also no broad-based catalyst triggering significant sell-offs. The market's stance was likely a reaction to stabilized, but still restrictive, interest rates and mixed economic data on inflation and growth.\n\n## ③ Volume/Volatility Context\nThe explicitly noted absence of volume surges (\"Vol surge: none\") is a critical characteristic of the session. This low volatility and average trading volume environment reinforces the interpretation of a consolidative, wait-and-see market sentiment. It indicates a lack of institutional repositioning or panic, with participants showing neither strong conviction nor fear. This type of low-volatility consolidation often occurs after major trends, as the market pauses to assess corporate fundamentals against the prevailing macroeconomic backdrop without a dominant new narrative.\n\n*Past performance is not indicative of future results.*"
+        "ja": "## ①指数動向の概要\n2026年2月17日時点のNASDAQ 100指数（QQQ）は、短期から中期にかけて調整局面にあることがデータから読み取れます。直近1ヶ月で-2.85%、3ヶ月でも-1.07%の下落を示しており、5日間のパフォーマンス（-1.27%）も弱含みです。ただし、直近1日は小幅ながらプラスに転じており、短期的な反発の動きも見られます。この動きは、指数を構成する個別銘柄のパフォーマンスが大きく分かれた結果と推察されます。\n\n## ②主要寄与銘柄の動き\n指数の動きは、個別銘柄の相反する動きが混在する状況です。\n**上昇寄与の中心**は、**半導体関連セクター**に集中しています。MU（マイクロン・テクノロジー）、ON（オン・セミコンダクター）、AMAT（アプライド・マテリアルズ）が1ヶ月で大きく上昇しており、特に半導体メモリや製造装置への市場期待が指数の下支え要因となっている可能性が示唆されます。\n一方、**下落寄与が大きい銘柄**は多様です。INTU（イントゥイット）の大幅な下落が最も目立ち、財務ソフトウェアセクターへの懸念が影響したと考えられます。AMZN（アマゾン）やQCOM（クアルコム）といった大型株の下落が、指数全体のパフォーマンスを大きく押し下げた主要因と推察できます。\n\n## ③出来高・ボラティリティから読む背景\n出来高が急増した銘柄の動向から、市場の関心が特定のイベントやセクターに集中している様子が窺えます。PANW（パロアルトネットワークス）の出来高が通常の3.5倍以上に急増していることは、同社またはサイバーセキュリティセクターに関する何らかの重要なニュースが市場参加者の注目を集めた可能性を示しています。また、上昇寄与の大きかったONの出来高も増加しており、半導体セクターへの資金流入が活発であったことが分かります。これらの動きは、市場全体が単一の方向性ではなく、セクターごとの個別の材料や業績見通しに対して敏感に反応している状況を反映していると考えられます。\n\n---\n*本レポートは過去のデータに基づく解説であり、将来のパフォーマンスや投資行動を保証するものではありません。*",
+        "en": "## ① Overview\nAs of 2026-02-17, the NASDAQ 100 (QQQ) exhibited a mixed but generally weak short-term performance, with marginal daily gains failing to offset broader declines. The index was up 0.21% on the day, yet down 1.27% over the past week and 2.85% over the past month. This suggests a period of consolidation or mild correction following recent strength, with selling pressure over recent weeks outweighing any single-day rebound. The negative three-month return of -1.07% indicates the index has struggled for positive momentum in the medium term.\n\n## ② Key Contributors\nThe day's marginal positive move was driven by significant outperformance in the semiconductor and equipment sector, which countered heavy losses in other mega-cap components. Top gainers like **Micron (MU)**, **ON Semiconductor (ON)**, and **Applied Materials (AMAT)**—all surging over 17%—likely rallied on positive industry-specific catalysts such as strong earnings, raised guidance, or breakthroughs in memory or chip fabrication technology. Conversely, substantial losses in major index weights were a primary drag on the broader index. **Intuit (INTU)** plummeting 29.5% likely followed a major earnings miss or guidance cut, while a 16.0% drop in **Amazon (AMZN)** and a 14.5% fall in **Qualcomm (QCOM)** suggest disappointing financial results or negative sector news that overwhelmed the strength in chips.\n\n## ③ Volume/Volatility Context\nUnusual trading volume provides critical context for the price moves. The extreme volume surge in **Palo Alto Networks (PANW)** (3.52x normal) and **Cisco (CSCO)** (1.8x), alongside **ON**'s high-volume gain, points to event-driven trading, likely earnings releases or major corporate announcements that triggered sharp re-pricing. High volume on such large moves confirms the presence of decisive institutional activity rather than minor sentiment shifts. This created a bifurcated volatility environment: extreme stock-specific volatility in both directions, which largely netted out to a flat index day as sector rotations occurred within the QQQ.\n\n*This analysis is for informational purposes only and does not constitute financial advice.*"
       }
     },
     "RUSSELL": {
@@ -54,20 +3218,1624 @@
       "color": "#F59E0B",
       "date": "2026-02-17",
       "performance": {
-        "ret_1d": null,
-        "ret_5d": null,
-        "ret_1m": null,
-        "ret_3m": null
+        "ret_1d": 1.32,
+        "ret_5d": -0.78,
+        "ret_1m": -0.09,
+        "ret_3m": 11.05
       },
-      "candles": [],
-      "components": [],
-      "gainers": [],
-      "losers": [],
-      "vol_surge": [],
-      "high_vol": [],
+      "candles": [
+        {
+          "date": "2025-08-25",
+          "open": 234.14,
+          "high": 234.3,
+          "low": 232.36,
+          "close": 232.36,
+          "volume": 28453700
+        },
+        {
+          "date": "2025-08-26",
+          "open": 232.83,
+          "high": 234.87,
+          "low": 232.59,
+          "close": 234.28,
+          "volume": 25121535
+        },
+        {
+          "date": "2025-08-27",
+          "open": 233.74,
+          "high": 236.12,
+          "low": 233.56,
+          "close": 235.94,
+          "volume": 25395400
+        },
+        {
+          "date": "2025-08-28",
+          "open": 236.96,
+          "high": 236.97,
+          "low": 235.35,
+          "close": 236.22,
+          "volume": 25011200
+        },
+        {
+          "date": "2025-08-29",
+          "open": 236.74,
+          "high": 237.02,
+          "low": 234.37,
+          "close": 235.17,
+          "volume": 29254800
+        },
+        {
+          "date": "2025-09-02",
+          "open": 231.99,
+          "high": 234.4,
+          "low": 231.47,
+          "close": 233.9,
+          "volume": 33108624
+        },
+        {
+          "date": "2025-09-03",
+          "open": 233.27,
+          "high": 235.26,
+          "low": 232.46,
+          "close": 233.67,
+          "volume": 33252400
+        },
+        {
+          "date": "2025-09-04",
+          "open": 234.23,
+          "high": 236.67,
+          "low": 233.58,
+          "close": 236.59,
+          "volume": 30323833
+        },
+        {
+          "date": "2025-09-05",
+          "open": 237.72,
+          "high": 239.68,
+          "low": 234.95,
+          "close": 237.77,
+          "volume": 47542500
+        },
+        {
+          "date": "2025-09-08",
+          "open": 238.51,
+          "high": 238.56,
+          "low": 236.39,
+          "close": 238.25,
+          "volume": 31487732
+        },
+        {
+          "date": "2025-09-09",
+          "open": 237.9,
+          "high": 237.96,
+          "low": 235.42,
+          "close": 236.85,
+          "volume": 35395800
+        },
+        {
+          "date": "2025-09-10",
+          "open": 237.31,
+          "high": 238.27,
+          "low": 235.46,
+          "close": 236.43,
+          "volume": 33910200
+        },
+        {
+          "date": "2025-09-11",
+          "open": 236.85,
+          "high": 240.93,
+          "low": 236.24,
+          "close": 240.8,
+          "volume": 43629818
+        },
+        {
+          "date": "2025-09-12",
+          "open": 240.2,
+          "high": 240.32,
+          "low": 238.2,
+          "close": 238.34,
+          "volume": 46097640
+        },
+        {
+          "date": "2025-09-15",
+          "open": 239.23,
+          "high": 240.04,
+          "low": 238.55,
+          "close": 239.35,
+          "volume": 33014031
+        },
+        {
+          "date": "2025-09-16",
+          "open": 238.45,
+          "high": 238.93,
+          "low": 236.76,
+          "close": 238.28,
+          "volume": 37059322
+        },
+        {
+          "date": "2025-09-17",
+          "open": 238.82,
+          "high": 244.28,
+          "low": 237.02,
+          "close": 238.89,
+          "volume": 79955604
+        },
+        {
+          "date": "2025-09-18",
+          "open": 240.8,
+          "high": 245.15,
+          "low": 240.13,
+          "close": 244.84,
+          "volume": 49167700
+        },
+        {
+          "date": "2025-09-19",
+          "open": 245.57,
+          "high": 245.57,
+          "low": 242.51,
+          "close": 242.98,
+          "volume": 56092037
+        },
+        {
+          "date": "2025-09-22",
+          "open": 242.24,
+          "high": 244.79,
+          "low": 241.11,
+          "close": 244.39,
+          "volume": 53572930
+        },
+        {
+          "date": "2025-09-23",
+          "open": 245.01,
+          "high": 247.18,
+          "low": 243.44,
+          "close": 243.84,
+          "volume": 41854513
+        },
+        {
+          "date": "2025-09-24",
+          "open": 243.9,
+          "high": 244.61,
+          "low": 241.56,
+          "close": 241.6,
+          "volume": 36002200
+        },
+        {
+          "date": "2025-09-25",
+          "open": 238.98,
+          "high": 239.99,
+          "low": 237.55,
+          "close": 239.29,
+          "volume": 37209500
+        },
+        {
+          "date": "2025-09-26",
+          "open": 239.62,
+          "high": 241.68,
+          "low": 239.33,
+          "close": 241.34,
+          "volume": 28942800
+        },
+        {
+          "date": "2025-09-29",
+          "open": 242.84,
+          "high": 242.93,
+          "low": 240.81,
+          "close": 241.62,
+          "volume": 26391500
+        },
+        {
+          "date": "2025-09-30",
+          "open": 241.11,
+          "high": 242.13,
+          "low": 239.4,
+          "close": 241.96,
+          "volume": 33447721
+        },
+        {
+          "date": "2025-10-01",
+          "open": 240.57,
+          "high": 243.04,
+          "low": 240.55,
+          "close": 242.49,
+          "volume": 28520000
+        },
+        {
+          "date": "2025-10-02",
+          "open": 243.0,
+          "high": 244.09,
+          "low": 241.47,
+          "close": 244.02,
+          "volume": 28687401
+        },
+        {
+          "date": "2025-10-03",
+          "open": 245.35,
+          "high": 248.09,
+          "low": 245.03,
+          "close": 245.83,
+          "volume": 34579610
+        },
+        {
+          "date": "2025-10-06",
+          "open": 247.73,
+          "high": 248.48,
+          "low": 246.07,
+          "close": 246.81,
+          "volume": 31507400
+        },
+        {
+          "date": "2025-10-07",
+          "open": 247.36,
+          "high": 247.64,
+          "low": 243.19,
+          "close": 244.16,
+          "volume": 31766601
+        },
+        {
+          "date": "2025-10-08",
+          "open": 245.28,
+          "high": 246.96,
+          "low": 243.8,
+          "close": 246.72,
+          "volume": 25825000
+        },
+        {
+          "date": "2025-10-09",
+          "open": 246.31,
+          "high": 247.25,
+          "low": 244.01,
+          "close": 245.13,
+          "volume": 26243148
+        },
+        {
+          "date": "2025-10-10",
+          "open": 245.75,
+          "high": 246.89,
+          "low": 237.56,
+          "close": 237.79,
+          "volume": 70569415
+        },
+        {
+          "date": "2025-10-13",
+          "open": 241.83,
+          "high": 244.63,
+          "low": 241.4,
+          "close": 244.41,
+          "volume": 36298626
+        },
+        {
+          "date": "2025-10-14",
+          "open": 241.23,
+          "high": 249.6,
+          "low": 240.36,
+          "close": 247.9,
+          "volume": 45320805
+        },
+        {
+          "date": "2025-10-15",
+          "open": 250.36,
+          "high": 252.77,
+          "low": 247.06,
+          "close": 250.33,
+          "volume": 45369046
+        },
+        {
+          "date": "2025-10-16",
+          "open": 250.97,
+          "high": 251.26,
+          "low": 244.0,
+          "close": 245.06,
+          "volume": 52740400
+        },
+        {
+          "date": "2025-10-17",
+          "open": 243.32,
+          "high": 245.16,
+          "low": 241.47,
+          "close": 243.41,
+          "volume": 55379514
+        },
+        {
+          "date": "2025-10-20",
+          "open": 246.62,
+          "high": 248.33,
+          "low": 246.14,
+          "close": 248.16,
+          "volume": 32545025
+        },
+        {
+          "date": "2025-10-21",
+          "open": 247.43,
+          "high": 248.37,
+          "low": 245.51,
+          "close": 246.99,
+          "volume": 26337900
+        },
+        {
+          "date": "2025-10-22",
+          "open": 246.03,
+          "high": 246.86,
+          "low": 240.77,
+          "close": 243.34,
+          "volume": 46578446
+        },
+        {
+          "date": "2025-10-23",
+          "open": 244.29,
+          "high": 247.12,
+          "low": 243.68,
+          "close": 246.42,
+          "volume": 28591002
+        },
+        {
+          "date": "2025-10-24",
+          "open": 249.8,
+          "high": 251.11,
+          "low": 248.97,
+          "close": 249.43,
+          "volume": 26627005
+        },
+        {
+          "date": "2025-10-27",
+          "open": 251.78,
+          "high": 252.21,
+          "low": 249.5,
+          "close": 250.3,
+          "volume": 31798148
+        },
+        {
+          "date": "2025-10-28",
+          "open": 249.55,
+          "high": 250.9,
+          "low": 248.11,
+          "close": 248.96,
+          "volume": 28075900
+        },
+        {
+          "date": "2025-10-29",
+          "open": 248.84,
+          "high": 251.14,
+          "low": 244.69,
+          "close": 246.84,
+          "volume": 56235300
+        },
+        {
+          "date": "2025-10-30",
+          "open": 245.27,
+          "high": 248.14,
+          "low": 244.63,
+          "close": 244.85,
+          "volume": 44538747
+        },
+        {
+          "date": "2025-10-31",
+          "open": 244.99,
+          "high": 246.79,
+          "low": 243.69,
+          "close": 246.23,
+          "volume": 37323274
+        },
+        {
+          "date": "2025-11-03",
+          "open": 246.17,
+          "high": 246.26,
+          "low": 242.49,
+          "close": 245.44,
+          "volume": 28887904
+        },
+        {
+          "date": "2025-11-04",
+          "open": 241.79,
+          "high": 244.06,
+          "low": 241.0,
+          "close": 241.2,
+          "volume": 34468704
+        },
+        {
+          "date": "2025-11-05",
+          "open": 241.96,
+          "high": 245.73,
+          "low": 241.64,
+          "close": 244.68,
+          "volume": 38229200
+        },
+        {
+          "date": "2025-11-06",
+          "open": 244.26,
+          "high": 244.79,
+          "low": 240.0,
+          "close": 240.35,
+          "volume": 40601200
+        },
+        {
+          "date": "2025-11-07",
+          "open": 238.41,
+          "high": 241.66,
+          "low": 236.27,
+          "close": 241.61,
+          "volume": 54978900
+        },
+        {
+          "date": "2025-11-10",
+          "open": 245.01,
+          "high": 245.24,
+          "low": 242.25,
+          "close": 244.03,
+          "volume": 31238018
+        },
+        {
+          "date": "2025-11-11",
+          "open": 243.37,
+          "high": 244.74,
+          "low": 242.52,
+          "close": 244.24,
+          "volume": 27357900
+        },
+        {
+          "date": "2025-11-12",
+          "open": 244.84,
+          "high": 246.38,
+          "low": 243.33,
+          "close": 243.64,
+          "volume": 34543226
+        },
+        {
+          "date": "2025-11-13",
+          "open": 241.84,
+          "high": 242.68,
+          "low": 235.84,
+          "close": 236.79,
+          "volume": 65710000
+        },
+        {
+          "date": "2025-11-14",
+          "open": 233.34,
+          "high": 238.73,
+          "low": 233.27,
+          "close": 237.48,
+          "volume": 58344442
+        },
+        {
+          "date": "2025-11-17",
+          "open": 236.46,
+          "high": 237.84,
+          "low": 231.76,
+          "close": 232.76,
+          "volume": 55765900
+        },
+        {
+          "date": "2025-11-18",
+          "open": 231.31,
+          "high": 235.08,
+          "low": 230.96,
+          "close": 233.47,
+          "volume": 63092500
+        },
+        {
+          "date": "2025-11-19",
+          "open": 233.8,
+          "high": 236.37,
+          "low": 232.43,
+          "close": 233.43,
+          "volume": 57280548
+        },
+        {
+          "date": "2025-11-20",
+          "open": 237.24,
+          "high": 239.1,
+          "low": 228.9,
+          "close": 229.11,
+          "volume": 95483018
+        },
+        {
+          "date": "2025-11-21",
+          "open": 229.96,
+          "high": 237.11,
+          "low": 229.58,
+          "close": 235.6,
+          "volume": 99504106
+        },
+        {
+          "date": "2025-11-24",
+          "open": 235.96,
+          "high": 240.39,
+          "low": 235.48,
+          "close": 239.9,
+          "volume": 36135317
+        },
+        {
+          "date": "2025-11-25",
+          "open": 240.74,
+          "high": 245.55,
+          "low": 240.04,
+          "close": 245.13,
+          "volume": 46160800
+        },
+        {
+          "date": "2025-11-26",
+          "open": 245.05,
+          "high": 248.83,
+          "low": 244.77,
+          "close": 247.3,
+          "volume": 34636600
+        },
+        {
+          "date": "2025-11-28",
+          "open": 248.01,
+          "high": 248.81,
+          "low": 247.07,
+          "close": 248.75,
+          "volume": 18911812
+        },
+        {
+          "date": "2025-12-01",
+          "open": 245.57,
+          "high": 247.69,
+          "low": 245.34,
+          "close": 245.62,
+          "volume": 36920000
+        },
+        {
+          "date": "2025-12-02",
+          "open": 247.37,
+          "high": 247.37,
+          "low": 245.12,
+          "close": 245.17,
+          "volume": 31918500
+        },
+        {
+          "date": "2025-12-03",
+          "open": 245.97,
+          "high": 249.84,
+          "low": 245.48,
+          "close": 249.63,
+          "volume": 32846300
+        },
+        {
+          "date": "2025-12-04",
+          "open": 248.97,
+          "high": 252.66,
+          "low": 248.54,
+          "close": 251.82,
+          "volume": 40245800
+        },
+        {
+          "date": "2025-12-05",
+          "open": 251.49,
+          "high": 252.66,
+          "low": 250.28,
+          "close": 250.77,
+          "volume": 36956621
+        },
+        {
+          "date": "2025-12-08",
+          "open": 252.7,
+          "high": 252.77,
+          "low": 250.18,
+          "close": 250.87,
+          "volume": 29100029
+        },
+        {
+          "date": "2025-12-09",
+          "open": 250.25,
+          "high": 252.95,
+          "low": 250.1,
+          "close": 251.39,
+          "volume": 30170111
+        },
+        {
+          "date": "2025-12-10",
+          "open": 250.9,
+          "high": 256.57,
+          "low": 250.54,
+          "close": 254.81,
+          "volume": 51105200
+        },
+        {
+          "date": "2025-12-11",
+          "open": 254.64,
+          "high": 258.01,
+          "low": 254.32,
+          "close": 257.8,
+          "volume": 41345200
+        },
+        {
+          "date": "2025-12-12",
+          "open": 257.95,
+          "high": 258.2,
+          "low": 253.44,
+          "close": 253.85,
+          "volume": 57657743
+        },
+        {
+          "date": "2025-12-15",
+          "open": 255.55,
+          "high": 255.69,
+          "low": 251.74,
+          "close": 251.93,
+          "volume": 43120100
+        },
+        {
+          "date": "2025-12-16",
+          "open": 250.34,
+          "high": 252.16,
+          "low": 248.47,
+          "close": 249.9,
+          "volume": 43115300
+        },
+        {
+          "date": "2025-12-17",
+          "open": 250.37,
+          "high": 252.16,
+          "low": 246.7,
+          "close": 247.24,
+          "volume": 38132440
+        },
+        {
+          "date": "2025-12-18",
+          "open": 250.18,
+          "high": 251.36,
+          "low": 248.21,
+          "close": 248.71,
+          "volume": 39068000
+        },
+        {
+          "date": "2025-12-19",
+          "open": 249.28,
+          "high": 251.4,
+          "low": 249.06,
+          "close": 250.79,
+          "volume": 43610403
+        },
+        {
+          "date": "2025-12-22",
+          "open": 252.28,
+          "high": 255.12,
+          "low": 252.2,
+          "close": 253.58,
+          "volume": 40497300
+        },
+        {
+          "date": "2025-12-23",
+          "open": 252.42,
+          "high": 253.22,
+          "low": 251.46,
+          "close": 252.08,
+          "volume": 24973500
+        },
+        {
+          "date": "2025-12-24",
+          "open": 251.97,
+          "high": 252.86,
+          "low": 251.12,
+          "close": 252.71,
+          "volume": 12103000
+        },
+        {
+          "date": "2025-12-26",
+          "open": 252.58,
+          "high": 252.75,
+          "low": 250.4,
+          "close": 251.42,
+          "volume": 17429945
+        },
+        {
+          "date": "2025-12-29",
+          "open": 250.26,
+          "high": 251.5,
+          "low": 249.35,
+          "close": 249.88,
+          "volume": 25218800
+        },
+        {
+          "date": "2025-12-30",
+          "open": 249.97,
+          "high": 250.15,
+          "low": 247.95,
+          "close": 248.03,
+          "volume": 22123639
+        },
+        {
+          "date": "2025-12-31",
+          "open": 248.18,
+          "high": 248.28,
+          "low": 246.01,
+          "close": 246.16,
+          "volume": 35352000
+        },
+        {
+          "date": "2026-01-02",
+          "open": 247.63,
+          "high": 249.09,
+          "low": 245.86,
+          "close": 248.78,
+          "volume": 40007700
+        },
+        {
+          "date": "2026-01-05",
+          "open": 249.79,
+          "high": 253.55,
+          "low": 249.57,
+          "close": 252.73,
+          "volume": 37428100
+        },
+        {
+          "date": "2026-01-06",
+          "open": 252.24,
+          "high": 256.25,
+          "low": 251.52,
+          "close": 256.08,
+          "volume": 40677800
+        },
+        {
+          "date": "2026-01-07",
+          "open": 256.4,
+          "high": 256.8,
+          "low": 253.97,
+          "close": 255.48,
+          "volume": 33052026
+        },
+        {
+          "date": "2026-01-08",
+          "open": 254.7,
+          "high": 258.93,
+          "low": 254.36,
+          "close": 258.27,
+          "volume": 37957029
+        },
+        {
+          "date": "2026-01-09",
+          "open": 259.58,
+          "high": 261.56,
+          "low": 258.09,
+          "close": 260.23,
+          "volume": 36301546
+        },
+        {
+          "date": "2026-01-12",
+          "open": 259.28,
+          "high": 261.66,
+          "low": 258.24,
+          "close": 261.5,
+          "volume": 28423400
+        },
+        {
+          "date": "2026-01-13",
+          "open": 262.4,
+          "high": 262.89,
+          "low": 260.46,
+          "close": 261.35,
+          "volume": 33882400
+        },
+        {
+          "date": "2026-01-14",
+          "open": 261.13,
+          "high": 263.46,
+          "low": 260.19,
+          "close": 263.19,
+          "volume": 37164300
+        },
+        {
+          "date": "2026-01-15",
+          "open": 264.06,
+          "high": 267.05,
+          "low": 263.73,
+          "close": 265.51,
+          "volume": 33465208
+        },
+        {
+          "date": "2026-01-16",
+          "open": 265.87,
+          "high": 267.21,
+          "low": 264.71,
+          "close": 265.76,
+          "volume": 33844900
+        },
+        {
+          "date": "2026-01-20",
+          "open": 261.14,
+          "high": 265.08,
+          "low": 261.06,
+          "close": 262.58,
+          "volume": 47911500
+        },
+        {
+          "date": "2026-01-21",
+          "open": 264.64,
+          "high": 268.59,
+          "low": 262.92,
+          "close": 267.79,
+          "volume": 59952800
+        },
+        {
+          "date": "2026-01-22",
+          "open": 269.83,
+          "high": 271.6,
+          "low": 269.42,
+          "close": 269.79,
+          "volume": 35110800
+        },
+        {
+          "date": "2026-01-23",
+          "open": 269.04,
+          "high": 269.05,
+          "low": 264.46,
+          "close": 264.81,
+          "volume": 42636700
+        },
+        {
+          "date": "2026-01-26",
+          "open": 265.07,
+          "high": 266.69,
+          "low": 263.49,
+          "close": 263.98,
+          "volume": 32119332
+        },
+        {
+          "date": "2026-01-27",
+          "open": 264.05,
+          "high": 264.86,
+          "low": 262.66,
+          "close": 264.73,
+          "volume": 26975518
+        },
+        {
+          "date": "2026-01-28",
+          "open": 265.98,
+          "high": 266.68,
+          "low": 262.56,
+          "close": 263.3,
+          "volume": 37139119
+        },
+        {
+          "date": "2026-01-29",
+          "open": 264.07,
+          "high": 265.06,
+          "low": 259.41,
+          "close": 263.37,
+          "volume": 43922928
+        },
+        {
+          "date": "2026-01-30",
+          "open": 261.07,
+          "high": 262.98,
+          "low": 257.94,
+          "close": 259.65,
+          "volume": 59164200
+        },
+        {
+          "date": "2026-02-02",
+          "open": 258.48,
+          "high": 263.77,
+          "low": 258.35,
+          "close": 262.18,
+          "volume": 42896200
+        },
+        {
+          "date": "2026-02-03",
+          "open": 263.06,
+          "high": 265.06,
+          "low": 258.55,
+          "close": 262.78,
+          "volume": 54588013
+        },
+        {
+          "date": "2026-02-04",
+          "open": 264.16,
+          "high": 264.65,
+          "low": 257.14,
+          "close": 260.52,
+          "volume": 48826545
+        },
+        {
+          "date": "2026-02-05",
+          "open": 258.5,
+          "high": 261.62,
+          "low": 255.05,
+          "close": 255.83,
+          "volume": 48279639
+        },
+        {
+          "date": "2026-02-06",
+          "open": 259.74,
+          "high": 265.72,
+          "low": 259.58,
+          "close": 265.02,
+          "volume": 43354900
+        },
+        {
+          "date": "2026-02-09",
+          "open": 264.84,
+          "high": 267.67,
+          "low": 263.34,
+          "close": 266.88,
+          "volume": 29064849
+        },
+        {
+          "date": "2026-02-10",
+          "open": 267.23,
+          "high": 268.52,
+          "low": 265.88,
+          "close": 266.16,
+          "volume": 24661700
+        },
+        {
+          "date": "2026-02-11",
+          "open": 268.47,
+          "high": 268.96,
+          "low": 262.1,
+          "close": 264.95,
+          "volume": 41829428
+        },
+        {
+          "date": "2026-02-12",
+          "open": 267.02,
+          "high": 267.46,
+          "low": 258.39,
+          "close": 259.54,
+          "volume": 47628200
+        },
+        {
+          "date": "2026-02-13",
+          "open": 260.6,
+          "high": 265.17,
+          "low": 258.51,
+          "close": 262.96,
+          "volume": 45360322
+        }
+      ],
+      "components": [
+        {
+          "ticker": "SMCI",
+          "name": "Super Micro Computer, Inc.",
+          "sector": "Technology",
+          "price": 30.54,
+          "ret_1d": 0.36,
+          "ret_5d": -11.17,
+          "ret_1m": 8.03,
+          "vol_ratio": 0.65,
+          "atr_pct": 6.4
+        },
+        {
+          "ticker": "HIMS",
+          "name": "Hims & Hers Health, Inc.",
+          "sector": "Healthcare",
+          "price": 16.3,
+          "ret_1d": 3.16,
+          "ret_5d": -29.19,
+          "ret_1m": -47.96,
+          "vol_ratio": 2.53,
+          "atr_pct": 12.5
+        },
+        {
+          "ticker": "CAVA",
+          "name": "CAVA Group, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 63.5,
+          "ret_1d": -0.17,
+          "ret_5d": -9.23,
+          "ret_1m": -10.02,
+          "vol_ratio": 0.81,
+          "atr_pct": 5.4
+        },
+        {
+          "ticker": "AXSM",
+          "name": "Axsome Therapeutics, Inc.",
+          "sector": "Healthcare",
+          "price": 181.21,
+          "ret_1d": -0.95,
+          "ret_5d": -0.73,
+          "ret_1m": 2.37,
+          "vol_ratio": 0.49,
+          "atr_pct": 3.0
+        },
+        {
+          "ticker": "DDOG",
+          "name": "Datadog, Inc.",
+          "sector": "Technology",
+          "price": 125.2,
+          "ret_1d": -0.74,
+          "ret_5d": 12.1,
+          "ret_1m": 2.28,
+          "vol_ratio": 1.55,
+          "atr_pct": 5.4
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "sector": "Technology",
+          "price": 390.55,
+          "ret_1d": 6.44,
+          "ret_5d": -3.98,
+          "ret_1m": -36.78,
+          "vol_ratio": 1.62,
+          "atr_pct": 9.2
+        },
+        {
+          "ticker": "GTLB",
+          "name": "GitLab Inc.",
+          "sector": "Technology",
+          "price": 29.55,
+          "ret_1d": -0.1,
+          "ret_5d": -8.03,
+          "ret_1m": -18.28,
+          "vol_ratio": 0.93,
+          "atr_pct": 6.5
+        },
+        {
+          "ticker": "EXPI",
+          "name": "eXp World Holdings, Inc.",
+          "sector": "Real Estate",
+          "price": 7.55,
+          "ret_1d": -0.4,
+          "ret_5d": -12.82,
+          "ret_1m": -17.49,
+          "vol_ratio": 1.03,
+          "atr_pct": 4.4
+        },
+        {
+          "ticker": "CELH",
+          "name": "Celsius Holdings, Inc.",
+          "sector": "Consumer Defensive",
+          "price": 44.68,
+          "ret_1d": 0.65,
+          "ret_5d": -11.65,
+          "ret_1m": -15.9,
+          "vol_ratio": 1.22,
+          "atr_pct": 4.9
+        },
+        {
+          "ticker": "BOOT",
+          "name": "Boot Barn Holdings, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 187.99,
+          "ret_1d": 1.07,
+          "ret_5d": -7.57,
+          "ret_1m": 0.37,
+          "vol_ratio": 0.55,
+          "atr_pct": 4.5
+        },
+        {
+          "ticker": "ONON",
+          "name": "On Holding AG",
+          "sector": "Consumer Cyclical",
+          "price": 45.29,
+          "ret_1d": 2.3,
+          "ret_5d": 4.19,
+          "ret_1m": 0.49,
+          "vol_ratio": 0.71,
+          "atr_pct": 3.5
+        },
+        {
+          "ticker": "DECK",
+          "name": "Deckers Outdoor Corporation",
+          "sector": "Consumer Cyclical",
+          "price": 115.73,
+          "ret_1d": -0.25,
+          "ret_5d": 0.24,
+          "ret_1m": 14.13,
+          "vol_ratio": 0.63,
+          "atr_pct": 3.4
+        },
+        {
+          "ticker": "FTCI",
+          "name": "FTC Solar, Inc.",
+          "sector": "Energy",
+          "price": 9.49,
+          "ret_1d": 0.53,
+          "ret_5d": -0.11,
+          "ret_1m": -19.78,
+          "vol_ratio": 0.82,
+          "atr_pct": 8.4
+        },
+        {
+          "ticker": "ENVX",
+          "name": "Enovix Corporation",
+          "sector": "Industrials",
+          "price": 5.92,
+          "ret_1d": 2.78,
+          "ret_5d": -7.21,
+          "ret_1m": -27.89,
+          "vol_ratio": 0.88,
+          "atr_pct": 8.5
+        },
+        {
+          "ticker": "GLBE",
+          "name": "Global-e Online Ltd.",
+          "sector": "Consumer Cyclical",
+          "price": 31.66,
+          "ret_1d": -3.15,
+          "ret_5d": -2.91,
+          "ret_1m": -19.58,
+          "vol_ratio": 1.92,
+          "atr_pct": 4.6
+        },
+        {
+          "ticker": "BRZE",
+          "name": "Braze, Inc.",
+          "sector": "Technology",
+          "price": 17.6,
+          "ret_1d": 1.68,
+          "ret_5d": -1.07,
+          "ret_1m": -35.39,
+          "vol_ratio": 1.25,
+          "atr_pct": 9.2
+        },
+        {
+          "ticker": "IOT",
+          "name": "Samsara Inc.",
+          "sector": "Technology",
+          "price": 27.32,
+          "ret_1d": 2.44,
+          "ret_5d": 7.47,
+          "ret_1m": -19.29,
+          "vol_ratio": 1.14,
+          "atr_pct": 5.7
+        },
+        {
+          "ticker": "MNDY",
+          "name": "monday.com Ltd.",
+          "sector": "Technology",
+          "price": 72.38,
+          "ret_1d": -1.7,
+          "ret_5d": -26.14,
+          "ret_1m": -44.46,
+          "vol_ratio": 3.77,
+          "atr_pct": 8.9
+        },
+        {
+          "ticker": "RXRX",
+          "name": "Recursion Pharmaceuticals, Inc",
+          "sector": "Healthcare",
+          "price": 3.49,
+          "ret_1d": -2.51,
+          "ret_5d": -12.31,
+          "ret_1m": -28.04,
+          "vol_ratio": 0.75,
+          "atr_pct": 7.9
+        },
+        {
+          "ticker": "ACLS",
+          "name": "Axcelis Technologies, Inc.",
+          "sector": "Technology",
+          "price": 94.55,
+          "ret_1d": 4.43,
+          "ret_5d": 9.84,
+          "ret_1m": 1.43,
+          "vol_ratio": 1.19,
+          "atr_pct": 4.9
+        },
+        {
+          "ticker": "TMDX",
+          "name": "TransMedics Group, Inc.",
+          "sector": "Healthcare",
+          "price": 129.84,
+          "ret_1d": 1.03,
+          "ret_5d": -3.86,
+          "ret_1m": -8.54,
+          "vol_ratio": 0.67,
+          "atr_pct": 5.3
+        },
+        {
+          "ticker": "NARI",
+          "name": "Inari Medical, Inc.",
+          "sector": "Healthcare",
+          "price": 79.97,
+          "ret_1d": 0.0,
+          "ret_5d": 0.11,
+          "ret_1m": 0.53,
+          "vol_ratio": 0.67,
+          "atr_pct": 0.1
+        },
+        {
+          "ticker": "SWAV",
+          "name": "ShockWave Medical, Inc.",
+          "sector": "Healthcare",
+          "price": 334.75,
+          "ret_1d": -0.02,
+          "ret_5d": 0.22,
+          "ret_1m": 1.38,
+          "vol_ratio": 1.5,
+          "atr_pct": 0.2
+        },
+        {
+          "ticker": "INSP",
+          "name": "Inspire Medical Systems, Inc.",
+          "sector": "Healthcare",
+          "price": 59.76,
+          "ret_1d": 0.18,
+          "ret_5d": -9.04,
+          "ret_1m": -35.78,
+          "vol_ratio": 1.69,
+          "atr_pct": 8.2
+        },
+        {
+          "ticker": "AMBA",
+          "name": "Ambarella, Inc.",
+          "sector": "Technology",
+          "price": 66.21,
+          "ret_1d": 0.44,
+          "ret_5d": 4.04,
+          "ret_1m": 2.18,
+          "vol_ratio": 0.71,
+          "atr_pct": 4.6
+        },
+        {
+          "ticker": "VNET",
+          "name": "VNET Group, Inc.",
+          "sector": "Technology",
+          "price": 13.8,
+          "ret_1d": -1.64,
+          "ret_5d": 23.21,
+          "ret_1m": 15.58,
+          "vol_ratio": 1.7,
+          "atr_pct": 5.9
+        },
+        {
+          "ticker": "ARWR",
+          "name": "Arrowhead Pharmaceuticals, Inc",
+          "sector": "Healthcare",
+          "price": 63.82,
+          "ret_1d": 2.31,
+          "ret_5d": -1.08,
+          "ret_1m": -3.17,
+          "vol_ratio": 1.03,
+          "atr_pct": 6.1
+        },
+        {
+          "ticker": "XPOF",
+          "name": "Xponential Fitness, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 8.3,
+          "ret_1d": 1.84,
+          "ret_5d": -2.92,
+          "ret_1m": 3.62,
+          "vol_ratio": 0.64,
+          "atr_pct": 5.1
+        },
+        {
+          "ticker": "BYRN",
+          "name": "Byrna Technologies Inc.",
+          "sector": "Industrials",
+          "price": 12.51,
+          "ret_1d": -2.8,
+          "ret_5d": -14.84,
+          "ret_1m": -25.4,
+          "vol_ratio": 0.84,
+          "atr_pct": 8.5
+        },
+        {
+          "ticker": "CTKB",
+          "name": "Cytek Biosciences, Inc.",
+          "sector": "Healthcare",
+          "price": 4.24,
+          "ret_1d": 1.68,
+          "ret_5d": -5.15,
+          "ret_1m": -23.74,
+          "vol_ratio": 0.8,
+          "atr_pct": 5.7
+        }
+      ],
+      "gainers": [
+        {
+          "ticker": "VNET",
+          "name": "VNET Group, Inc.",
+          "sector": "Technology",
+          "price": 13.8,
+          "ret_1d": -1.64,
+          "ret_5d": 23.21,
+          "ret_1m": 15.58,
+          "vol_ratio": 1.7,
+          "atr_pct": 5.9
+        },
+        {
+          "ticker": "DECK",
+          "name": "Deckers Outdoor Corporation",
+          "sector": "Consumer Cyclical",
+          "price": 115.73,
+          "ret_1d": -0.25,
+          "ret_5d": 0.24,
+          "ret_1m": 14.13,
+          "vol_ratio": 0.63,
+          "atr_pct": 3.4
+        },
+        {
+          "ticker": "SMCI",
+          "name": "Super Micro Computer, Inc.",
+          "sector": "Technology",
+          "price": 30.54,
+          "ret_1d": 0.36,
+          "ret_5d": -11.17,
+          "ret_1m": 8.03,
+          "vol_ratio": 0.65,
+          "atr_pct": 6.4
+        },
+        {
+          "ticker": "XPOF",
+          "name": "Xponential Fitness, Inc.",
+          "sector": "Consumer Cyclical",
+          "price": 8.3,
+          "ret_1d": 1.84,
+          "ret_5d": -2.92,
+          "ret_1m": 3.62,
+          "vol_ratio": 0.64,
+          "atr_pct": 5.1
+        },
+        {
+          "ticker": "AXSM",
+          "name": "Axsome Therapeutics, Inc.",
+          "sector": "Healthcare",
+          "price": 181.21,
+          "ret_1d": -0.95,
+          "ret_5d": -0.73,
+          "ret_1m": 2.37,
+          "vol_ratio": 0.49,
+          "atr_pct": 3.0
+        },
+        {
+          "ticker": "DDOG",
+          "name": "Datadog, Inc.",
+          "sector": "Technology",
+          "price": 125.2,
+          "ret_1d": -0.74,
+          "ret_5d": 12.1,
+          "ret_1m": 2.28,
+          "vol_ratio": 1.55,
+          "atr_pct": 5.4
+        },
+        {
+          "ticker": "AMBA",
+          "name": "Ambarella, Inc.",
+          "sector": "Technology",
+          "price": 66.21,
+          "ret_1d": 0.44,
+          "ret_5d": 4.04,
+          "ret_1m": 2.18,
+          "vol_ratio": 0.71,
+          "atr_pct": 4.6
+        },
+        {
+          "ticker": "ACLS",
+          "name": "Axcelis Technologies, Inc.",
+          "sector": "Technology",
+          "price": 94.55,
+          "ret_1d": 4.43,
+          "ret_5d": 9.84,
+          "ret_1m": 1.43,
+          "vol_ratio": 1.19,
+          "atr_pct": 4.9
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "HIMS",
+          "name": "Hims & Hers Health, Inc.",
+          "sector": "Healthcare",
+          "price": 16.3,
+          "ret_1d": 3.16,
+          "ret_5d": -29.19,
+          "ret_1m": -47.96,
+          "vol_ratio": 2.53,
+          "atr_pct": 12.5
+        },
+        {
+          "ticker": "MNDY",
+          "name": "monday.com Ltd.",
+          "sector": "Technology",
+          "price": 72.38,
+          "ret_1d": -1.7,
+          "ret_5d": -26.14,
+          "ret_1m": -44.46,
+          "vol_ratio": 3.77,
+          "atr_pct": 8.9
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "sector": "Technology",
+          "price": 390.55,
+          "ret_1d": 6.44,
+          "ret_5d": -3.98,
+          "ret_1m": -36.78,
+          "vol_ratio": 1.62,
+          "atr_pct": 9.2
+        },
+        {
+          "ticker": "INSP",
+          "name": "Inspire Medical Systems, Inc.",
+          "sector": "Healthcare",
+          "price": 59.76,
+          "ret_1d": 0.18,
+          "ret_5d": -9.04,
+          "ret_1m": -35.78,
+          "vol_ratio": 1.69,
+          "atr_pct": 8.2
+        },
+        {
+          "ticker": "BRZE",
+          "name": "Braze, Inc.",
+          "sector": "Technology",
+          "price": 17.6,
+          "ret_1d": 1.68,
+          "ret_5d": -1.07,
+          "ret_1m": -35.39,
+          "vol_ratio": 1.25,
+          "atr_pct": 9.2
+        },
+        {
+          "ticker": "RXRX",
+          "name": "Recursion Pharmaceuticals, Inc",
+          "sector": "Healthcare",
+          "price": 3.49,
+          "ret_1d": -2.51,
+          "ret_5d": -12.31,
+          "ret_1m": -28.04,
+          "vol_ratio": 0.75,
+          "atr_pct": 7.9
+        },
+        {
+          "ticker": "ENVX",
+          "name": "Enovix Corporation",
+          "sector": "Industrials",
+          "price": 5.92,
+          "ret_1d": 2.78,
+          "ret_5d": -7.21,
+          "ret_1m": -27.89,
+          "vol_ratio": 0.88,
+          "atr_pct": 8.5
+        },
+        {
+          "ticker": "BYRN",
+          "name": "Byrna Technologies Inc.",
+          "sector": "Industrials",
+          "price": 12.51,
+          "ret_1d": -2.8,
+          "ret_5d": -14.84,
+          "ret_1m": -25.4,
+          "vol_ratio": 0.84,
+          "atr_pct": 8.5
+        }
+      ],
+      "vol_surge": [
+        {
+          "ticker": "MNDY",
+          "name": "monday.com Ltd.",
+          "sector": "Technology",
+          "price": 72.38,
+          "ret_1d": -1.7,
+          "ret_5d": -26.14,
+          "ret_1m": -44.46,
+          "vol_ratio": 3.77,
+          "atr_pct": 8.9
+        },
+        {
+          "ticker": "HIMS",
+          "name": "Hims & Hers Health, Inc.",
+          "sector": "Healthcare",
+          "price": 16.3,
+          "ret_1d": 3.16,
+          "ret_5d": -29.19,
+          "ret_1m": -47.96,
+          "vol_ratio": 2.53,
+          "atr_pct": 12.5
+        },
+        {
+          "ticker": "GLBE",
+          "name": "Global-e Online Ltd.",
+          "sector": "Consumer Cyclical",
+          "price": 31.66,
+          "ret_1d": -3.15,
+          "ret_5d": -2.91,
+          "ret_1m": -19.58,
+          "vol_ratio": 1.92,
+          "atr_pct": 4.6
+        },
+        {
+          "ticker": "VNET",
+          "name": "VNET Group, Inc.",
+          "sector": "Technology",
+          "price": 13.8,
+          "ret_1d": -1.64,
+          "ret_5d": 23.21,
+          "ret_1m": 15.58,
+          "vol_ratio": 1.7,
+          "atr_pct": 5.9
+        },
+        {
+          "ticker": "INSP",
+          "name": "Inspire Medical Systems, Inc.",
+          "sector": "Healthcare",
+          "price": 59.76,
+          "ret_1d": 0.18,
+          "ret_5d": -9.04,
+          "ret_1m": -35.78,
+          "vol_ratio": 1.69,
+          "atr_pct": 8.2
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "sector": "Technology",
+          "price": 390.55,
+          "ret_1d": 6.44,
+          "ret_5d": -3.98,
+          "ret_1m": -36.78,
+          "vol_ratio": 1.62,
+          "atr_pct": 9.2
+        }
+      ],
+      "high_vol": [
+        {
+          "ticker": "HIMS",
+          "name": "Hims & Hers Health, Inc.",
+          "sector": "Healthcare",
+          "price": 16.3,
+          "ret_1d": 3.16,
+          "ret_5d": -29.19,
+          "ret_1m": -47.96,
+          "vol_ratio": 2.53,
+          "atr_pct": 12.5
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "sector": "Technology",
+          "price": 390.55,
+          "ret_1d": 6.44,
+          "ret_5d": -3.98,
+          "ret_1m": -36.78,
+          "vol_ratio": 1.62,
+          "atr_pct": 9.2
+        },
+        {
+          "ticker": "BRZE",
+          "name": "Braze, Inc.",
+          "sector": "Technology",
+          "price": 17.6,
+          "ret_1d": 1.68,
+          "ret_5d": -1.07,
+          "ret_1m": -35.39,
+          "vol_ratio": 1.25,
+          "atr_pct": 9.2
+        },
+        {
+          "ticker": "MNDY",
+          "name": "monday.com Ltd.",
+          "sector": "Technology",
+          "price": 72.38,
+          "ret_1d": -1.7,
+          "ret_5d": -26.14,
+          "ret_1m": -44.46,
+          "vol_ratio": 3.77,
+          "atr_pct": 8.9
+        },
+        {
+          "ticker": "ENVX",
+          "name": "Enovix Corporation",
+          "sector": "Industrials",
+          "price": 5.92,
+          "ret_1d": 2.78,
+          "ret_5d": -7.21,
+          "ret_1m": -27.89,
+          "vol_ratio": 0.88,
+          "atr_pct": 8.5
+        },
+        {
+          "ticker": "BYRN",
+          "name": "Byrna Technologies Inc.",
+          "sector": "Industrials",
+          "price": 12.51,
+          "ret_1d": -2.8,
+          "ret_5d": -14.84,
+          "ret_1m": -25.4,
+          "vol_ratio": 0.84,
+          "atr_pct": 8.5
+        }
+      ],
       "analysis": {
-        "ja": "## ①指数動向の概要\n提供されたデータでは、Russell 2000指数（IWM）の直近のパーセンテージ変動が「None」となっており、具体的な値動きを確認することができません。このため、指数の短期的な方向性や強弱をパフォーマンスデータから直接評価することは困難です。一般的に、Russell 2000は米国中小型株を代表する指数であり、国内景気へのエクスポージャーが高く、市場のリスク選好や金利環境の変化に対して敏感に反応する傾向があります。分析を行うには、指数水準そのものに加え、構成銘柄個別の動向やマクロ経済環境に関する追加のコンテクストが有益となります。\n\n## ②主要寄与銘柄の動き\n今回のデータでは、直近1ヶ月間の指数変動に対して特に大きなプラスまたはマイナスの寄与を与えた銘柄（TOP3）に関する情報が提供されていません。通常、指数の動きを深く理解するためには、これらの「主要寄与銘柄」の業績発表、セクター別のニュース、あるいはマクロ経済指標への反応などを分析することが有効です。寄与度の高い銘柄の動向が不明であることは、指数全体の上昇または下落が広範な銘柄にわたる均一な動きによるものなのか、それとも特定のセクターや少数の大型銘柄の極端な動きに集中しているのかを判断する材料が限られることを意味します。\n\n## ③出来高・ボラティリティから読む背景\n「出来高急増銘柄」に関する具体的な情報も今回のデータには含まれていません。出来高の急増は、その銘柄に関して何らかの重要なニュース（例：決算発表、M&A報道、規制関連の動き）が市場で取引されている可能性を示唆する場合があります。これらの銘柄が指数の動きをリードする「背景候補」となり得ますが、その情報がないため、市場内部での資金の循環や注目セクターの特定が難しい状況です。また、ボラティリティ（価格変動率）に関するデータもないため、市場参加者の不安感や予想の不一致の度合いを計測することはできません。\n\n---\n*免責事項：本レポートは提供されたデータに基づく解説であり、投資助言を目的としたものではありません。*",
-        "en": "## ① Overview\nAs of 2026-02-17, the Russell 2000 Index (IWM) exhibited a session of notable consolidation, with no significant price movement recorded across the 1-day, 5-day, 1-month, and 3-month periods. The absence of clear top gainers, losers, or volume surge securities indicates a market in a state of equilibrium, where opposing forces of buying and selling pressure for small-cap stocks effectively canceled each other out. This flat performance likely reflects a macroeconomic environment of heightened uncertainty, where investors are awaiting clearer signals on policy, earnings, or economic data before committing capital decisively to the more domestically focused and economically sensitive small-cap segment.\n\n## ② Key Contributors\nThe lack of directional movement suggests no single sector or thematic driver exerted dominant influence. Typically, small-cap stocks are sensitive to changes in domestic economic growth expectations, interest rate outlooks, and credit conditions. The flat performance implies that market participants are balancing competing narratives. Potential supportive factors, such as resilient U.S. consumer data or anticipation of fiscal stimulus, may have been offset by concurrent headwinds. These headwinds could include concerns over tighter regional bank lending (a critical funding source for small businesses), elevated input cost inflation pressuring margins, or uncertainty regarding future tax and regulatory policies. The equilibrium indicates that the market has fully priced in the prevailing, mixed information set, with no new catalyst emerging to shift the balance.\n\n## ③ Volume/Volatility Context\nThe reported absence of a volume surge aligns perfectly with the price stagnation. Low and non-directional volume signifies a lack of conviction from both institutional and retail investors. This often occurs during periods of event risk anticipation, such as ahead of key Federal Reserve meetings, major political developments, or the upcoming earnings season for a new quarter. Similarly, the lack of extreme losers or gainers points to suppressed idiosyncratic volatility within the index. The market is not rewarding or punishing individual company stories aggressively, instead treating the small-cap universe as a monolithic group awaiting a broader macro catalyst. This compression in volatility and volume is a classic characteristic of a consolidative pause within a longer-term trend.\n\n*Past performance is not indicative of future results.*"
+        "ja": "## ①指数動向の概要\nRussell 2000指数（IWM）は、短期・中期で異なるパフォーマンスを示しています。直近1ヶ月は概ね横ばい（-0.09%）でしたが、3ヶ月という少し長い期間では+11.05%の上昇を記録しています。この乖離は、3ヶ月間の上昇トレンドの後、直近1ヶ月で調整局面に入った可能性を示唆しています。特に直近5日間の下落（-0.78%）と、それを覆すような直近1日間の反発（+1.32%）からは、短期的な市場の方向性に対する不確実性や、ボラティリティの高まりが読み取れます。\n\n## ②主要寄与銘柄の動き\n直近1ヶ月の指数パフォーマンスは、個別銘柄の極端な動きにより特徴づけられています。\n**上昇側**では、VNET（データセンター）、DECK（アパレル）、SMCI（サーバー）といった異なるセクターの銘柄が牽引しました。特にSMCIはAI関連需要を背景とした堅調な動きが継続していると推察され、一部の小型株における特定テーマへの資金流入を示しています。\n一方、**下落側**の影響は顕著で、HIMS（ヘルスケア）、MNDY（業務効化ソフト）、APP（ソーシャルメディア）が大きな下落を示しました。これらの大幅な下落は、企業の業績見通しや評価水準に対する市場の厳しい見直しが、指数の1ヶ月横ばいという結果に大きく寄与した構造と考えられます。\n\n## ③出来高・ボラティリティから読む背景\n出来高が急増した銘柄（MNDY, HIMS, GLBE）は、下落寄与TOP3と重なっており、これらの銘柄で「出来高を伴った売り」が活発であった可能性が示されます。これは、業績発表や業界環境の変化などを契機とした、集中的なポジション調整が発生したためと推察されます。このような一部のハイグロース銘柄における大幅な調整と、それに伴う高いボラティリティが、指数全体の短期的な不安定さ（5日下落後の1日反発など）の一因となっていると考えられます。市場全体として、小型株に対する選別（セクター・銘柄選別）の動きが強まっている局面と解釈できます。\n\n---\n*本レポートは過去のデータに基づく解説であり、将来の投資成果を保証するものではなく、売買の推奨を目的としたものではありません。*",
+        "en": "## ① Overview\nAs of 2026-02-17, the Russell 2000 (IWM) presents a mixed performance picture, characterized by strong quarterly gains but recent stagnation and divergence. The index posted a solid 11.05% advance over the prior three months, indicating a significant risk-on period for small-cap equities. However, momentum has stalled in the near term, with the index essentially flat over one month (-0.09%) and down over five days (-0.78%), despite a 1.32% single-day gain on the report date. This suggests a period of consolidation or sector rotation following the strong quarterly run.\n\n## ② Key Contributors\nThe day's positive return was likely driven by outsized gains in specific heavyweight constituents, masking broad weakness. Super Micro Computer (SMCI, +8.0%) and Deckers Outdoor (DECK, +14.1%) are examples of large-capitalization members whose rallies provided disproportionate upward index pressure. Conversely, severe losses in other notable names created significant drag. The dramatic declines in Hims & Hers Health (HIMS, -48.0%) and Monday.com (MNDY, -44.5%)—likely due to disappointing earnings or guidance—represented substantial negative contributions given their index weights. This extreme bifurcation between top gainers and losers indicates a market intensely focused on company-specific fundamentals, punishing disappointments harshly while rewarding positive surprises.\n\n## ③ Volume/Volatility Context\nUnusual trading volume underscores the stock-specific nature of the moves. The largest losers, MNDY and HIMS, saw volume surge by 277% and 153% respectively, confirming the intense, news-driven sell-off in these names. This elevated activity in declining stocks points to institutional repositioning and heightened volatility within the index, even as the aggregate index level held steady. The volume surge in these specific components, rather than broad-based across the index, supports the thesis of a rotational or corrective phase where capital is being rapidly reallocated based on recent performance and outlook.\n\n*Past performance is not indicative of future results.*"
       }
     }
   }
