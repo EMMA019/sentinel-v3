@@ -3,11 +3,6 @@
 scripts/generate_articles.py — 毎日実行
 ====================================
 VCP×RSスキャン + AI記事生成
-
-【修正内容】
-- 最終取引日を自動検出（休場日対応）
-- デバッグログ強化
-- スキャン進捗の詳細表示
 """
 import sys, json, os, time
 from pathlib import Path
@@ -32,31 +27,29 @@ OPENAI_BASE_URL = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
 OPENAI_MODEL    = os.environ.get("OPENAI_MODEL", "gpt-4")
 
 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 最終取引日の検出
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 def get_latest_trading_date() -> str:
-    """
-    FMPから取得できる最新の取引日を返す。
-    休場日（土日・祝日）でも直近の営業日を自動検出。
-    """
+    """FMPから取得できる最新の取引日を返す"""
     print("\n=== Detecting latest trading date ===")
     
-    # SPYで代表確認
-    df = core_fmp.get_historical_data("SPY", days=10)
-    if df is not None and len(df) > 0:
-        latest = df.index[-1].strftime("%Y-%m-%d")
-        print(f"✅ FMP latest data: {latest}")
-        print(f"   (Executed on: {TODAY})")
+    # SPYで確認（最大5回リトライ）
+    for attempt in range(5):
+        df = core_fmp.get_historical_data("SPY", days=10)
+        if df is not None and len(df) > 0:
+            latest = df.index[-1].strftime("%Y-%m-%d")
+            print(f"✅ FMP latest data: {latest}")
+            print(f"   (Executed on: {TODAY})")
+            
+            if latest != TODAY:
+                print(f"⚠️  Market closed on {TODAY}, using {latest} data")
+            
+            return latest
         
-        if latest != TODAY:
-            print(f"⚠️  Market closed on {TODAY}, using {latest} data")
-        
-        return latest
+        if attempt < 4:
+            print(f"   Retry {attempt+1}/5...")
+            time.sleep(5)
     
-    # フォールバック: 今日が土日なら金曜を返す
-    print("❌ Cannot fetch SPY data, using fallback logic")
+    # フォールバック
+    print("❌ Cannot fetch SPY data after 5 retries")
     dt = datetime.now(JST)
     if dt.weekday() == 5:  # 土曜
         fallback = (dt - timedelta(days=1)).strftime("%Y-%m-%d")
@@ -65,19 +58,15 @@ def get_latest_trading_date() -> str:
     else:
         fallback = TODAY
     
-    print(f"   Fallback date: {fallback}")
+    print(f"   Using fallback: {fallback}")
     return fallback
 
-
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# スキャン（デバッグ強化版）
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def scan_all_tickers(report_date: str):
     print(f"\n=== Scanning {len(TICKERS)} tickers ===")
     print(f"Report date: {report_date}")
     
-    # ── テスト: 最初の3銘柄で詳細確認 ───────────────────
+    # テスト
     print("\n--- Pre-scan test (first 3 tickers) ---")
     for i, ticker in enumerate(TICKERS[:3]):
         df = core_fmp.get_historical_data(ticker, days=10)
@@ -88,7 +77,7 @@ def scan_all_tickers(report_date: str):
         else:
             print(f"  [{i+1}] {ticker:6s}: ❌ Data fetch failed")
     
-    # ── フルスキャン開始 ─────────────────────────────────
+    # フルスキャン
     print("\n--- Full scan starting ---")
     raw_list = []
     failed_count = 0
@@ -103,7 +92,6 @@ def scan_all_tickers(report_date: str):
         if rs_raw != -999.0:
             raw_list.append({"ticker": ticker, "df": df, "raw_rs": rs_raw})
         
-        # 進捗表示（50銘柄ごと）
         if (i + 1) % 50 == 0:
             print(f"  Progress: {i+1}/{len(TICKERS)} ({len(raw_list)} valid, {failed_count} failed)")
     
@@ -115,11 +103,9 @@ def scan_all_tickers(report_date: str):
         print("❌ No valid tickers found")
         return {"qualified":[], "actions":[], "waits":[], "all_scored":[]}
     
-    # ── RS percentile 計算 ────────────────────────────────
     scored = RSAnalyzer.assign_percentiles(raw_list)
     print(f"  RS assigned:   {len(scored)}")
     
-    # ── VCP/ECR/CANSLIM/SES 計算 ─────────────────────────
     print("\n--- Multi-strategy scoring ---")
     qualified, all_scored = [], []
     
@@ -130,7 +116,6 @@ def scan_all_tickers(report_date: str):
         ecr     = ECRStrategyEngine.analyze_single(item["ticker"], item["df"])
         canslim = CANSLIMAnalyzer.calculate(item["ticker"], item["df"])
         
-        # 価格は内部計算のみ
         price = float(item["df"]["Close"].iloc[-1])
         pivot = float(item["df"]["High"].iloc[-20:].max())
         entry = round(pivot * 1.002, 2)
@@ -139,7 +124,6 @@ def scan_all_tickers(report_date: str):
         dist  = (price - pivot) / pivot
         status= "ACTION" if -0.05<=dist<=0.03 else ("WAIT" if dist<-0.05 else "EXTENDED")
         
-        # 派生データ
         atr_pct       = round(vcp["atr"] / price * 100, 2) if price else None
         pivot_dist_pct= round(dist * 100, 2)
         stop_atr_mult = round(CONFIG["STOP_LOSS_ATR"], 2)
@@ -196,11 +180,9 @@ def scan_all_tickers(report_date: str):
                 vcp["score"]>=CONFIG["MIN_VCP_SCORE"] and pf>=CONFIG["MIN_PROFIT_FACTOR"]):
             qualified.append(row)
         
-        # 進捗表示
         if (i + 1) % 100 == 0:
             print(f"  Scored: {i+1}/{len(scored)}")
     
-    # ── 最終集計 ──────────────────────────────────────────
     qualified.sort(key=lambda x:(x["status"]=="ACTION", x["vcp"]+x["rs"]), reverse=True)
     all_scored.sort(key=lambda x: x["vcp"]+x["rs"]*0.5, reverse=True)
     actions = [q for q in qualified if q["status"]=="ACTION"]
@@ -212,7 +194,6 @@ def scan_all_tickers(report_date: str):
     print(f"    - ACTION:    {len(actions)}")
     print(f"    - WAIT:      {len(waits)}")
     
-    # スコア分布
     if all_scored:
         vcp_scores = [s["vcp"] for s in all_scored]
         rs_scores  = [s["rs"]  for s in all_scored]
@@ -220,7 +201,6 @@ def scan_all_tickers(report_date: str):
         print(f"  VCP: min={min(vcp_scores):3d} max={max(vcp_scores):3d} avg={sum(vcp_scores)/len(vcp_scores):5.1f}")
         print(f"  RS:  min={min(rs_scores):3d} max={max(rs_scores):3d} avg={sum(rs_scores)/len(rs_scores):5.1f}")
         
-        # 閾値に近い銘柄
         close_ones = [s for s in all_scored 
                       if s["vcp"] >= CONFIG["MIN_VCP_SCORE"]-10 
                       and s["rs"] >= CONFIG["MIN_RS_RATING"]-10]
@@ -332,17 +312,14 @@ def generate_daily_ai_report(actions: list, index: dict, sector: list,
 
 
 def main():
-    # ── 最終取引日検出 ──────────────────────────────────────
     REPORT_DATE = get_latest_trading_date()
     
     print(f"\n{'='*60}")
     print(f"SENTINEL DAILY {REPORT_DATE}")
     print(f"{'='*60}")
     
-    # ── スキャン ─────────────────────────────────────────────
     result = scan_all_tickers(REPORT_DATE)
     
-    # ── 記事生成 ─────────────────────────────────────────────
     print("\n=== Generating daily report ===")
     index   = get_index_data()
     ranking = build_vcp_ranking(result["all_scored"])
@@ -383,17 +360,25 @@ def main():
     )
     print("✅ Daily report saved")
     
-    # ── index.json 更新 ──────────────────────────────────────
+    # index.json 更新（エラー対策版）
     index_file = OUT_DIR / "index.json"
     if index_file.exists():
-        idx = json.loads(index_file.read_text())
+        try:
+            idx = json.loads(index_file.read_text())
+            # 壊れたJSONの修復
+            if not isinstance(idx, dict) or "articles" not in idx:
+                idx = {"articles": []}
+            if not isinstance(idx["articles"], list):
+                idx = {"articles": []}
+        except:
+            idx = {"articles": []}
     else:
         idx = {"articles": []}
     
-    existing = next((a for a in idx["articles"] if a["slug"] == daily_article["slug"]), None)
-    if existing:
-        idx["articles"] = [a for a in idx["articles"] if a["slug"] != daily_article["slug"]]
+    # 既存エントリ削除
+    idx["articles"] = [a for a in idx["articles"] if a.get("slug") != daily_article["slug"]]
     
+    # 新規追加
     idx["articles"].insert(0, {
         "slug": daily_article["slug"],
         "type": daily_article["type"],
