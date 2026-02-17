@@ -55,4 +55,30 @@ test("income-statement-growth（確認済み）",
     f"{BASE}/income-statement-growth",
     {"symbol": TICKER, "period": "annual", "limit": 1})
 
+print("\n[income-statement 全キー確認]")
+resp = requests.get(
+    f"{BASE}/income-statement",
+    params={"symbol": TICKER, "period": "annual", "limit": 3, "apikey": KEY},
+    timeout=15
+)
+data = resp.json()
+if data and isinstance(data, list):
+    print(f"  件数: {len(data)}")
+    print(f"  全キー: {list(data[0].keys())}")
+    
+    # EPS・売上成長率を手動計算
+    if len(data) >= 2:
+        curr = data[0]
+        prev = data[1]
+        
+        eps_curr = curr.get("eps", 0) or 0
+        eps_prev = prev.get("eps", 0) or 0
+        rev_curr = curr.get("revenue", 0) or 0
+        rev_prev = prev.get("revenue", 0) or 0
+        
+        eps_growth = (eps_curr - eps_prev) / abs(eps_prev) * 100 if eps_prev else None
+        rev_growth = (rev_curr - rev_prev) / abs(rev_prev) * 100 if rev_prev else None
+        
+        print(f"\n  EPS: {eps_prev} → {eps_curr} = {eps_growth:.1f}%" if eps_growth else "  EPS: 計算不可")
+        print(f"  Rev: {rev_prev:,.0f} → {rev_curr:,.0f} = {rev_growth:.1f}%" if rev_growth else "  Rev: 計算不可")
 print("\n=== END ===")
