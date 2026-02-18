@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body {
+  background: #060A0F;
+  color: #C8DCF0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #0C1117; }
+::-webkit-scrollbar-thumb { background: #182030; border-radius: 2px; }
+
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* ステータスバッジ */
+.badge-action { @apply bg-green-dim text-green border border-green/30 font-mono text-xs px-2 py-0.5 rounded; }
+.badge-wait   { @apply bg-amber-dim  text-amber  border border-amber/30  font-mono text-xs px-2 py-0.5 rounded; }
+.badge-watch  { @apply bg-blue-dim   text-blue   border border-blue/30   font-mono text-xs px-2 py-0.5 rounded; }
+
+/* グロウ効果 */
+.glow-green { text-shadow: 0 0 20px #00FF8880; }
+.glow-red   { text-shadow: 0 0 20px #FF446680; }
