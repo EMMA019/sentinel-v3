@@ -1,84 +1,112 @@
-#!/usr/bin/env python3
 """
-scripts/test_fundamentals.py — ファンダメンタルズ取得テスト
+scripts/debug_mag7_strategies.py
+Magnificent 7 が generate_strategies.py の処理フローの中で
+どのように判定され、なぜ最終出力から除外されているのかを特定する診断ツール。
 """
-import os, requests, json
+import sys, os
+import pandas as pd
+import numpy as np
+from pathlib import Path
 
-KEY  = os.environ.get("FMP_API_KEY", "")
-BASE = "https://financialmodelingprep.com/stable"
-TICKER = "AAPL"
+# パス設定: shared を読み込めるようにする
+sys.path.append(str(Path(__file__).parent.parent / "shared"))
 
-def test(name, url, params={}):
-    print(f"\n[{name}]")
-    print(f"  URL: {url}")
-    resp = requests.get(url, params={**params, "apikey": KEY}, timeout=15)
-    print(f"  Status: {resp.status_code}")
-    if resp.status_code == 200:
-        data = resp.json()
-        item = data[0] if isinstance(data, list) and data else data
-        if item:
-            # 最初の5キーだけ表示
-            keys = list(item.keys())[:5]
-            print(f"  ✅ Keys: {keys}")
-            for k in keys:
-                print(f"    {k}: {item[k]}")
-        else:
-            print(f"  ❌ Empty response")
-    else:
-        print(f"  ❌ {resp.text[:100]}")
+from engines import core_fmp
+from engines.analysis import VCPAnalyzer, RSAnalyzer, StrategyValidator
+from engines.sentinel_efficiency import SentinelEfficiencyAnalyzer
+from engines.ecr_strategy import ECRStrategyEngine
+from engines.canslim import CANSLIMAnalyzer
+from engines.config import CONFIG
 
-print(f"=== FUNDAMENTALS TEST ({TICKER}) ===")
-print(f"Key: {KEY[:8]}...{KEY[-4:]}")
+# 診断対象：Magnificent 7
+TARGETS = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"]
 
-# 1. 決算EPS（CANSLIMのC）
-test("earnings-history",
-    f"{BASE}/earnings-historical-growth",
-    {"symbol": TICKER})
+def diagnose_ticker(ticker):
+    print(f"\n{'='*60}")
+    print(f"🔍 Analyzing: {ticker}")
+    print(f"{'='*60}")
 
-# 2. 年次決算（CANSLIMのA）
-test("income-statement",
-    f"{BASE}/income-statement",
-    {"symbol": TICKER, "period": "annual", "limit": 3})
-
-# 3. 機関投資家（CANSLIMのI）
-test("institutional-ownership",
-    f"{BASE}/institutional-ownership",
-    {"symbol": TICKER})
-
-# 4. 現在確認済み（比較用）
-test("key-metrics（確認済み）",
-    f"{BASE}/key-metrics",
-    {"symbol": TICKER, "period": "annual", "limit": 1})
-
-# 5. income-statement-growth（確認済み）
-test("income-statement-growth（確認済み）",
-    f"{BASE}/income-statement-growth",
-    {"symbol": TICKER, "period": "annual", "limit": 1})
-
-print("\n[income-statement 全キー確認]")
-resp = requests.get(
-    f"{BASE}/income-statement",
-    params={"symbol": TICKER, "period": "annual", "limit": 3, "apikey": KEY},
-    timeout=15
-)
-data = resp.json()
-if data and isinstance(data, list):
-    print(f"  件数: {len(data)}")
-    print(f"  全キー: {list(data[0].keys())}")
+    # ---------------------------------------------------------
+    # 1. データ取得フェーズ
+    # ---------------------------------------------------------
+    print(f"Step 1: Data Fetching...")
+    df = core_fmp.get_historical_data(ticker, days=700)
     
-    # EPS・売上成長率を手動計算
-    if len(data) >= 2:
-        curr = data[0]
-        prev = data[1]
+    if df is None or len(df) < 200:
+        print(f"  ❌ FAILED: データ取得失敗またはデータ不足 ({len(df) if df is not None else 'None'} rows)")
+        return
+    
+    latest_date = df.index[-1].strftime('%Y-%m-%d')
+    price = float(df["Close"].iloc[-1])
+    print(f"  ✅ SUCCESS: {len(df)} rows found. Latest: {latest_date}, Price: ${price:.2f}")
+
+    # ---------------------------------------------------------
+    # 2. ロジック判定フェーズ（Status決定）
+    # ---------------------------------------------------------
+    print(f"Step 2: Logic & Status Check...")
+    
+    # generate_strategies.py と同じロジック
+    pivot = float(df["High"].iloc[-20:].max())  # 直近20日の最高値
+    dist  = (price - pivot) / pivot             # ピボットからの乖離率
+    
+    # 判定ロジック
+    if -0.05 <= dist <= 0.03:
+        status = "ACTION"
+        judge = "✅ INCLUDED (Ranking対象)"
+    elif dist < -0.05:
+        status = "WAIT"
+        judge = "✅ INCLUDED (Ranking対象)"
+    else:
+        status = "EXTENDED"
+        judge = "❌ EXCLUDED (Ranking除外対象)"
+
+    print(f"  📊 Price Analysis:")
+    print(f"     - Current Price: ${price:.2f}")
+    print(f"     - Pivot (20d High): ${pivot:.2f}")
+    print(f"     - Distance: {dist*100:+.2f}%")
+    print(f"     👉 Determined Status: [{status}]")
+    print(f"     👉 Final Verdict: {judge}")
+
+    if status == "EXTENDED":
+        print(f"     ⚠️  理由: 株価がピボットより3%以上高いため「伸びすぎ(EXTENDED)」と判定されています。")
+
+    # ---------------------------------------------------------
+    # 3. スコアリングフェーズ（ファンダメンタルズ含む）
+    # ---------------------------------------------------------
+    print(f"Step 3: Scoring & Fundamentals...")
+    
+    try:
+        # VCP
+        vcp = VCPAnalyzer.calculate(df)
         
-        eps_curr = curr.get("eps", 0) or 0
-        eps_prev = prev.get("eps", 0) or 0
-        rev_curr = curr.get("revenue", 0) or 0
-        rev_prev = prev.get("revenue", 0) or 0
+        # CANSLIM (Fundametal取得確認)
+        fund = core_fmp.get_fundamentals(ticker)
+        own = core_fmp.get_ownership(ticker)
         
-        eps_growth = (eps_curr - eps_prev) / abs(eps_prev) * 100 if eps_prev else None
-        rev_growth = (rev_curr - rev_prev) / abs(rev_prev) * 100 if rev_prev else None
+        has_fund = "✅ Yes" if fund else "❌ No (None)"
+        has_own  = "✅ Yes" if own and own.get("institutional_pct") else "⚠️ Partial/No"
+
+        canslim = CANSLIMAnalyzer.calculate(ticker, df, fund=fund or {}, own=own or {})
         
-        print(f"\n  EPS: {eps_prev} → {eps_curr} = {eps_growth:.1f}%" if eps_growth else "  EPS: 計算不可")
-        print(f"  Rev: {rev_prev:,.0f} → {rev_curr:,.0f} = {rev_growth:.1f}%" if rev_growth else "  Rev: 計算不可")
-print("\n=== END ===")
+        # ECR
+        ecr = ECRStrategyEngine.analyze_single(ticker, df)
+        
+        print(f"     - Fundamentals Data: {has_fund}")
+        print(f"     - Ownership Data:    {has_own}")
+        print(f"     - VCP Score: {vcp['score']}")
+        print(f"     - CANSLIM Score: {canslim['score']} (Grade: {canslim['grade']})")
+        print(f"     - ECR Rank: {ecr['sentinel_rank']}")
+        
+    except Exception as e:
+        print(f"  ❌ SCORING ERROR: 計算中にエラーが発生しました: {e}")
+
+def main():
+    print("=== STARTING MAG7 DIAGNOSIS ===")
+    for t in TARGETS:
+        diagnose_ticker(t)
+    print("\n=== DIAGNOSIS COMPLETE ===")
+
+if __name__ == "__main__":
+    main()
+
+
