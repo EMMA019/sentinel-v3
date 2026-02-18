@@ -1,25 +1,71 @@
-name: FMP API Test
+#!/usr/bin/env python3
+"""
+test.py
+GitHub Actions 用バックテスト実行スクリプト
+generate_backtest.py を呼び出し、
+backtest.json を確実に生成する
+"""
 
-on:
-  workflow_dispatch:  # 手動実行のみ
+import os
+import sys
+import json
+from pathlib import Path
+from datetime import datetime
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# APIキー確認
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+api_key = os.getenv("FMP_API_KEY")
+if not api_key:
+    print("❌ FMP_API_KEY not set")
+    sys.exit(1)
 
-      # pandas と numpy を追加インストール
-      - name: Install dependencies
-        run: pip install requests pandas numpy
+print("✅ FMP_API_KEY detected")
 
-      - name: Test FMP API
-        env:
-          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-        # 実行するファイル名に合わせてください (例: scripts/test.py または scripts/debug_mag7_strategies.py)
-        run: python scripts/test.py
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# パス調整
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(BASE_DIR))
+
+BACKTEST_SCRIPT = BASE_DIR / "scripts" / "generate_backtest.py"
+OUTPUT_JSON = BASE_DIR / "frontend" / "public" / "content" / "backtest.json"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# バックテスト実行
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+print("🚀 Running backtest...")
+
+exit_code = os.system(f"python {BACKTEST_SCRIPT}")
+
+if exit_code != 0:
+    print("❌ Backtest failed")
+    sys.exit(1)
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# JSON確認
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+if not OUTPUT_JSON.exists():
+    print("❌ backtest.json not found")
+    sys.exit(1)
+
+try:
+    with open(OUTPUT_JSON, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    print("📊 Backtest Summary:")
+    print(json.dumps({
+        "generated_at": data.get("generated_at"),
+        "overall": data.get("overall"),
+        "methods": data.get("methods")
+    }, indent=2, ensure_ascii=False))
+
+except Exception as e:
+    print(f"❌ Failed to read JSON: {e}")
+    sys.exit(1)
+
+print("✅ Backtest JSON successfully generated")
