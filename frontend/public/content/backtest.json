@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-17",
+  "generated_at": "2026-02-18",
   "overall": {
     "total_trades": 1567,
     "win_rate": 39.1,
@@ -1187,44 +1187,6 @@
       }
     },
     {
-      "ticker": "AFRM",
-      "entry_date": "2025-06-11",
-      "exit_date": "2025-08-06",
-      "entry_price": 63.5,
-      "exit_price": 76.51785714285714,
-      "pnl_pct": 20.5,
-      "type": "WIN",
-      "method_scores": {
-        "vcp": 45,
-        "atr": 2.6035714285714286,
-        "pf": 0.86,
-        "ses": 50,
-        "ecr_rank": 56,
-        "ecr_phase": "WATCH",
-        "canslim": 35,
-        "rs_pct": 78
-      }
-    },
-    {
-      "ticker": "AFRM",
-      "entry_date": "2025-08-12",
-      "exit_date": "2025-08-29",
-      "entry_price": 76.89,
-      "exit_price": 96.56857142857142,
-      "pnl_pct": 25.59,
-      "type": "WIN",
-      "method_scores": {
-        "vcp": 40,
-        "atr": 3.9357142857142846,
-        "pf": 1.33,
-        "ses": 20,
-        "ecr_rank": 52,
-        "ecr_phase": "WATCH",
-        "canslim": 60,
-        "rs_pct": 100
-      }
-    },
-    {
       "ticker": "AGIO",
       "entry_date": "2025-07-02",
       "exit_date": "2025-08-04",
@@ -1260,6 +1222,44 @@
         "ecr_phase": "WATCH",
         "canslim": 15,
         "rs_pct": 37
+      }
+    },
+    {
+      "ticker": "AFRM",
+      "entry_date": "2025-06-11",
+      "exit_date": "2025-08-06",
+      "entry_price": 63.5,
+      "exit_price": 76.51785714285714,
+      "pnl_pct": 20.5,
+      "type": "WIN",
+      "method_scores": {
+        "vcp": 45,
+        "atr": 2.6035714285714286,
+        "pf": 0.86,
+        "ses": 50,
+        "ecr_rank": 56,
+        "ecr_phase": "WATCH",
+        "canslim": 35,
+        "rs_pct": 78
+      }
+    },
+    {
+      "ticker": "AFRM",
+      "entry_date": "2025-08-12",
+      "exit_date": "2025-08-29",
+      "entry_price": 76.89,
+      "exit_price": 96.56857142857142,
+      "pnl_pct": 25.59,
+      "type": "WIN",
+      "method_scores": {
+        "vcp": 40,
+        "atr": 3.9357142857142846,
+        "pf": 1.33,
+        "ses": 20,
+        "ecr_rank": 52,
+        "ecr_phase": "WATCH",
+        "canslim": 60,
+        "rs_pct": 100
       }
     },
     {
@@ -1567,6 +1567,25 @@
       }
     },
     {
+      "ticker": "ALTM",
+      "entry_date": "2024-12-02",
+      "exit_date": "2024-12-18",
+      "entry_price": 5.16,
+      "exit_price": 4.981428571428571,
+      "pnl_pct": -3.46,
+      "type": "LOSS",
+      "method_scores": {
+        "vcp": 48,
+        "atr": 0.08928571428571422,
+        "pf": 0.97,
+        "ses": 40,
+        "ecr_rank": 46,
+        "ecr_phase": "WATCH",
+        "canslim": 20,
+        "rs_pct": 50
+      }
+    },
+    {
       "ticker": "ALKS",
       "entry_date": "2025-10-21",
       "exit_date": "2025-10-24",
@@ -1586,22 +1605,41 @@
       }
     },
     {
-      "ticker": "ALTM",
-      "entry_date": "2024-12-02",
-      "exit_date": "2024-12-18",
-      "entry_price": 5.16,
-      "exit_price": 4.981428571428571,
-      "pnl_pct": -3.46,
+      "ticker": "ALNY",
+      "entry_date": "2025-09-09",
+      "exit_date": "2025-09-15",
+      "entry_price": 482.13,
+      "exit_price": 457.17,
+      "pnl_pct": -5.18,
       "type": "LOSS",
       "method_scores": {
-        "vcp": 48,
-        "atr": 0.08928571428571422,
-        "pf": 0.97,
+        "vcp": 50,
+        "atr": 12.479999999999993,
+        "pf": 0.94,
+        "ses": 60,
+        "ecr_rank": 68,
+        "ecr_phase": "HOLD/WATCH",
+        "canslim": 70,
+        "rs_pct": 100
+      }
+    },
+    {
+      "ticker": "ALNY",
+      "entry_date": "2025-10-13",
+      "exit_date": "2025-10-30",
+      "entry_price": 464.95,
+      "exit_price": 439.5785714285714,
+      "pnl_pct": -5.46,
+      "type": "LOSS",
+      "method_scores": {
+        "vcp": 75,
+        "atr": 12.685714285714274,
+        "pf": 0.82,
         "ses": 40,
-        "ecr_rank": 46,
-        "ecr_phase": "WATCH",
-        "canslim": 20,
-        "rs_pct": 50
+        "ecr_rank": 67,
+        "ecr_phase": "HOLD/WATCH",
+        "canslim": 60,
+        "rs_pct": 84
       }
     },
     {
@@ -1735,44 +1773,6 @@
         "ecr_phase": "WATCH",
         "canslim": 50,
         "rs_pct": 83
-      }
-    },
-    {
-      "ticker": "ALNY",
-      "entry_date": "2025-09-09",
-      "exit_date": "2025-09-15",
-      "entry_price": 482.13,
-      "exit_price": 457.17,
-      "pnl_pct": -5.18,
-      "type": "LOSS",
-      "method_scores": {
-        "vcp": 50,
-        "atr": 12.479999999999993,
-        "pf": 0.94,
-        "ses": 60,
-        "ecr_rank": 68,
-        "ecr_phase": "HOLD/WATCH",
-        "canslim": 70,
-        "rs_pct": 100
-      }
-    },
-    {
-      "ticker": "ALNY",
-      "entry_date": "2025-10-13",
-      "exit_date": "2025-10-30",
-      "entry_price": 464.95,
-      "exit_price": 439.5785714285714,
-      "pnl_pct": -5.46,
-      "type": "LOSS",
-      "method_scores": {
-        "vcp": 75,
-        "atr": 12.685714285714274,
-        "pf": 0.82,
-        "ses": 40,
-        "ecr_rank": 67,
-        "ecr_phase": "HOLD/WATCH",
-        "canslim": 60,
-        "rs_pct": 84
       }
     },
     {
@@ -3239,25 +3239,6 @@
       }
     },
     {
-      "ticker": "APPN",
-      "entry_date": "2025-09-18",
-      "exit_date": "2025-09-26",
-      "entry_price": 33.16,
-      "exit_price": 30.949999999999996,
-      "pnl_pct": -6.66,
-      "type": "LOSS",
-      "method_scores": {
-        "vcp": 40,
-        "atr": 1.1050000000000006,
-        "pf": 1.01,
-        "ses": 45,
-        "ecr_rank": 40,
-        "ecr_phase": "WATCH",
-        "canslim": 25,
-        "rs_pct": 38
-      }
-    },
-    {
       "ticker": "ARLO",
       "entry_date": "2025-05-13",
       "exit_date": "2025-06-06",
@@ -3331,6 +3312,25 @@
         "ecr_phase": "HOLD/WATCH",
         "canslim": 40,
         "rs_pct": 85
+      }
+    },
+    {
+      "ticker": "APPN",
+      "entry_date": "2025-09-18",
+      "exit_date": "2025-09-26",
+      "entry_price": 33.16,
+      "exit_price": 30.949999999999996,
+      "pnl_pct": -6.66,
+      "type": "LOSS",
+      "method_scores": {
+        "vcp": 40,
+        "atr": 1.1050000000000006,
+        "pf": 1.01,
+        "ses": 45,
+        "ecr_rank": 40,
+        "ecr_phase": "WATCH",
+        "canslim": 25,
+        "rs_pct": 38
       }
     },
     {
@@ -3714,25 +3714,6 @@
       }
     },
     {
-      "ticker": "ARVN",
-      "entry_date": "2025-11-06",
-      "exit_date": "2025-11-18",
-      "entry_price": 10.0,
-      "exit_price": 12.082142857142859,
-      "pnl_pct": 20.82,
-      "type": "WIN",
-      "method_scores": {
-        "vcp": 40,
-        "atr": 0.4164285714285717,
-        "pf": 2.5,
-        "ses": 20,
-        "ecr_rank": 29,
-        "ecr_phase": "WATCH",
-        "canslim": 40,
-        "rs_pct": 26
-      }
-    },
-    {
       "ticker": "ARWR",
       "entry_date": "2025-10-15",
       "exit_date": "2025-11-25",
@@ -3768,6 +3749,25 @@
         "ecr_phase": "IGNITION",
         "canslim": 70,
         "rs_pct": 100
+      }
+    },
+    {
+      "ticker": "ARVN",
+      "entry_date": "2025-11-06",
+      "exit_date": "2025-11-18",
+      "entry_price": 10.0,
+      "exit_price": 12.082142857142859,
+      "pnl_pct": 20.82,
+      "type": "WIN",
+      "method_scores": {
+        "vcp": 40,
+        "atr": 0.4164285714285717,
+        "pf": 2.5,
+        "ses": 20,
+        "ecr_rank": 29,
+        "ecr_phase": "WATCH",
+        "canslim": 40,
+        "rs_pct": 26
       }
     },
     {

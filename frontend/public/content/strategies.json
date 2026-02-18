@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-02-18",
-  "ticker_count": 604,
-  "action_count": 235,
-  "wait_count": 369,
+  "ticker_count": 611,
+  "action_count": 238,
+  "wait_count": 373,
   "rankings": {
     "vcp_rs": [
       {
@@ -11,20 +11,20 @@
         "sector": "Communication Services",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
+          "vcp": 103,
           "ses": 25,
-          "ecr_rank": 79,
+          "ecr_rank": 78,
           "canslim": 40,
           "pf": 2.5,
           "rs": 97,
-          "composite": 74.3
+          "composite": 73.6
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 1.87,
-        "pivot_dist_pct": -0.22,
-        "ma50_ratio": 2.6,
+        "atr_pct": 1.88,
+        "pivot_dist_pct": -0.9,
+        "ma50_ratio": 1.9,
         "method_hits": 2
       },
       {
@@ -45,7 +45,7 @@
         "ecr_strategy": "PBVH",
         "canslim_grade": "B",
         "atr_pct": 0.34,
-        "pivot_dist_pct": -0.21,
+        "pivot_dist_pct": -0.22,
         "ma50_ratio": 1.2,
         "method_hits": 2
       },
@@ -60,8 +60,8 @@
           "ecr_rank": 96,
           "canslim": 50,
           "pf": 1.09,
-          "rs": 91,
-          "composite": 82.2
+          "rs": 92,
+          "composite": 82.4
         },
         "ecr_phase": "ACCUMULATION",
         "ecr_strategy": "PBVH",
@@ -126,8 +126,8 @@
           "ecr_rank": 69,
           "canslim": 50,
           "pf": 1.49,
-          "rs": 78,
-          "composite": 69.6
+          "rs": 77,
+          "composite": 69.4
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -136,50 +136,6 @@
         "pivot_dist_pct": -0.2,
         "ma50_ratio": 2.0,
         "method_hits": 0
-      },
-      {
-        "ticker": "ALEX",
-        "name": "Alexander & Baldwin, Inc.",
-        "sector": "Real Estate",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 105,
-          "ses": 20,
-          "ecr_rank": 61,
-          "canslim": 65,
-          "pf": 0.0,
-          "rs": 63,
-          "composite": 69.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 0.18,
-        "pivot_dist_pct": -0.29,
-        "ma50_ratio": 1.7,
-        "method_hits": 1
-      },
-      {
-        "ticker": "MRUS",
-        "name": "Merus N.V.",
-        "sector": "Healthcare",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 78,
-          "ses": 25,
-          "ecr_rank": 64,
-          "canslim": 30,
-          "pf": 1.25,
-          "rs": 90,
-          "composite": 60.3
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 0.93,
-        "pivot_dist_pct": -7.35,
-        "ma50_ratio": -5.7,
-        "method_hits": 1
       },
       {
         "ticker": "ROST",
@@ -198,10 +154,32 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 1.76,
-        "pivot_dist_pct": -0.9,
-        "ma50_ratio": 5.6,
+        "atr_pct": 1.8,
+        "pivot_dist_pct": -0.39,
+        "ma50_ratio": 6.1,
         "method_hits": 0
+      },
+      {
+        "ticker": "MRUS",
+        "name": "Merus N.V.",
+        "sector": "Healthcare",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 78,
+          "ses": 25,
+          "ecr_rank": 64,
+          "canslim": 30,
+          "pf": 1.25,
+          "rs": 89,
+          "composite": 60.1
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 0.93,
+        "pivot_dist_pct": -7.35,
+        "ma50_ratio": -5.7,
+        "method_hits": 1
       },
       {
         "ticker": "RDUS",
@@ -226,25 +204,47 @@
         "method_hits": 1
       },
       {
+        "ticker": "ALEX",
+        "name": "Alexander & Baldwin, Inc.",
+        "sector": "Real Estate",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 100,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 65,
+          "pf": 0.0,
+          "rs": 63,
+          "composite": 68.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 0.18,
+        "pivot_dist_pct": -0.29,
+        "ma50_ratio": 1.7,
+        "method_hits": 1
+      },
+      {
         "ticker": "FOLD",
         "name": "Amicus Therapeutics, Inc.",
         "sector": "Healthcare",
         "status": "ACTION",
         "scores": {
           "vcp": 75,
-          "ses": 30,
-          "ecr_rank": 62,
+          "ses": 20,
+          "ecr_rank": 59,
           "canslim": 55,
-          "pf": 2.57,
+          "pf": 2.55,
           "rs": 87,
-          "composite": 66.1
+          "composite": 65.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 0.23,
-        "pivot_dist_pct": -0.14,
-        "ma50_ratio": 6.9,
+        "atr_pct": 0.24,
+        "pivot_dist_pct": -0.42,
+        "ma50_ratio": 6.6,
         "method_hits": 1
       },
       {
@@ -254,19 +254,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 88,
-          "ses": 25,
-          "ecr_rank": 58,
+          "ses": 15,
+          "ecr_rank": 55,
           "canslim": 45,
           "pf": 1.16,
           "rs": 72,
-          "composite": 61.2
+          "composite": 60.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 2.31,
-        "pivot_dist_pct": -2.24,
-        "ma50_ratio": 0.3,
+        "atr_pct": 2.34,
+        "pivot_dist_pct": -2.17,
+        "ma50_ratio": 0.4,
         "method_hits": 0
       },
       {
@@ -298,42 +298,20 @@
         "status": "ACTION",
         "scores": {
           "vcp": 65,
-          "ses": 70,
-          "ecr_rank": 77,
+          "ses": 80,
+          "ecr_rank": 80,
           "canslim": 35,
-          "pf": 2.68,
+          "pf": 2.67,
           "rs": 94,
-          "composite": 64.9
+          "composite": 65.9
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 4.71,
-        "pivot_dist_pct": -1.5,
-        "ma50_ratio": 9.0,
+        "atr_pct": 4.75,
+        "pivot_dist_pct": -1.55,
+        "ma50_ratio": 8.9,
         "method_hits": 2
-      },
-      {
-        "ticker": "IONS",
-        "name": "Ionis Pharmaceuticals, In",
-        "sector": "Healthcare",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 63,
-          "ses": 25,
-          "ecr_rank": 62,
-          "canslim": 45,
-          "pf": 5.0,
-          "rs": 95,
-          "composite": 62.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 3.0,
-        "pivot_dist_pct": -6.21,
-        "ma50_ratio": 0.6,
-        "method_hits": 0
       },
       {
         "ticker": "MNST",
@@ -342,20 +320,42 @@
         "status": "ACTION",
         "scores": {
           "vcp": 75,
-          "ses": 20,
-          "ecr_rank": 55,
-          "canslim": 35,
-          "pf": 1.42,
-          "rs": 83,
-          "composite": 56.9
+          "ses": 30,
+          "ecr_rank": 59,
+          "canslim": 40,
+          "pf": 1.45,
+          "rs": 84,
+          "composite": 60.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
         "atr_pct": 1.77,
-        "pivot_dist_pct": -0.88,
-        "ma50_ratio": 5.6,
+        "pivot_dist_pct": -0.41,
+        "ma50_ratio": 6.1,
         "method_hits": 1
+      },
+      {
+        "ticker": "IONS",
+        "name": "Ionis Pharmaceuticals, In",
+        "sector": "Healthcare",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 63,
+          "ses": 35,
+          "ecr_rank": 65,
+          "canslim": 45,
+          "pf": 5.0,
+          "rs": 95,
+          "composite": 63.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 3.0,
+        "pivot_dist_pct": -6.2,
+        "ma50_ratio": 0.6,
+        "method_hits": 0
       },
       {
         "ticker": "PTGX",
@@ -374,9 +374,9 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 4.31,
-        "pivot_dist_pct": -4.15,
-        "ma50_ratio": -3.3,
+        "atr_pct": 4.41,
+        "pivot_dist_pct": -4.23,
+        "ma50_ratio": -3.4,
         "method_hits": 1
       },
       {
@@ -402,28 +402,6 @@
         "method_hits": 1
       },
       {
-        "ticker": "SWAV",
-        "name": "ShockWave Medical, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 75,
-          "ses": 75,
-          "ecr_rank": 71,
-          "canslim": 50,
-          "pf": 5.0,
-          "rs": 81,
-          "composite": 66.7
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 0.26,
-        "pivot_dist_pct": -0.04,
-        "ma50_ratio": 3.0,
-        "method_hits": 3
-      },
-      {
         "ticker": "ALTM",
         "name": "Arcadium Lithium plc",
         "sector": "Basic Materials",
@@ -446,6 +424,28 @@
         "method_hits": 1
       },
       {
+        "ticker": "SWAV",
+        "name": "ShockWave Medical, Inc.",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 75,
+          "ses": 75,
+          "ecr_rank": 71,
+          "canslim": 50,
+          "pf": 5.0,
+          "rs": 80,
+          "composite": 66.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 0.26,
+        "pivot_dist_pct": -0.04,
+        "ma50_ratio": 3.0,
+        "method_hits": 3
+      },
+      {
         "ticker": "GPCR",
         "name": "Structure Therapeutics In",
         "sector": "Healthcare",
@@ -455,39 +455,39 @@
           "ses": 40,
           "ecr_rank": 64,
           "canslim": 25,
-          "pf": 2.56,
+          "pf": 2.55,
           "rs": 98,
           "composite": 56.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 6.64,
-        "pivot_dist_pct": -24.58,
-        "ma50_ratio": -2.4,
+        "atr_pct": 6.67,
+        "pivot_dist_pct": -24.65,
+        "ma50_ratio": -2.5,
         "method_hits": 0
       },
       {
-        "ticker": "EGAN",
-        "name": "eGain Corporation",
-        "sector": "Technology",
-        "status": "WAIT",
+        "ticker": "RTX",
+        "name": "RTX Corporation",
+        "sector": "Industrials",
+        "status": "ACTION",
         "scores": {
-          "vcp": 65,
+          "vcp": 70,
           "ses": 0,
-          "ecr_rank": 48,
-          "canslim": 30,
-          "pf": 3.75,
-          "rs": 87,
-          "composite": 52.0
+          "ecr_rank": 47,
+          "canslim": 65,
+          "pf": 1.39,
+          "rs": 83,
+          "composite": 62.3
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 5.92,
-        "pivot_dist_pct": -8.63,
-        "ma50_ratio": -3.6,
-        "method_hits": 0
+        "canslim_grade": "B+",
+        "atr_pct": 2.65,
+        "pivot_dist_pct": -1.44,
+        "ma50_ratio": 7.1,
+        "method_hits": 2
       },
       {
         "ticker": "GHLD",
@@ -512,26 +512,26 @@
         "method_hits": 0
       },
       {
-        "ticker": "RTX",
-        "name": "RTX Corporation",
-        "sector": "Industrials",
-        "status": "ACTION",
+        "ticker": "EGAN",
+        "name": "eGain Corporation",
+        "sector": "Technology",
+        "status": "WAIT",
         "scores": {
-          "vcp": 70,
+          "vcp": 65,
           "ses": 0,
           "ecr_rank": 47,
-          "canslim": 60,
-          "pf": 1.4,
-          "rs": 82,
-          "composite": 60.6
+          "canslim": 30,
+          "pf": 3.75,
+          "rs": 86,
+          "composite": 51.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 2.61,
-        "pivot_dist_pct": -1.17,
-        "ma50_ratio": 7.4,
-        "method_hits": 2
+        "canslim_grade": "D",
+        "atr_pct": 6.03,
+        "pivot_dist_pct": -10.0,
+        "ma50_ratio": -5.0,
+        "method_hits": 0
       },
       {
         "ticker": "PTCT",
@@ -544,15 +544,15 @@
           "ecr_rank": 49,
           "canslim": 5,
           "pf": 1.0,
-          "rs": 69,
-          "composite": 44.2
+          "rs": 68,
+          "composite": 44.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 3.9,
-        "pivot_dist_pct": -11.24,
-        "ma50_ratio": -7.8,
+        "atr_pct": 3.92,
+        "pivot_dist_pct": -11.75,
+        "ma50_ratio": -8.3,
         "method_hits": 0
       },
       {
@@ -566,59 +566,15 @@
           "ecr_rank": 47,
           "canslim": 20,
           "pf": 2.5,
-          "rs": 83,
-          "composite": 48.0
+          "rs": 82,
+          "composite": 47.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 3.64,
-        "pivot_dist_pct": -2.61,
-        "ma50_ratio": 6.8,
-        "method_hits": 0
-      },
-      {
-        "ticker": "TSM",
-        "name": "Taiwan Semiconductor Manu",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 60,
-          "ses": 15,
-          "ecr_rank": 51,
-          "canslim": 60,
-          "pf": 2.5,
-          "rs": 88,
-          "composite": 61.4
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 4.51,
-        "pivot_dist_pct": -3.89,
-        "ma50_ratio": 13.4,
-        "method_hits": 1
-      },
-      {
-        "ticker": "XBI",
-        "name": "State Street SPDR S&P Bio",
-        "sector": "Financial Services",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 73,
-          "ses": 5,
-          "ecr_rank": 46,
-          "canslim": 10,
-          "pf": 5.0,
-          "rs": 75,
-          "composite": 44.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 2.88,
-        "pivot_dist_pct": -5.24,
-        "ma50_ratio": 0.6,
+        "atr_pct": 3.68,
+        "pivot_dist_pct": -3.11,
+        "ma50_ratio": 6.3,
         "method_hits": 0
       },
       {
@@ -639,8 +595,30 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
         "atr_pct": 2.32,
-        "pivot_dist_pct": -1.56,
-        "ma50_ratio": -0.8,
+        "pivot_dist_pct": -1.45,
+        "ma50_ratio": -0.7,
+        "method_hits": 0
+      },
+      {
+        "ticker": "XBI",
+        "name": "State Street SPDR S&P Bio",
+        "sector": "Financial Services",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 73,
+          "ses": 5,
+          "ecr_rank": 46,
+          "canslim": 10,
+          "pf": 5.0,
+          "rs": 74,
+          "composite": 44.3
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 2.89,
+        "pivot_dist_pct": -5.65,
+        "ma50_ratio": 0.2,
         "method_hits": 0
       },
       {
@@ -653,16 +631,38 @@
           "ses": 55,
           "ecr_rank": 62,
           "canslim": 50,
-          "pf": 2.54,
+          "pf": 2.51,
           "rs": 86,
           "composite": 61.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 3.11,
-        "pivot_dist_pct": -1.26,
-        "ma50_ratio": 14.4,
+        "atr_pct": 3.24,
+        "pivot_dist_pct": -1.88,
+        "ma50_ratio": 13.7,
+        "method_hits": 0
+      },
+      {
+        "ticker": "CMI",
+        "name": "Cummins Inc.",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 60,
+          "ses": 10,
+          "ecr_rank": 47,
+          "canslim": 30,
+          "pf": 2.5,
+          "rs": 85,
+          "composite": 50.5
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 4.27,
+        "pivot_dist_pct": -3.61,
+        "ma50_ratio": 8.3,
         "method_hits": 0
       }
     ],
@@ -678,8 +678,8 @@
           "ecr_rank": 96,
           "canslim": 50,
           "pf": 1.09,
-          "rs": 91,
-          "composite": 82.2
+          "rs": 92,
+          "composite": 82.4
         },
         "ecr_phase": "ACCUMULATION",
         "ecr_strategy": "PBVH",
@@ -729,8 +729,30 @@
         "ecr_strategy": "PBVH",
         "canslim_grade": "B",
         "atr_pct": 0.34,
-        "pivot_dist_pct": -0.21,
+        "pivot_dist_pct": -0.22,
         "ma50_ratio": 1.2,
+        "method_hits": 2
+      },
+      {
+        "ticker": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 65,
+          "ses": 80,
+          "ecr_rank": 80,
+          "canslim": 35,
+          "pf": 2.67,
+          "rs": 94,
+          "composite": 65.9
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 4.75,
+        "pivot_dist_pct": -1.55,
+        "ma50_ratio": 8.9,
         "method_hits": 2
       },
       {
@@ -739,20 +761,20 @@
         "sector": "Communication Services",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
+          "vcp": 103,
           "ses": 25,
-          "ecr_rank": 79,
+          "ecr_rank": 78,
           "canslim": 40,
           "pf": 2.5,
           "rs": 97,
-          "composite": 74.3
+          "composite": 73.6
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 1.87,
-        "pivot_dist_pct": -0.22,
-        "ma50_ratio": 2.6,
+        "atr_pct": 1.88,
+        "pivot_dist_pct": -0.9,
+        "ma50_ratio": 1.9,
         "method_hits": 2
       },
       {
@@ -778,28 +800,6 @@
         "method_hits": 2
       },
       {
-        "ticker": "KYMR",
-        "name": "Kymera Therapeutics, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 65,
-          "ses": 70,
-          "ecr_rank": 77,
-          "canslim": 35,
-          "pf": 2.68,
-          "rs": 94,
-          "composite": 64.9
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 4.71,
-        "pivot_dist_pct": -1.5,
-        "ma50_ratio": 9.0,
-        "method_hits": 2
-      },
-      {
         "ticker": "SWAV",
         "name": "ShockWave Medical, Inc.",
         "sector": "Healthcare",
@@ -810,8 +810,8 @@
           "ecr_rank": 71,
           "canslim": 50,
           "pf": 5.0,
-          "rs": 81,
-          "composite": 66.7
+          "rs": 80,
+          "composite": 66.5
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -820,28 +820,6 @@
         "pivot_dist_pct": -0.04,
         "ma50_ratio": 3.0,
         "method_hits": 3
-      },
-      {
-        "ticker": "JNJ",
-        "name": "Johnson & Johnson",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 55,
-          "ses": 95,
-          "ecr_rank": 70,
-          "canslim": 50,
-          "pf": 3.33,
-          "rs": 83,
-          "composite": 63.3
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 1.52,
-        "pivot_dist_pct": -1.04,
-        "ma50_ratio": 12.1,
-        "method_hits": 2
       },
       {
         "ticker": "AMPS",
@@ -854,8 +832,8 @@
           "ecr_rank": 69,
           "canslim": 50,
           "pf": 1.49,
-          "rs": 78,
-          "composite": 69.6
+          "rs": 77,
+          "composite": 69.4
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -864,6 +842,28 @@
         "pivot_dist_pct": -0.2,
         "ma50_ratio": 2.0,
         "method_hits": 0
+      },
+      {
+        "ticker": "JNJ",
+        "name": "Johnson & Johnson",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 55,
+          "ses": 90,
+          "ecr_rank": 69,
+          "canslim": 45,
+          "pf": 3.33,
+          "rs": 83,
+          "composite": 61.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 1.52,
+        "pivot_dist_pct": -1.23,
+        "ma50_ratio": 11.9,
+        "method_hits": 1
       },
       {
         "ticker": "RPRX",
@@ -882,9 +882,9 @@
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 2.2,
-        "pivot_dist_pct": -0.97,
-        "ma50_ratio": 12.6,
+        "atr_pct": 2.21,
+        "pivot_dist_pct": -1.5,
+        "ma50_ratio": 12.0,
         "method_hits": 1
       },
       {
@@ -897,61 +897,17 @@
           "ses": 90,
           "ecr_rank": 67,
           "canslim": 50,
-          "pf": 0.99,
+          "pf": 0.96,
           "rs": 76,
           "composite": 61.9
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 2.15,
-        "pivot_dist_pct": -1.66,
-        "ma50_ratio": 14.2,
+        "atr_pct": 2.16,
+        "pivot_dist_pct": -2.12,
+        "ma50_ratio": 13.6,
         "method_hits": 1
-      },
-      {
-        "ticker": "CIEN",
-        "name": "Ciena Corporation",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 67,
-          "canslim": 80,
-          "pf": 4.3,
-          "rs": 99,
-          "composite": 71.6
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 7.62,
-        "pivot_dist_pct": -0.87,
-        "ma50_ratio": 25.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "CAT",
-        "name": "Caterpillar Inc.",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 50,
-          "ses": 55,
-          "ecr_rank": 66,
-          "canslim": 55,
-          "pf": 7.18,
-          "rs": 93,
-          "composite": 64.4
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 3.94,
-        "pivot_dist_pct": -2.84,
-        "ma50_ratio": 20.4,
-        "method_hits": 0
       },
       {
         "ticker": "LITE",
@@ -963,16 +919,16 @@
           "ses": 75,
           "ecr_rank": 66,
           "canslim": 70,
-          "pf": 8.42,
+          "pf": 8.36,
           "rs": 100,
           "composite": 67.6
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "A",
-        "atr_pct": 8.83,
-        "pivot_dist_pct": -0.61,
-        "ma50_ratio": 54.0,
+        "atr_pct": 9.01,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 51.4,
         "method_hits": 2
       },
       {
@@ -998,6 +954,72 @@
         "method_hits": 1
       },
       {
+        "ticker": "CAT",
+        "name": "Caterpillar Inc.",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 50,
+          "ses": 50,
+          "ecr_rank": 65,
+          "canslim": 50,
+          "pf": 7.14,
+          "rs": 93,
+          "composite": 62.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 3.96,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 20.0,
+        "method_hits": 0
+      },
+      {
+        "ticker": "GEV",
+        "name": "GE Vernova Inc.",
+        "sector": "Utilities",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 45,
+          "ses": 60,
+          "ecr_rank": 65,
+          "canslim": 75,
+          "pf": 7.1,
+          "rs": 92,
+          "composite": 69.0
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 5.08,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 18.5,
+        "method_hits": 2
+      },
+      {
+        "ticker": "IONS",
+        "name": "Ionis Pharmaceuticals, In",
+        "sector": "Healthcare",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 63,
+          "ses": 35,
+          "ecr_rank": 65,
+          "canslim": 45,
+          "pf": 5.0,
+          "rs": 95,
+          "composite": 63.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 3.0,
+        "pivot_dist_pct": -6.2,
+        "ma50_ratio": 0.6,
+        "method_hits": 0
+      },
+      {
         "ticker": "IPGP",
         "name": "IPG Photonics Corporation",
         "sector": "Technology",
@@ -1014,32 +1036,32 @@
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 8.08,
-        "pivot_dist_pct": -14.5,
-        "ma50_ratio": 51.7,
+        "atr_pct": 7.98,
+        "pivot_dist_pct": -13.45,
+        "ma50_ratio": 53.5,
         "method_hits": 1
       },
       {
-        "ticker": "FDX",
-        "name": "FedEx Corporation",
-        "sector": "Industrials",
+        "ticker": "CIEN",
+        "name": "Ciena Corporation",
+        "sector": "Technology",
         "status": "ACTION",
         "scores": {
-          "vcp": 50,
-          "ses": 75,
+          "vcp": 40,
+          "ses": 60,
           "ecr_rank": 64,
-          "canslim": 45,
-          "pf": 2.5,
-          "rs": 86,
-          "composite": 59.4
+          "canslim": 80,
+          "pf": 4.27,
+          "rs": 99,
+          "composite": 70.6
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 2.71,
-        "pivot_dist_pct": -1.09,
-        "ma50_ratio": 20.9,
-        "method_hits": 1
+        "canslim_grade": "A+",
+        "atr_pct": 7.72,
+        "pivot_dist_pct": -2.1,
+        "ma50_ratio": 24.1,
+        "method_hits": 2
       },
       {
         "ticker": "GPCR",
@@ -1051,16 +1073,16 @@
           "ses": 40,
           "ecr_rank": 64,
           "canslim": 25,
-          "pf": 2.56,
+          "pf": 2.55,
           "rs": 98,
           "composite": 56.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 6.64,
-        "pivot_dist_pct": -24.58,
-        "ma50_ratio": -2.4,
+        "atr_pct": 6.67,
+        "pivot_dist_pct": -24.65,
+        "ma50_ratio": -2.5,
         "method_hits": 0
       },
       {
@@ -1074,8 +1096,8 @@
           "ecr_rank": 64,
           "canslim": 30,
           "pf": 1.25,
-          "rs": 90,
-          "composite": 60.3
+          "rs": 89,
+          "composite": 60.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
@@ -1084,50 +1106,6 @@
         "pivot_dist_pct": -7.35,
         "ma50_ratio": -5.7,
         "method_hits": 1
-      },
-      {
-        "ticker": "NEOG",
-        "name": "Neogen Corporation",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 90,
-          "ecr_rank": 64,
-          "canslim": 25,
-          "pf": 1.25,
-          "rs": 86,
-          "composite": 51.8
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 3.72,
-        "pivot_dist_pct": -1.39,
-        "ma50_ratio": 27.0,
-        "method_hits": 1
-      },
-      {
-        "ticker": "VRT",
-        "name": "Vertiv Holdings Co",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 38,
-          "ses": 65,
-          "ecr_rank": 64,
-          "canslim": 85,
-          "pf": 1.7,
-          "rs": 94,
-          "composite": 70.8
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 6.61,
-        "pivot_dist_pct": -4.53,
-        "ma50_ratio": 34.7,
-        "method_hits": 2
       },
       {
         "ticker": "ALTM",
@@ -1174,6 +1152,94 @@
         "method_hits": 1
       },
       {
+        "ticker": "EKSO",
+        "name": "Ekso Bionics Holdings, In",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 45,
+          "ses": 50,
+          "ecr_rank": 63,
+          "canslim": 45,
+          "pf": 1.79,
+          "rs": 96,
+          "composite": 60.0
+        },
+        "ecr_phase": "IGNITION",
+        "ecr_strategy": "ESE",
+        "canslim_grade": "C",
+        "atr_pct": 9.04,
+        "pivot_dist_pct": -2.11,
+        "ma50_ratio": 47.9,
+        "method_hits": 0
+      },
+      {
+        "ticker": "FDX",
+        "name": "FedEx Corporation",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 50,
+          "ses": 75,
+          "ecr_rank": 63,
+          "canslim": 45,
+          "pf": 2.5,
+          "rs": 85,
+          "composite": 58.9
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 2.73,
+        "pivot_dist_pct": -1.75,
+        "ma50_ratio": 20.2,
+        "method_hits": 1
+      },
+      {
+        "ticker": "NEOG",
+        "name": "Neogen Corporation",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 40,
+          "ses": 85,
+          "ecr_rank": 63,
+          "canslim": 25,
+          "pf": 1.25,
+          "rs": 86,
+          "composite": 51.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 3.76,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 26.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "VRT",
+        "name": "Vertiv Holdings Co",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 38,
+          "ses": 60,
+          "ecr_rank": 63,
+          "canslim": 85,
+          "pf": 1.69,
+          "rs": 94,
+          "composite": 70.5
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A+",
+        "atr_pct": 6.63,
+        "pivot_dist_pct": -4.7,
+        "ma50_ratio": 34.5,
+        "method_hits": 2
+      },
+      {
         "ticker": "ADI",
         "name": "Analog Devices, Inc.",
         "sector": "Technology",
@@ -1183,16 +1249,16 @@
           "ses": 55,
           "ecr_rank": 62,
           "canslim": 50,
-          "pf": 2.54,
+          "pf": 2.51,
           "rs": 86,
           "composite": 61.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 3.11,
-        "pivot_dist_pct": -1.26,
-        "ma50_ratio": 14.4,
+        "atr_pct": 3.24,
+        "pivot_dist_pct": -1.88,
+        "ma50_ratio": 13.7,
         "method_hits": 0
       },
       {
@@ -1228,82 +1294,16 @@
           "ecr_rank": 62,
           "canslim": 50,
           "pf": 0.83,
-          "rs": 63,
-          "composite": 57.0
+          "rs": 62,
+          "composite": 56.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 2.18,
-        "pivot_dist_pct": -1.76,
-        "ma50_ratio": 8.5,
+        "atr_pct": 2.19,
+        "pivot_dist_pct": -1.98,
+        "ma50_ratio": 8.2,
         "method_hits": 1
-      },
-      {
-        "ticker": "FOLD",
-        "name": "Amicus Therapeutics, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 75,
-          "ses": 30,
-          "ecr_rank": 62,
-          "canslim": 55,
-          "pf": 2.57,
-          "rs": 87,
-          "composite": 66.1
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 0.23,
-        "pivot_dist_pct": -0.14,
-        "ma50_ratio": 6.9,
-        "method_hits": 1
-      },
-      {
-        "ticker": "GLW",
-        "name": "Corning Incorporated",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 60,
-          "ecr_rank": 62,
-          "canslim": 90,
-          "pf": 3.6,
-          "rs": 97,
-          "composite": 71.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 5.6,
-        "pivot_dist_pct": -2.64,
-        "ma50_ratio": 35.5,
-        "method_hits": 2
-      },
-      {
-        "ticker": "IONS",
-        "name": "Ionis Pharmaceuticals, In",
-        "sector": "Healthcare",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 63,
-          "ses": 25,
-          "ecr_rank": 62,
-          "canslim": 45,
-          "pf": 5.0,
-          "rs": 95,
-          "composite": 62.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 3.0,
-        "pivot_dist_pct": -6.21,
-        "ma50_ratio": 0.6,
-        "method_hits": 0
       },
       {
         "ticker": "NKTR",
@@ -1315,16 +1315,16 @@
           "ses": 75,
           "ecr_rank": 62,
           "canslim": 60,
-          "pf": 3.72,
+          "pf": 3.75,
           "rs": 99,
           "composite": 61.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 7.14,
-        "pivot_dist_pct": -0.49,
-        "ma50_ratio": 62.9,
+        "atr_pct": 7.35,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 62.7,
         "method_hits": 2
       }
     ],
@@ -1339,39 +1339,17 @@
           "ses": 30,
           "ecr_rank": 53,
           "canslim": 95,
-          "pf": 2.05,
+          "pf": 2.03,
           "rs": 96,
           "composite": 69.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 5.69,
-        "pivot_dist_pct": -2.61,
-        "ma50_ratio": 30.6,
+        "atr_pct": 5.82,
+        "pivot_dist_pct": -3.55,
+        "ma50_ratio": 29.4,
         "method_hits": 1
-      },
-      {
-        "ticker": "GLW",
-        "name": "Corning Incorporated",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 60,
-          "ecr_rank": 62,
-          "canslim": 90,
-          "pf": 3.6,
-          "rs": 97,
-          "composite": 71.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 5.6,
-        "pivot_dist_pct": -2.64,
-        "ma50_ratio": 35.5,
-        "method_hits": 2
       },
       {
         "ticker": "MU",
@@ -1390,9 +1368,9 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.57,
-        "pivot_dist_pct": -11.48,
-        "ma50_ratio": 20.9,
+        "atr_pct": 7.73,
+        "pivot_dist_pct": -12.23,
+        "ma50_ratio": 19.9,
         "method_hits": 1
       },
       {
@@ -1403,18 +1381,40 @@
         "scores": {
           "vcp": 40,
           "ses": 15,
-          "ecr_rank": 49,
+          "ecr_rank": 48,
           "canslim": 85,
-          "pf": 5.96,
-          "rs": 92,
-          "composite": 65.6
+          "pf": 5.73,
+          "rs": 91,
+          "composite": 65.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.2,
-        "pivot_dist_pct": -0.83,
-        "ma50_ratio": 35.9,
+        "atr_pct": 7.41,
+        "pivot_dist_pct": -3.59,
+        "ma50_ratio": 32.2,
+        "method_hits": 1
+      },
+      {
+        "ticker": "GLW",
+        "name": "Corning Incorporated",
+        "sector": "Technology",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 33,
+          "ses": 50,
+          "ecr_rank": 58,
+          "canslim": 85,
+          "pf": 3.53,
+          "rs": 97,
+          "composite": 68.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A+",
+        "atr_pct": 5.72,
+        "pivot_dist_pct": -4.6,
+        "ma50_ratio": 32.8,
         "method_hits": 1
       },
       {
@@ -1424,19 +1424,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 65,
-          "ecr_rank": 64,
+          "ses": 60,
+          "ecr_rank": 63,
           "canslim": 85,
-          "pf": 1.7,
+          "pf": 1.69,
           "rs": 94,
-          "composite": 70.8
+          "composite": 70.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 6.61,
-        "pivot_dist_pct": -4.53,
-        "ma50_ratio": 34.7,
+        "atr_pct": 6.63,
+        "pivot_dist_pct": -4.7,
+        "ma50_ratio": 34.5,
         "method_hits": 2
       },
       {
@@ -1446,19 +1446,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 67,
+          "ses": 60,
+          "ecr_rank": 64,
           "canslim": 80,
-          "pf": 4.3,
+          "pf": 4.27,
           "rs": 99,
-          "composite": 71.6
+          "composite": 70.6
         },
-        "ecr_phase": "HOLD/WATCH",
+        "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.62,
-        "pivot_dist_pct": -0.87,
-        "ma50_ratio": 25.6,
+        "atr_pct": 7.72,
+        "pivot_dist_pct": -2.1,
+        "ma50_ratio": 24.1,
         "method_hits": 2
       },
       {
@@ -1468,19 +1468,19 @@
         "status": "WAIT",
         "scores": {
           "vcp": 35,
-          "ses": 20,
-          "ecr_rank": 50,
+          "ses": 25,
+          "ecr_rank": 51,
           "canslim": 75,
           "pf": 5.0,
-          "rs": 97,
-          "composite": 63.0
+          "rs": 98,
+          "composite": 63.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 8.03,
-        "pivot_dist_pct": -9.56,
-        "ma50_ratio": 32.5,
+        "atr_pct": 8.1,
+        "pivot_dist_pct": -9.03,
+        "ma50_ratio": 33.2,
         "method_hits": 1
       },
       {
@@ -1500,9 +1500,9 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 6.0,
-        "pivot_dist_pct": -11.02,
-        "ma50_ratio": 4.9,
+        "atr_pct": 6.01,
+        "pivot_dist_pct": -11.06,
+        "ma50_ratio": 4.8,
         "method_hits": 1
       },
       {
@@ -1515,16 +1515,16 @@
           "ses": 15,
           "ecr_rank": 51,
           "canslim": 75,
-          "pf": 1.79,
-          "rs": 91,
-          "composite": 64.4
+          "pf": 1.78,
+          "rs": 90,
+          "composite": 64.3
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 3.79,
-        "pivot_dist_pct": -4.61,
-        "ma50_ratio": 14.1,
+        "atr_pct": 3.87,
+        "pivot_dist_pct": -4.93,
+        "ma50_ratio": 13.7,
         "method_hits": 1
       },
       {
@@ -1533,43 +1533,43 @@
         "sector": "Real Estate",
         "status": "ACTION",
         "scores": {
-          "vcp": 65,
-          "ses": 30,
-          "ecr_rank": 53,
+          "vcp": 55,
+          "ses": 40,
+          "ecr_rank": 52,
           "canslim": 75,
           "pf": 3.75,
           "rs": 79,
-          "composite": 65.8
+          "composite": 63.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 2.45,
-        "pivot_dist_pct": -0.66,
-        "ma50_ratio": 9.6,
+        "atr_pct": 2.48,
+        "pivot_dist_pct": -0.58,
+        "ma50_ratio": 10.3,
         "method_hits": 1
       },
       {
-        "ticker": "HALO",
-        "name": "Halozyme Therapeutics, In",
-        "sector": "Healthcare",
+        "ticker": "GEV",
+        "name": "GE Vernova Inc.",
+        "sector": "Utilities",
         "status": "ACTION",
         "scores": {
-          "vcp": 70,
-          "ses": 40,
-          "ecr_rank": 56,
+          "vcp": 45,
+          "ses": 60,
+          "ecr_rank": 65,
           "canslim": 75,
-          "pf": 1.5,
-          "rs": 75,
-          "composite": 67.0
+          "pf": 7.1,
+          "rs": 92,
+          "composite": 69.0
         },
-        "ecr_phase": "WATCH",
+        "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 3.24,
-        "pivot_dist_pct": -1.24,
-        "ma50_ratio": 14.6,
-        "method_hits": 1
+        "atr_pct": 5.08,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 18.5,
+        "method_hits": 2
       },
       {
         "ticker": "LRCX",
@@ -1581,16 +1581,16 @@
           "ses": 10,
           "ecr_rank": 52,
           "canslim": 75,
-          "pf": 3.42,
+          "pf": 3.4,
           "rs": 97,
           "composite": 65.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 5.7,
-        "pivot_dist_pct": -5.89,
-        "ma50_ratio": 17.7,
+        "atr_pct": 5.73,
+        "pivot_dist_pct": -6.47,
+        "ma50_ratio": 17.0,
         "method_hits": 1
       },
       {
@@ -1603,7 +1603,7 @@
           "ses": 75,
           "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.81,
+          "pf": 1.83,
           "rs": 76,
           "composite": 63.4
         },
@@ -1611,8 +1611,8 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
         "atr_pct": 3.25,
-        "pivot_dist_pct": -1.12,
-        "ma50_ratio": 18.7,
+        "pivot_dist_pct": -1.0,
+        "ma50_ratio": 19.0,
         "method_hits": 2
       },
       {
@@ -1626,15 +1626,15 @@
           "ecr_rank": 44,
           "canslim": 70,
           "pf": 5.0,
-          "rs": 56,
-          "composite": 53.0
+          "rs": 55,
+          "composite": 52.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 2.68,
-        "pivot_dist_pct": -2.11,
-        "ma50_ratio": 12.4,
+        "atr_pct": 2.69,
+        "pivot_dist_pct": -2.65,
+        "ma50_ratio": 11.8,
         "method_hits": 1
       },
       {
@@ -1647,16 +1647,16 @@
           "ses": 75,
           "ecr_rank": 66,
           "canslim": 70,
-          "pf": 8.42,
+          "pf": 8.36,
           "rs": 100,
           "composite": 67.6
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "A",
-        "atr_pct": 8.83,
-        "pivot_dist_pct": -0.61,
-        "ma50_ratio": 54.0,
+        "atr_pct": 9.01,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 51.4,
         "method_hits": 2
       },
       {
@@ -1665,20 +1665,20 @@
         "sector": "Healthcare",
         "status": "WAIT",
         "scores": {
-          "vcp": 53,
+          "vcp": 50,
           "ses": 0,
-          "ecr_rank": 36,
+          "ecr_rank": 34,
           "canslim": 70,
           "pf": 1.0,
-          "rs": 70,
-          "composite": 54.8
+          "rs": 68,
+          "composite": 53.3
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 4.31,
-        "pivot_dist_pct": -6.14,
-        "ma50_ratio": -0.4,
+        "atr_pct": 4.39,
+        "pivot_dist_pct": -7.0,
+        "ma50_ratio": -1.3,
         "method_hits": 1
       },
       {
@@ -1688,19 +1688,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 70,
-          "ecr_rank": 61,
+          "ses": 65,
+          "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.37,
+          "pf": 1.35,
           "rs": 88,
-          "composite": 64.2
+          "composite": 63.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 4.93,
-        "pivot_dist_pct": -4.09,
-        "ma50_ratio": 35.6,
+        "atr_pct": 4.94,
+        "pivot_dist_pct": -4.47,
+        "ma50_ratio": 35.1,
         "method_hits": 2
       },
       {
@@ -1709,13 +1709,13 @@
         "sector": "Real Estate",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
+          "vcp": 100,
           "ses": 20,
-          "ecr_rank": 61,
+          "ecr_rank": 59,
           "canslim": 65,
           "pf": 0.0,
           "rs": 63,
-          "composite": 69.5
+          "composite": 68.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
@@ -1735,38 +1735,60 @@
           "ses": 40,
           "ecr_rank": 49,
           "canslim": 65,
-          "pf": 1.07,
-          "rs": 72,
-          "composite": 58.5
+          "pf": 1.06,
+          "rs": 71,
+          "composite": 58.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 2.99,
-        "pivot_dist_pct": -2.91,
-        "ma50_ratio": 10.4,
+        "atr_pct": 3.0,
+        "pivot_dist_pct": -3.05,
+        "ma50_ratio": 10.3,
         "method_hits": 1
       },
       {
         "ticker": "CAMT",
         "name": "Camtek Ltd.",
         "sector": "Technology",
-        "status": "WAIT",
+        "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 0,
-          "ecr_rank": 42,
+          "ses": 10,
+          "ecr_rank": 46,
           "canslim": 65,
-          "pf": 1.81,
+          "pf": 1.84,
           "rs": 91,
-          "composite": 56.6
+          "composite": 58.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 5.97,
-        "pivot_dist_pct": -5.08,
-        "ma50_ratio": 19.2,
+        "atr_pct": 5.93,
+        "pivot_dist_pct": -4.39,
+        "ma50_ratio": 20.1,
+        "method_hits": 1
+      },
+      {
+        "ticker": "CBOE",
+        "name": "Cboe Global Markets, Inc.",
+        "sector": "Financial Services",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 70,
+          "ses": 15,
+          "ecr_rank": 48,
+          "canslim": 65,
+          "pf": 1.0,
+          "rs": 72,
+          "composite": 60.7
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 2.82,
+        "pivot_dist_pct": -0.56,
+        "ma50_ratio": 8.5,
         "method_hits": 1
       },
       {
@@ -1777,18 +1799,40 @@
         "scores": {
           "vcp": 55,
           "ses": 20,
-          "ecr_rank": 40,
+          "ecr_rank": 39,
           "canslim": 65,
-          "pf": 0.35,
+          "pf": 0.32,
           "rs": 54,
-          "composite": 52.2
+          "composite": 51.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 3.28,
-        "pivot_dist_pct": -2.87,
-        "ma50_ratio": 4.5,
+        "atr_pct": 3.32,
+        "pivot_dist_pct": -3.49,
+        "ma50_ratio": 3.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "GE",
+        "name": "GE Aerospace",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 65,
+          "ses": 0,
+          "ecr_rank": 43,
+          "canslim": 65,
+          "pf": 2.5,
+          "rs": 78,
+          "composite": 59.2
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 3.07,
+        "pivot_dist_pct": -1.0,
+        "ma50_ratio": 6.0,
         "method_hits": 1
       },
       {
@@ -1801,7 +1845,7 @@
           "ses": 60,
           "ecr_rank": 55,
           "canslim": 65,
-          "pf": 2.68,
+          "pf": 2.67,
           "rs": 82,
           "composite": 60.7
         },
@@ -1809,31 +1853,9 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
         "atr_pct": 2.71,
-        "pivot_dist_pct": -1.16,
-        "ma50_ratio": 18.9,
+        "pivot_dist_pct": -1.28,
+        "ma50_ratio": 18.7,
         "method_hits": 2
-      },
-      {
-        "ticker": "NEM",
-        "name": "Newmont Corporation",
-        "sector": "Basic Materials",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 45,
-          "ses": 10,
-          "ecr_rank": 51,
-          "canslim": 65,
-          "pf": 6.25,
-          "rs": 95,
-          "composite": 61.6
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 5.96,
-        "pivot_dist_pct": -8.84,
-        "ma50_ratio": 11.9,
-        "method_hits": 1
       },
       {
         "ticker": "RGLD",
@@ -1852,10 +1874,32 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 5.45,
-        "pivot_dist_pct": -9.24,
-        "ma50_ratio": 11.7,
+        "atr_pct": 5.43,
+        "pivot_dist_pct": -8.88,
+        "ma50_ratio": 12.1,
         "method_hits": 1
+      },
+      {
+        "ticker": "RTX",
+        "name": "RTX Corporation",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 70,
+          "ses": 0,
+          "ecr_rank": 47,
+          "canslim": 65,
+          "pf": 1.39,
+          "rs": 83,
+          "composite": 62.3
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 2.65,
+        "pivot_dist_pct": -1.44,
+        "ma50_ratio": 7.1,
+        "method_hits": 2
       },
       {
         "ticker": "SCCO",
@@ -1864,19 +1908,19 @@
         "status": "WAIT",
         "scores": {
           "vcp": 35,
-          "ses": 5,
-          "ecr_rank": 44,
+          "ses": 10,
+          "ecr_rank": 46,
           "canslim": 65,
           "pf": 10.0,
           "rs": 92,
-          "composite": 57.0
+          "composite": 57.7
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 7.2,
-        "pivot_dist_pct": -13.49,
-        "ma50_ratio": 11.0,
+        "atr_pct": 7.41,
+        "pivot_dist_pct": -13.35,
+        "ma50_ratio": 11.2,
         "method_hits": 1
       },
       {
@@ -1890,15 +1934,15 @@
           "ecr_rank": 51,
           "canslim": 65,
           "pf": 2.5,
-          "rs": 55,
-          "composite": 57.9
+          "rs": 57,
+          "composite": 58.3
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 2.2,
-        "pivot_dist_pct": -0.11,
-        "ma50_ratio": 7.7,
+        "atr_pct": 2.21,
+        "pivot_dist_pct": -0.04,
+        "ma50_ratio": 7.9,
         "method_hits": 1
       },
       {
@@ -1908,19 +1952,19 @@
         "status": "WAIT",
         "scores": {
           "vcp": 38,
-          "ses": 55,
-          "ecr_rank": 61,
+          "ses": 50,
+          "ecr_rank": 60,
           "canslim": 65,
-          "pf": 3.34,
-          "rs": 98,
-          "composite": 64.5
+          "pf": 3.2,
+          "rs": 97,
+          "composite": 64.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 6.48,
-        "pivot_dist_pct": -5.26,
-        "ma50_ratio": 34.3,
+        "atr_pct": 6.59,
+        "pivot_dist_pct": -6.85,
+        "ma50_ratio": 32.1,
         "method_hits": 1
       },
       {
@@ -1940,54 +1984,10 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 7.37,
-        "pivot_dist_pct": -23.69,
-        "ma50_ratio": -7.8,
+        "atr_pct": 7.39,
+        "pivot_dist_pct": -23.93,
+        "ma50_ratio": -8.0,
         "method_hits": 1
-      },
-      {
-        "ticker": "CBOE",
-        "name": "Cboe Global Markets, Inc.",
-        "sector": "Financial Services",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 70,
-          "ses": 15,
-          "ecr_rank": 47,
-          "canslim": 60,
-          "pf": 1.0,
-          "rs": 72,
-          "composite": 58.8
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 2.83,
-        "pivot_dist_pct": -0.9,
-        "ma50_ratio": 8.1,
-        "method_hits": 1
-      },
-      {
-        "ticker": "CENT",
-        "name": "Central Garden & Pet Comp",
-        "sector": "Consumer Defensive",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 49,
-          "canslim": 60,
-          "pf": 0.08,
-          "rs": 54,
-          "composite": 51.4
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 3.67,
-        "pivot_dist_pct": -1.67,
-        "ma50_ratio": 15.5,
-        "method_hits": 2
       }
     ],
     "ses": [
@@ -1997,43 +1997,43 @@
         "sector": "Technology",
         "status": "ACTION",
         "scores": {
-          "vcp": 25,
+          "vcp": 23,
           "ses": 95,
-          "ecr_rank": 52,
+          "ecr_rank": 51,
           "canslim": 30,
-          "pf": 1.92,
-          "rs": 67,
-          "composite": 43.2
+          "pf": 1.81,
+          "rs": 65,
+          "composite": 42.2
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 4.76,
-        "pivot_dist_pct": -3.23,
-        "ma50_ratio": 24.7,
+        "atr_pct": 4.9,
+        "pivot_dist_pct": -4.84,
+        "ma50_ratio": 22.7,
         "method_hits": 1
       },
       {
-        "ticker": "JNJ",
-        "name": "Johnson & Johnson",
-        "sector": "Healthcare",
+        "ticker": "GURE",
+        "name": "Gulf Resources, Inc.",
+        "sector": "Basic Materials",
         "status": "ACTION",
         "scores": {
-          "vcp": 55,
+          "vcp": 40,
           "ses": 95,
-          "ecr_rank": 70,
-          "canslim": 50,
-          "pf": 3.33,
-          "rs": 83,
-          "composite": 63.3
+          "ecr_rank": 55,
+          "canslim": 10,
+          "pf": 0.69,
+          "rs": 47,
+          "composite": 37.2
         },
-        "ecr_phase": "HOLD/WATCH",
+        "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 1.52,
-        "pivot_dist_pct": -1.04,
-        "ma50_ratio": 12.1,
-        "method_hits": 2
+        "canslim_grade": "D",
+        "atr_pct": 8.95,
+        "pivot_dist_pct": -0.51,
+        "ma50_ratio": 27.9,
+        "method_hits": 1
       },
       {
         "ticker": "BRC",
@@ -2045,16 +2045,16 @@
           "ses": 90,
           "ecr_rank": 67,
           "canslim": 50,
-          "pf": 0.99,
+          "pf": 0.96,
           "rs": 76,
           "composite": 61.9
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 2.15,
-        "pivot_dist_pct": -1.66,
-        "ma50_ratio": 14.2,
+        "atr_pct": 2.16,
+        "pivot_dist_pct": -2.12,
+        "ma50_ratio": 13.6,
         "method_hits": 1
       },
       {
@@ -2068,59 +2068,37 @@
           "ecr_rank": 62,
           "canslim": 50,
           "pf": 0.83,
-          "rs": 63,
-          "composite": 57.0
+          "rs": 62,
+          "composite": 56.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 2.18,
-        "pivot_dist_pct": -1.76,
-        "ma50_ratio": 8.5,
+        "atr_pct": 2.19,
+        "pivot_dist_pct": -1.98,
+        "ma50_ratio": 8.2,
         "method_hits": 1
       },
       {
-        "ticker": "GURE",
-        "name": "Gulf Resources, Inc.",
-        "sector": "Basic Materials",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 40,
-          "ses": 90,
-          "ecr_rank": 51,
-          "canslim": 10,
-          "pf": 0.61,
-          "rs": 37,
-          "composite": 34.1
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 9.2,
-        "pivot_dist_pct": -5.99,
-        "ma50_ratio": 21.1,
-        "method_hits": 1
-      },
-      {
-        "ticker": "NEOG",
-        "name": "Neogen Corporation",
+        "ticker": "JNJ",
+        "name": "Johnson & Johnson",
         "sector": "Healthcare",
         "status": "ACTION",
         "scores": {
-          "vcp": 40,
+          "vcp": 55,
           "ses": 90,
-          "ecr_rank": 64,
-          "canslim": 25,
-          "pf": 1.25,
-          "rs": 86,
-          "composite": 51.8
+          "ecr_rank": 69,
+          "canslim": 45,
+          "pf": 3.33,
+          "rs": 83,
+          "composite": 61.5
         },
-        "ecr_phase": "WATCH",
+        "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 3.72,
-        "pivot_dist_pct": -1.39,
-        "ma50_ratio": 27.0,
+        "canslim_grade": "C",
+        "atr_pct": 1.52,
+        "pivot_dist_pct": -1.23,
+        "ma50_ratio": 11.9,
         "method_hits": 1
       },
       {
@@ -2140,10 +2118,98 @@
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 2.2,
-        "pivot_dist_pct": -0.97,
-        "ma50_ratio": 12.6,
+        "atr_pct": 2.21,
+        "pivot_dist_pct": -1.5,
+        "ma50_ratio": 12.0,
         "method_hits": 1
+      },
+      {
+        "ticker": "NEOG",
+        "name": "Neogen Corporation",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 40,
+          "ses": 85,
+          "ecr_rank": 63,
+          "canslim": 25,
+          "pf": 1.25,
+          "rs": 86,
+          "composite": 51.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 3.76,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 26.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "AM",
+        "name": "Antero Midstream Corporat",
+        "sector": "Energy",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 45,
+          "ses": 80,
+          "ecr_rank": 57,
+          "canslim": 50,
+          "pf": 3.68,
+          "rs": 73,
+          "composite": 55.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 2.19,
+        "pivot_dist_pct": -0.97,
+        "ma50_ratio": 16.4,
+        "method_hits": 1
+      },
+      {
+        "ticker": "DVN",
+        "name": "Devon Energy Corporation",
+        "sector": "Energy",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 45,
+          "ses": 80,
+          "ecr_rank": 58,
+          "canslim": 35,
+          "pf": 0.68,
+          "rs": 76,
+          "composite": 51.7
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 3.26,
+        "pivot_dist_pct": -2.76,
+        "ma50_ratio": 14.6,
+        "method_hits": 1
+      },
+      {
+        "ticker": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 65,
+          "ses": 80,
+          "ecr_rank": 80,
+          "canslim": 35,
+          "pf": 2.67,
+          "rs": 94,
+          "composite": 65.9
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 4.75,
+        "pivot_dist_pct": -1.55,
+        "ma50_ratio": 8.9,
+        "method_hits": 2
       },
       {
         "ticker": "TRGP",
@@ -2155,7 +2221,7 @@
           "ses": 80,
           "ecr_rank": 57,
           "canslim": 60,
-          "pf": 1.52,
+          "pf": 1.56,
           "rs": 71,
           "composite": 58.0
         },
@@ -2163,31 +2229,9 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
         "atr_pct": 2.67,
-        "pivot_dist_pct": -1.31,
-        "ma50_ratio": 16.9,
+        "pivot_dist_pct": -0.72,
+        "ma50_ratio": 17.5,
         "method_hits": 2
-      },
-      {
-        "ticker": "AM",
-        "name": "Antero Midstream Corporat",
-        "sector": "Energy",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 45,
-          "ses": 75,
-          "ecr_rank": 55,
-          "canslim": 50,
-          "pf": 3.46,
-          "rs": 72,
-          "composite": 54.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 2.21,
-        "pivot_dist_pct": -1.82,
-        "ma50_ratio": 15.4,
-        "method_hits": 1
       },
       {
         "ticker": "AROC",
@@ -2199,7 +2243,7 @@
           "ses": 75,
           "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.81,
+          "pf": 1.83,
           "rs": 76,
           "composite": 63.4
         },
@@ -2207,8 +2251,8 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
         "atr_pct": 3.25,
-        "pivot_dist_pct": -1.12,
-        "ma50_ratio": 18.7,
+        "pivot_dist_pct": -1.0,
+        "ma50_ratio": 19.0,
         "method_hits": 2
       },
       {
@@ -2234,28 +2278,6 @@
         "method_hits": 1
       },
       {
-        "ticker": "DVN",
-        "name": "Devon Energy Corporation",
-        "sector": "Energy",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 45,
-          "ses": 75,
-          "ecr_rank": 57,
-          "canslim": 35,
-          "pf": 0.66,
-          "rs": 75,
-          "composite": 51.2
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 3.28,
-        "pivot_dist_pct": -3.29,
-        "ma50_ratio": 13.9,
-        "method_hits": 1
-      },
-      {
         "ticker": "FDX",
         "name": "FedEx Corporation",
         "sector": "Industrials",
@@ -2263,18 +2285,18 @@
         "scores": {
           "vcp": 50,
           "ses": 75,
-          "ecr_rank": 64,
+          "ecr_rank": 63,
           "canslim": 45,
           "pf": 2.5,
-          "rs": 86,
-          "composite": 59.4
+          "rs": 85,
+          "composite": 58.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 2.71,
-        "pivot_dist_pct": -1.09,
-        "ma50_ratio": 20.9,
+        "atr_pct": 2.73,
+        "pivot_dist_pct": -1.75,
+        "ma50_ratio": 20.2,
         "method_hits": 1
       },
       {
@@ -2287,16 +2309,16 @@
           "ses": 75,
           "ecr_rank": 66,
           "canslim": 70,
-          "pf": 8.42,
+          "pf": 8.36,
           "rs": 100,
           "composite": 67.6
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "A",
-        "atr_pct": 8.83,
-        "pivot_dist_pct": -0.61,
-        "ma50_ratio": 54.0,
+        "atr_pct": 9.01,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 51.4,
         "method_hits": 2
       },
       {
@@ -2309,16 +2331,16 @@
           "ses": 75,
           "ecr_rank": 62,
           "canslim": 60,
-          "pf": 3.72,
+          "pf": 3.75,
           "rs": 99,
           "composite": 61.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 7.14,
-        "pivot_dist_pct": -0.49,
-        "ma50_ratio": 62.9,
+        "atr_pct": 7.35,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 62.7,
         "method_hits": 2
       },
       {
@@ -2332,8 +2354,8 @@
           "ecr_rank": 71,
           "canslim": 50,
           "pf": 5.0,
-          "rs": 81,
-          "composite": 66.7
+          "rs": 80,
+          "composite": 66.5
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -2349,87 +2371,21 @@
         "sector": "Consumer Defensive",
         "status": "ACTION",
         "scores": {
-          "vcp": 40,
+          "vcp": 25,
           "ses": 70,
-          "ecr_rank": 49,
+          "ecr_rank": 42,
           "canslim": 60,
-          "pf": 0.08,
+          "pf": 0.06,
           "rs": 54,
-          "composite": 51.4
+          "composite": 46.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 3.67,
-        "pivot_dist_pct": -1.67,
-        "ma50_ratio": 15.5,
+        "atr_pct": 3.69,
+        "pivot_dist_pct": -2.2,
+        "ma50_ratio": 14.9,
         "method_hits": 2
-      },
-      {
-        "ticker": "CENTA",
-        "name": "Central Garden & Pet Comp",
-        "sector": "Consumer Defensive",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 70,
-          "ecr_rank": 47,
-          "canslim": 55,
-          "pf": 0.05,
-          "rs": 56,
-          "composite": 48.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 3.95,
-        "pivot_dist_pct": -1.38,
-        "ma50_ratio": 13.6,
-        "method_hits": 1
-      },
-      {
-        "ticker": "CIEN",
-        "name": "Ciena Corporation",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 67,
-          "canslim": 80,
-          "pf": 4.3,
-          "rs": 99,
-          "composite": 71.6
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 7.62,
-        "pivot_dist_pct": -0.87,
-        "ma50_ratio": 25.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "CMCSA",
-        "name": "Comcast Corporation",
-        "sector": "Communication Services",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 70,
-          "ecr_rank": 44,
-          "canslim": 35,
-          "pf": 0.66,
-          "rs": 41,
-          "composite": 39.0
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 2.88,
-        "pivot_dist_pct": -2.82,
-        "ma50_ratio": 11.6,
-        "method_hits": 1
       },
       {
         "ticker": "EQIX",
@@ -2437,20 +2393,20 @@
         "sector": "Real Estate",
         "status": "ACTION",
         "scores": {
-          "vcp": 40,
+          "vcp": 38,
           "ses": 70,
           "ecr_rank": 49,
           "canslim": 60,
           "pf": 0.62,
           "rs": 60,
-          "composite": 52.4
+          "composite": 52.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 2.93,
-        "pivot_dist_pct": -3.9,
-        "ma50_ratio": 20.1,
+        "atr_pct": 3.06,
+        "pivot_dist_pct": -4.12,
+        "ma50_ratio": 19.8,
         "method_hits": 2
       },
       {
@@ -2459,20 +2415,20 @@
         "sector": "Healthcare",
         "status": "ACTION",
         "scores": {
-          "vcp": 45,
+          "vcp": 35,
           "ses": 70,
-          "ecr_rank": 54,
+          "ecr_rank": 50,
           "canslim": 40,
           "pf": 2.5,
           "rs": 71,
-          "composite": 51.0
+          "composite": 47.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 3.03,
-        "pivot_dist_pct": -0.16,
-        "ma50_ratio": 16.5,
+        "atr_pct": 3.05,
+        "pivot_dist_pct": -0.25,
+        "ma50_ratio": 17.1,
         "method_hits": 1
       },
       {
@@ -2492,9 +2448,9 @@
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 8.08,
-        "pivot_dist_pct": -14.5,
-        "ma50_ratio": 51.7,
+        "atr_pct": 7.98,
+        "pivot_dist_pct": -13.45,
+        "ma50_ratio": 53.5,
         "method_hits": 1
       },
       {
@@ -2508,8 +2464,8 @@
           "ecr_rank": 96,
           "canslim": 50,
           "pf": 1.09,
-          "rs": 91,
-          "composite": 82.2
+          "rs": 92,
+          "composite": 82.4
         },
         "ecr_phase": "ACCUMULATION",
         "ecr_strategy": "PBVH",
@@ -2520,50 +2476,6 @@
         "method_hits": 3
       },
       {
-        "ticker": "KYMR",
-        "name": "Kymera Therapeutics, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 65,
-          "ses": 70,
-          "ecr_rank": 77,
-          "canslim": 35,
-          "pf": 2.68,
-          "rs": 94,
-          "composite": 64.9
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 4.71,
-        "pivot_dist_pct": -1.5,
-        "ma50_ratio": 9.0,
-        "method_hits": 2
-      },
-      {
-        "ticker": "RRX",
-        "name": "Regal Rexnord Corporation",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 38,
-          "ses": 70,
-          "ecr_rank": 61,
-          "canslim": 70,
-          "pf": 1.37,
-          "rs": 88,
-          "composite": 64.2
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 4.93,
-        "pivot_dist_pct": -4.09,
-        "ma50_ratio": 35.6,
-        "method_hits": 2
-      },
-      {
         "ticker": "TMUS",
         "name": "T-Mobile US, Inc.",
         "sector": "Communication Services",
@@ -2571,18 +2483,18 @@
         "scores": {
           "vcp": 35,
           "ses": 70,
-          "ecr_rank": 42,
+          "ecr_rank": 41,
           "canslim": 35,
-          "pf": 0.47,
-          "rs": 32,
-          "composite": 36.7
+          "pf": 0.42,
+          "rs": 31,
+          "composite": 36.2
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 2.95,
-        "pivot_dist_pct": -0.19,
-        "ma50_ratio": 11.6,
+        "atr_pct": 3.07,
+        "pivot_dist_pct": -2.09,
+        "ma50_ratio": 11.0,
         "method_hits": 1
       },
       {
@@ -2595,16 +2507,16 @@
           "ses": 70,
           "ecr_rank": 45,
           "canslim": 40,
-          "pf": 2.36,
-          "rs": 69,
-          "composite": 44.1
+          "pf": 2.29,
+          "rs": 68,
+          "composite": 43.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 3.02,
-        "pivot_dist_pct": -2.25,
-        "ma50_ratio": 17.4,
+        "atr_pct": 3.03,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 17.0,
         "method_hits": 1
       },
       {
@@ -2617,16 +2529,16 @@
           "ses": 65,
           "ecr_rank": 58,
           "canslim": 15,
-          "pf": 0.04,
-          "rs": 43,
-          "composite": 44.6
+          "pf": 0.02,
+          "rs": 42,
+          "composite": 44.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 2.85,
-        "pivot_dist_pct": -2.24,
-        "ma50_ratio": 5.2,
+        "atr_pct": 2.95,
+        "pivot_dist_pct": -2.49,
+        "ma50_ratio": 5.0,
         "method_hits": 1
       },
       {
@@ -2650,6 +2562,94 @@
         "pivot_dist_pct": -0.15,
         "ma50_ratio": 9.0,
         "method_hits": 1
+      },
+      {
+        "ticker": "CARR",
+        "name": "Carrier Global Corporatio",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 25,
+          "ses": 65,
+          "ecr_rank": 40,
+          "canslim": 20,
+          "pf": 5.0,
+          "rs": 53,
+          "composite": 33.5
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 3.15,
+        "pivot_dist_pct": -2.78,
+        "ma50_ratio": 16.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "CMCSA",
+        "name": "Comcast Corporation",
+        "sector": "Communication Services",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 35,
+          "ses": 65,
+          "ecr_rank": 42,
+          "canslim": 35,
+          "pf": 0.59,
+          "rs": 39,
+          "composite": 37.9
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 2.91,
+        "pivot_dist_pct": -3.96,
+        "ma50_ratio": 10.3,
+        "method_hits": 1
+      },
+      {
+        "ticker": "DE",
+        "name": "Deere & Company",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 38,
+          "ses": 65,
+          "ecr_rank": 50,
+          "canslim": 20,
+          "pf": 2.5,
+          "rs": 73,
+          "composite": 42.7
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 2.68,
+        "pivot_dist_pct": -4.06,
+        "ma50_ratio": 17.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "KMI",
+        "name": "Kinder Morgan, Inc.",
+        "sector": "Energy",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 50,
+          "ses": 65,
+          "ecr_rank": 54,
+          "canslim": 60,
+          "pf": 0.7,
+          "rs": 69,
+          "composite": 57.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 2.18,
+        "pivot_dist_pct": -1.38,
+        "ma50_ratio": 13.1,
+        "method_hits": 2
       }
     ],
     "composite": [
@@ -2664,8 +2664,8 @@
           "ecr_rank": 96,
           "canslim": 50,
           "pf": 1.09,
-          "rs": 91,
-          "composite": 82.2
+          "rs": 92,
+          "composite": 82.4
         },
         "ecr_phase": "ACCUMULATION",
         "ecr_strategy": "PBVH",
@@ -2693,7 +2693,7 @@
         "ecr_strategy": "PBVH",
         "canslim_grade": "B",
         "atr_pct": 0.34,
-        "pivot_dist_pct": -0.21,
+        "pivot_dist_pct": -0.22,
         "ma50_ratio": 1.2,
         "method_hits": 2
       },
@@ -2725,64 +2725,20 @@
         "sector": "Communication Services",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
+          "vcp": 103,
           "ses": 25,
-          "ecr_rank": 79,
+          "ecr_rank": 78,
           "canslim": 40,
           "pf": 2.5,
           "rs": 97,
-          "composite": 74.3
+          "composite": 73.6
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 1.87,
-        "pivot_dist_pct": -0.22,
-        "ma50_ratio": 2.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "GLW",
-        "name": "Corning Incorporated",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 60,
-          "ecr_rank": 62,
-          "canslim": 90,
-          "pf": 3.6,
-          "rs": 97,
-          "composite": 71.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 5.6,
-        "pivot_dist_pct": -2.64,
-        "ma50_ratio": 35.5,
-        "method_hits": 2
-      },
-      {
-        "ticker": "CIEN",
-        "name": "Ciena Corporation",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 67,
-          "canslim": 80,
-          "pf": 4.3,
-          "rs": 99,
-          "composite": 71.6
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 7.62,
-        "pivot_dist_pct": -0.87,
-        "ma50_ratio": 25.6,
+        "atr_pct": 1.88,
+        "pivot_dist_pct": -0.9,
+        "ma50_ratio": 1.9,
         "method_hits": 2
       },
       {
@@ -2808,25 +2764,47 @@
         "method_hits": 2
       },
       {
+        "ticker": "CIEN",
+        "name": "Ciena Corporation",
+        "sector": "Technology",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 40,
+          "ses": 60,
+          "ecr_rank": 64,
+          "canslim": 80,
+          "pf": 4.27,
+          "rs": 99,
+          "composite": 70.6
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A+",
+        "atr_pct": 7.72,
+        "pivot_dist_pct": -2.1,
+        "ma50_ratio": 24.1,
+        "method_hits": 2
+      },
+      {
         "ticker": "VRT",
         "name": "Vertiv Holdings Co",
         "sector": "Industrials",
         "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 65,
-          "ecr_rank": 64,
+          "ses": 60,
+          "ecr_rank": 63,
           "canslim": 85,
-          "pf": 1.7,
+          "pf": 1.69,
           "rs": 94,
-          "composite": 70.8
+          "composite": 70.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 6.61,
-        "pivot_dist_pct": -4.53,
-        "ma50_ratio": 34.7,
+        "atr_pct": 6.63,
+        "pivot_dist_pct": -4.7,
+        "ma50_ratio": 34.5,
         "method_hits": 2
       },
       {
@@ -2839,16 +2817,16 @@
           "ses": 30,
           "ecr_rank": 53,
           "canslim": 95,
-          "pf": 2.05,
+          "pf": 2.03,
           "rs": 96,
           "composite": 69.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 5.69,
-        "pivot_dist_pct": -2.61,
-        "ma50_ratio": 30.6,
+        "atr_pct": 5.82,
+        "pivot_dist_pct": -3.55,
+        "ma50_ratio": 29.4,
         "method_hits": 1
       },
       {
@@ -2862,8 +2840,8 @@
           "ecr_rank": 69,
           "canslim": 50,
           "pf": 1.49,
-          "rs": 78,
-          "composite": 69.6
+          "rs": 77,
+          "composite": 69.4
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -2874,25 +2852,47 @@
         "method_hits": 0
       },
       {
-        "ticker": "ALEX",
-        "name": "Alexander & Baldwin, Inc.",
-        "sector": "Real Estate",
+        "ticker": "GEV",
+        "name": "GE Vernova Inc.",
+        "sector": "Utilities",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
-          "ses": 20,
-          "ecr_rank": 61,
-          "canslim": 65,
-          "pf": 0.0,
-          "rs": 63,
-          "composite": 69.5
+          "vcp": 45,
+          "ses": 60,
+          "ecr_rank": 65,
+          "canslim": 75,
+          "pf": 7.1,
+          "rs": 92,
+          "composite": 69.0
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 5.08,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 18.5,
+        "method_hits": 2
+      },
+      {
+        "ticker": "GLW",
+        "name": "Corning Incorporated",
+        "sector": "Technology",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 33,
+          "ses": 50,
+          "ecr_rank": 58,
+          "canslim": 85,
+          "pf": 3.53,
+          "rs": 97,
+          "composite": 68.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 0.18,
-        "pivot_dist_pct": -0.29,
-        "ma50_ratio": 1.7,
+        "canslim_grade": "A+",
+        "atr_pct": 5.72,
+        "pivot_dist_pct": -4.6,
+        "ma50_ratio": 32.8,
         "method_hits": 1
       },
       {
@@ -2912,9 +2912,31 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.57,
-        "pivot_dist_pct": -11.48,
-        "ma50_ratio": 20.9,
+        "atr_pct": 7.73,
+        "pivot_dist_pct": -12.23,
+        "ma50_ratio": 19.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "ALEX",
+        "name": "Alexander & Baldwin, Inc.",
+        "sector": "Real Estate",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 100,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 65,
+          "pf": 0.0,
+          "rs": 63,
+          "composite": 68.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 0.18,
+        "pivot_dist_pct": -0.29,
+        "ma50_ratio": 1.7,
         "method_hits": 1
       },
       {
@@ -2927,39 +2949,17 @@
           "ses": 75,
           "ecr_rank": 66,
           "canslim": 70,
-          "pf": 8.42,
+          "pf": 8.36,
           "rs": 100,
           "composite": 67.6
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "A",
-        "atr_pct": 8.83,
-        "pivot_dist_pct": -0.61,
-        "ma50_ratio": 54.0,
+        "atr_pct": 9.01,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 51.4,
         "method_hits": 2
-      },
-      {
-        "ticker": "HALO",
-        "name": "Halozyme Therapeutics, In",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 70,
-          "ses": 40,
-          "ecr_rank": 56,
-          "canslim": 75,
-          "pf": 1.5,
-          "rs": 75,
-          "composite": 67.0
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 3.24,
-        "pivot_dist_pct": -1.24,
-        "ma50_ratio": 14.6,
-        "method_hits": 1
       },
       {
         "ticker": "SWAV",
@@ -2972,8 +2972,8 @@
           "ecr_rank": 71,
           "canslim": 50,
           "pf": 5.0,
-          "rs": 81,
-          "composite": 66.7
+          "rs": 80,
+          "composite": 66.5
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -2984,48 +2984,26 @@
         "method_hits": 3
       },
       {
-        "ticker": "FOLD",
-        "name": "Amicus Therapeutics, Inc.",
+        "ticker": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
         "sector": "Healthcare",
         "status": "ACTION",
         "scores": {
-          "vcp": 75,
-          "ses": 30,
-          "ecr_rank": 62,
-          "canslim": 55,
-          "pf": 2.57,
-          "rs": 87,
-          "composite": 66.1
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 0.23,
-        "pivot_dist_pct": -0.14,
-        "ma50_ratio": 6.9,
-        "method_hits": 1
-      },
-      {
-        "ticker": "CTRE",
-        "name": "CareTrust REIT, Inc.",
-        "sector": "Real Estate",
-        "status": "ACTION",
-        "scores": {
           "vcp": 65,
-          "ses": 30,
-          "ecr_rank": 53,
-          "canslim": 75,
-          "pf": 3.75,
-          "rs": 79,
-          "composite": 65.8
+          "ses": 80,
+          "ecr_rank": 80,
+          "canslim": 35,
+          "pf": 2.67,
+          "rs": 94,
+          "composite": 65.9
         },
-        "ecr_phase": "WATCH",
+        "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 2.45,
-        "pivot_dist_pct": -0.66,
-        "ma50_ratio": 9.6,
-        "method_hits": 1
+        "canslim_grade": "C",
+        "atr_pct": 4.75,
+        "pivot_dist_pct": -1.55,
+        "ma50_ratio": 8.9,
+        "method_hits": 2
       },
       {
         "ticker": "LRCX",
@@ -3037,16 +3015,16 @@
           "ses": 10,
           "ecr_rank": 52,
           "canslim": 75,
-          "pf": 3.42,
+          "pf": 3.4,
           "rs": 97,
           "composite": 65.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 5.7,
-        "pivot_dist_pct": -5.89,
-        "ma50_ratio": 17.7,
+        "atr_pct": 5.73,
+        "pivot_dist_pct": -6.47,
+        "ma50_ratio": 17.0,
         "method_hits": 1
       },
       {
@@ -3057,62 +3035,40 @@
         "scores": {
           "vcp": 40,
           "ses": 15,
-          "ecr_rank": 49,
+          "ecr_rank": 48,
           "canslim": 85,
-          "pf": 5.96,
-          "rs": 92,
-          "composite": 65.6
+          "pf": 5.73,
+          "rs": 91,
+          "composite": 65.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.2,
-        "pivot_dist_pct": -0.83,
-        "ma50_ratio": 35.9,
+        "atr_pct": 7.41,
+        "pivot_dist_pct": -3.59,
+        "ma50_ratio": 32.2,
         "method_hits": 1
       },
       {
-        "ticker": "KYMR",
-        "name": "Kymera Therapeutics, Inc.",
+        "ticker": "FOLD",
+        "name": "Amicus Therapeutics, Inc.",
         "sector": "Healthcare",
         "status": "ACTION",
         "scores": {
-          "vcp": 65,
-          "ses": 70,
-          "ecr_rank": 77,
-          "canslim": 35,
-          "pf": 2.68,
-          "rs": 94,
-          "composite": 64.9
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 4.71,
-        "pivot_dist_pct": -1.5,
-        "ma50_ratio": 9.0,
-        "method_hits": 2
-      },
-      {
-        "ticker": "TER",
-        "name": "Teradyne, Inc.",
-        "sector": "Technology",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 38,
-          "ses": 55,
-          "ecr_rank": 61,
-          "canslim": 65,
-          "pf": 3.34,
-          "rs": 98,
-          "composite": 64.5
+          "vcp": 75,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 55,
+          "pf": 2.55,
+          "rs": 87,
+          "composite": 65.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 6.48,
-        "pivot_dist_pct": -5.26,
-        "ma50_ratio": 34.3,
+        "canslim_grade": "B",
+        "atr_pct": 0.24,
+        "pivot_dist_pct": -0.42,
+        "ma50_ratio": 6.6,
         "method_hits": 1
       },
       {
@@ -3125,38 +3081,104 @@
           "ses": 15,
           "ecr_rank": 51,
           "canslim": 75,
-          "pf": 1.79,
-          "rs": 91,
-          "composite": 64.4
+          "pf": 1.78,
+          "rs": 90,
+          "composite": 64.3
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 3.79,
-        "pivot_dist_pct": -4.61,
-        "ma50_ratio": 14.1,
+        "atr_pct": 3.87,
+        "pivot_dist_pct": -4.93,
+        "ma50_ratio": 13.7,
         "method_hits": 1
       },
       {
-        "ticker": "CAT",
-        "name": "Caterpillar Inc.",
-        "sector": "Industrials",
+        "ticker": "TER",
+        "name": "Teradyne, Inc.",
+        "sector": "Technology",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 38,
+          "ses": 50,
+          "ecr_rank": 60,
+          "canslim": 65,
+          "pf": 3.2,
+          "rs": 97,
+          "composite": 64.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 6.59,
+        "pivot_dist_pct": -6.85,
+        "ma50_ratio": 32.1,
+        "method_hits": 1
+      },
+      {
+        "ticker": "CTRE",
+        "name": "CareTrust REIT, Inc.",
+        "sector": "Real Estate",
         "status": "ACTION",
         "scores": {
-          "vcp": 50,
-          "ses": 55,
-          "ecr_rank": 66,
-          "canslim": 55,
-          "pf": 7.18,
-          "rs": 93,
-          "composite": 64.4
+          "vcp": 55,
+          "ses": 40,
+          "ecr_rank": 52,
+          "canslim": 75,
+          "pf": 3.75,
+          "rs": 79,
+          "composite": 63.8
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 2.48,
+        "pivot_dist_pct": -0.58,
+        "ma50_ratio": 10.3,
+        "method_hits": 1
+      },
+      {
+        "ticker": "ACMR",
+        "name": "ACM Research, Inc.",
+        "sector": "Technology",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 35,
+          "ses": 25,
+          "ecr_rank": 51,
+          "canslim": 75,
+          "pf": 5.0,
+          "rs": 98,
+          "composite": 63.5
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 8.1,
+        "pivot_dist_pct": -9.03,
+        "ma50_ratio": 33.2,
+        "method_hits": 1
+      },
+      {
+        "ticker": "IONS",
+        "name": "Ionis Pharmaceuticals, In",
+        "sector": "Healthcare",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 63,
+          "ses": 35,
+          "ecr_rank": 65,
+          "canslim": 45,
+          "pf": 5.0,
+          "rs": 95,
+          "composite": 63.5
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 3.94,
-        "pivot_dist_pct": -2.84,
-        "ma50_ratio": 20.4,
+        "canslim_grade": "C",
+        "atr_pct": 3.0,
+        "pivot_dist_pct": -6.2,
+        "ma50_ratio": 0.6,
         "method_hits": 0
       },
       {
@@ -3166,19 +3188,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 70,
-          "ecr_rank": 61,
+          "ses": 65,
+          "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.37,
+          "pf": 1.35,
           "rs": 88,
-          "composite": 64.2
+          "composite": 63.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 4.93,
-        "pivot_dist_pct": -4.09,
-        "ma50_ratio": 35.6,
+        "atr_pct": 4.94,
+        "pivot_dist_pct": -4.47,
+        "ma50_ratio": 35.1,
         "method_hits": 2
       },
       {
@@ -3191,7 +3213,7 @@
           "ses": 75,
           "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.81,
+          "pf": 1.83,
           "rs": 76,
           "composite": 63.4
         },
@@ -3199,30 +3221,8 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
         "atr_pct": 3.25,
-        "pivot_dist_pct": -1.12,
-        "ma50_ratio": 18.7,
-        "method_hits": 2
-      },
-      {
-        "ticker": "JNJ",
-        "name": "Johnson & Johnson",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 55,
-          "ses": 95,
-          "ecr_rank": 70,
-          "canslim": 50,
-          "pf": 3.33,
-          "rs": 83,
-          "composite": 63.3
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 1.52,
-        "pivot_dist_pct": -1.04,
-        "ma50_ratio": 12.1,
+        "pivot_dist_pct": -1.0,
+        "ma50_ratio": 19.0,
         "method_hits": 2
       },
       {
@@ -3242,54 +3242,54 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 4.31,
-        "pivot_dist_pct": -4.15,
-        "ma50_ratio": -3.3,
+        "atr_pct": 4.41,
+        "pivot_dist_pct": -4.23,
+        "ma50_ratio": -3.4,
         "method_hits": 1
       },
       {
-        "ticker": "ACMR",
-        "name": "ACM Research, Inc.",
-        "sector": "Technology",
-        "status": "WAIT",
+        "ticker": "CAT",
+        "name": "Caterpillar Inc.",
+        "sector": "Industrials",
+        "status": "ACTION",
         "scores": {
-          "vcp": 35,
-          "ses": 20,
-          "ecr_rank": 50,
-          "canslim": 75,
-          "pf": 5.0,
-          "rs": 97,
-          "composite": 63.0
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 8.03,
-        "pivot_dist_pct": -9.56,
-        "ma50_ratio": 32.5,
-        "method_hits": 1
-      },
-      {
-        "ticker": "IONS",
-        "name": "Ionis Pharmaceuticals, In",
-        "sector": "Healthcare",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 63,
-          "ses": 25,
-          "ecr_rank": 62,
-          "canslim": 45,
-          "pf": 5.0,
-          "rs": 95,
+          "vcp": 50,
+          "ses": 50,
+          "ecr_rank": 65,
+          "canslim": 50,
+          "pf": 7.14,
+          "rs": 93,
           "composite": 62.5
         },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 3.96,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 20.0,
+        "method_hits": 0
+      },
+      {
+        "ticker": "RTX",
+        "name": "RTX Corporation",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 70,
+          "ses": 0,
+          "ecr_rank": 47,
+          "canslim": 65,
+          "pf": 1.39,
+          "rs": 83,
+          "composite": 62.3
+        },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 3.0,
-        "pivot_dist_pct": -6.21,
-        "ma50_ratio": 0.6,
-        "method_hits": 0
+        "canslim_grade": "B+",
+        "atr_pct": 2.65,
+        "pivot_dist_pct": -1.44,
+        "ma50_ratio": 7.1,
+        "method_hits": 2
       },
       {
         "ticker": "ALTM",
@@ -3326,8 +3326,8 @@
           "ecr_rank": 96,
           "canslim": 50,
           "pf": 1.09,
-          "rs": 91,
-          "composite": 82.2
+          "rs": 92,
+          "composite": 82.4
         },
         "ecr_phase": "ACCUMULATION",
         "ecr_strategy": "PBVH",
@@ -3370,8 +3370,8 @@
           "ecr_rank": 71,
           "canslim": 50,
           "pf": 5.0,
-          "rs": 81,
-          "composite": 66.7
+          "rs": 80,
+          "composite": 66.5
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -3399,7 +3399,7 @@
         "ecr_strategy": "PBVH",
         "canslim_grade": "B",
         "atr_pct": 0.34,
-        "pivot_dist_pct": -0.21,
+        "pivot_dist_pct": -0.22,
         "ma50_ratio": 1.2,
         "method_hits": 2
       },
@@ -3409,64 +3409,20 @@
         "sector": "Communication Services",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
+          "vcp": 103,
           "ses": 25,
-          "ecr_rank": 79,
+          "ecr_rank": 78,
           "canslim": 40,
           "pf": 2.5,
           "rs": 97,
-          "composite": 74.3
+          "composite": 73.6
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 1.87,
-        "pivot_dist_pct": -0.22,
-        "ma50_ratio": 2.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "GLW",
-        "name": "Corning Incorporated",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 60,
-          "ecr_rank": 62,
-          "canslim": 90,
-          "pf": 3.6,
-          "rs": 97,
-          "composite": 71.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 5.6,
-        "pivot_dist_pct": -2.64,
-        "ma50_ratio": 35.5,
-        "method_hits": 2
-      },
-      {
-        "ticker": "CIEN",
-        "name": "Ciena Corporation",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 67,
-          "canslim": 80,
-          "pf": 4.3,
-          "rs": 99,
-          "composite": 71.6
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 7.62,
-        "pivot_dist_pct": -0.87,
-        "ma50_ratio": 25.6,
+        "atr_pct": 1.88,
+        "pivot_dist_pct": -0.9,
+        "ma50_ratio": 1.9,
         "method_hits": 2
       },
       {
@@ -3492,25 +3448,69 @@
         "method_hits": 2
       },
       {
+        "ticker": "CIEN",
+        "name": "Ciena Corporation",
+        "sector": "Technology",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 40,
+          "ses": 60,
+          "ecr_rank": 64,
+          "canslim": 80,
+          "pf": 4.27,
+          "rs": 99,
+          "composite": 70.6
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A+",
+        "atr_pct": 7.72,
+        "pivot_dist_pct": -2.1,
+        "ma50_ratio": 24.1,
+        "method_hits": 2
+      },
+      {
         "ticker": "VRT",
         "name": "Vertiv Holdings Co",
         "sector": "Industrials",
         "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 65,
-          "ecr_rank": 64,
+          "ses": 60,
+          "ecr_rank": 63,
           "canslim": 85,
-          "pf": 1.7,
+          "pf": 1.69,
           "rs": 94,
-          "composite": 70.8
+          "composite": 70.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 6.61,
-        "pivot_dist_pct": -4.53,
-        "ma50_ratio": 34.7,
+        "atr_pct": 6.63,
+        "pivot_dist_pct": -4.7,
+        "ma50_ratio": 34.5,
+        "method_hits": 2
+      },
+      {
+        "ticker": "GEV",
+        "name": "GE Vernova Inc.",
+        "sector": "Utilities",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 45,
+          "ses": 60,
+          "ecr_rank": 65,
+          "canslim": 75,
+          "pf": 7.1,
+          "rs": 92,
+          "composite": 69.0
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 5.08,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 18.5,
         "method_hits": 2
       },
       {
@@ -3523,16 +3523,16 @@
           "ses": 75,
           "ecr_rank": 66,
           "canslim": 70,
-          "pf": 8.42,
+          "pf": 8.36,
           "rs": 100,
           "composite": 67.6
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "A",
-        "atr_pct": 8.83,
-        "pivot_dist_pct": -0.61,
-        "ma50_ratio": 54.0,
+        "atr_pct": 9.01,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 51.4,
         "method_hits": 2
       },
       {
@@ -3542,19 +3542,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 65,
-          "ses": 70,
-          "ecr_rank": 77,
+          "ses": 80,
+          "ecr_rank": 80,
           "canslim": 35,
-          "pf": 2.68,
+          "pf": 2.67,
           "rs": 94,
-          "composite": 64.9
+          "composite": 65.9
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 4.71,
-        "pivot_dist_pct": -1.5,
-        "ma50_ratio": 9.0,
+        "atr_pct": 4.75,
+        "pivot_dist_pct": -1.55,
+        "ma50_ratio": 8.9,
         "method_hits": 2
       },
       {
@@ -3564,19 +3564,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 38,
-          "ses": 70,
-          "ecr_rank": 61,
+          "ses": 65,
+          "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.37,
+          "pf": 1.35,
           "rs": 88,
-          "composite": 64.2
+          "composite": 63.5
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 4.93,
-        "pivot_dist_pct": -4.09,
-        "ma50_ratio": 35.6,
+        "atr_pct": 4.94,
+        "pivot_dist_pct": -4.47,
+        "ma50_ratio": 35.1,
         "method_hits": 2
       },
       {
@@ -3589,7 +3589,7 @@
           "ses": 75,
           "ecr_rank": 59,
           "canslim": 70,
-          "pf": 1.81,
+          "pf": 1.83,
           "rs": 76,
           "composite": 63.4
         },
@@ -3597,30 +3597,30 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
         "atr_pct": 3.25,
-        "pivot_dist_pct": -1.12,
-        "ma50_ratio": 18.7,
+        "pivot_dist_pct": -1.0,
+        "ma50_ratio": 19.0,
         "method_hits": 2
       },
       {
-        "ticker": "JNJ",
-        "name": "Johnson & Johnson",
-        "sector": "Healthcare",
+        "ticker": "RTX",
+        "name": "RTX Corporation",
+        "sector": "Industrials",
         "status": "ACTION",
         "scores": {
-          "vcp": 55,
-          "ses": 95,
-          "ecr_rank": 70,
-          "canslim": 50,
-          "pf": 3.33,
+          "vcp": 70,
+          "ses": 0,
+          "ecr_rank": 47,
+          "canslim": 65,
+          "pf": 1.39,
           "rs": 83,
-          "composite": 63.3
+          "composite": 62.3
         },
-        "ecr_phase": "HOLD/WATCH",
+        "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 1.52,
-        "pivot_dist_pct": -1.04,
-        "ma50_ratio": 12.1,
+        "canslim_grade": "B+",
+        "atr_pct": 2.65,
+        "pivot_dist_pct": -1.44,
+        "ma50_ratio": 7.1,
         "method_hits": 2
       },
       {
@@ -3633,16 +3633,16 @@
           "ses": 75,
           "ecr_rank": 62,
           "canslim": 60,
-          "pf": 3.72,
+          "pf": 3.75,
           "rs": 99,
           "composite": 61.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 7.14,
-        "pivot_dist_pct": -0.49,
-        "ma50_ratio": 62.9,
+        "atr_pct": 7.35,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 62.7,
         "method_hits": 2
       },
       {
@@ -3655,7 +3655,7 @@
           "ses": 60,
           "ecr_rank": 55,
           "canslim": 65,
-          "pf": 2.68,
+          "pf": 2.67,
           "rs": 82,
           "composite": 60.7
         },
@@ -3663,52 +3663,8 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
         "atr_pct": 2.71,
-        "pivot_dist_pct": -1.16,
-        "ma50_ratio": 18.9,
-        "method_hits": 2
-      },
-      {
-        "ticker": "PSX",
-        "name": "Phillips 66",
-        "sector": "Energy",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 60,
-          "ses": 65,
-          "ecr_rank": 58,
-          "canslim": 60,
-          "pf": 1.23,
-          "rs": 70,
-          "composite": 60.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 3.03,
-        "pivot_dist_pct": -3.83,
-        "ma50_ratio": 11.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "RTX",
-        "name": "RTX Corporation",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 70,
-          "ses": 0,
-          "ecr_rank": 47,
-          "canslim": 60,
-          "pf": 1.4,
-          "rs": 82,
-          "composite": 60.6
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 2.61,
-        "pivot_dist_pct": -1.17,
-        "ma50_ratio": 7.4,
+        "pivot_dist_pct": -1.28,
+        "ma50_ratio": 18.7,
         "method_hits": 2
       },
       {
@@ -3721,7 +3677,7 @@
           "ses": 80,
           "ecr_rank": 57,
           "canslim": 60,
-          "pf": 1.52,
+          "pf": 1.56,
           "rs": 71,
           "composite": 58.0
         },
@@ -3729,8 +3685,8 @@
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
         "atr_pct": 2.67,
-        "pivot_dist_pct": -1.31,
-        "ma50_ratio": 16.9,
+        "pivot_dist_pct": -0.72,
+        "ma50_ratio": 17.5,
         "method_hits": 2
       },
       {
@@ -3740,19 +3696,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 50,
-          "ses": 60,
-          "ecr_rank": 52,
+          "ses": 65,
+          "ecr_rank": 54,
           "canslim": 60,
-          "pf": 0.68,
-          "rs": 68,
-          "composite": 56.6
+          "pf": 0.7,
+          "rs": 69,
+          "composite": 57.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 2.19,
-        "pivot_dist_pct": -1.81,
-        "ma50_ratio": 12.6,
+        "atr_pct": 2.18,
+        "pivot_dist_pct": -1.38,
+        "ma50_ratio": 13.1,
         "method_hits": 2
       },
       {
@@ -3761,20 +3717,20 @@
         "sector": "Real Estate",
         "status": "ACTION",
         "scores": {
-          "vcp": 40,
+          "vcp": 38,
           "ses": 70,
           "ecr_rank": 49,
           "canslim": 60,
           "pf": 0.62,
           "rs": 60,
-          "composite": 52.4
+          "composite": 52.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 2.93,
-        "pivot_dist_pct": -3.9,
-        "ma50_ratio": 20.1,
+        "atr_pct": 3.06,
+        "pivot_dist_pct": -4.12,
+        "ma50_ratio": 19.8,
         "method_hits": 2
       },
       {
@@ -3783,20 +3739,20 @@
         "sector": "Consumer Defensive",
         "status": "ACTION",
         "scores": {
-          "vcp": 40,
+          "vcp": 25,
           "ses": 70,
-          "ecr_rank": 49,
+          "ecr_rank": 42,
           "canslim": 60,
-          "pf": 0.08,
+          "pf": 0.06,
           "rs": 54,
-          "composite": 51.4
+          "composite": 46.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 3.67,
-        "pivot_dist_pct": -1.67,
-        "ma50_ratio": 15.5,
+        "atr_pct": 3.69,
+        "pivot_dist_pct": -2.2,
+        "ma50_ratio": 14.9,
         "method_hits": 2
       },
       {
@@ -3809,38 +3765,38 @@
           "ses": 30,
           "ecr_rank": 53,
           "canslim": 95,
-          "pf": 2.05,
+          "pf": 2.03,
           "rs": 96,
           "composite": 69.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 5.69,
-        "pivot_dist_pct": -2.61,
-        "ma50_ratio": 30.6,
+        "atr_pct": 5.82,
+        "pivot_dist_pct": -3.55,
+        "ma50_ratio": 29.4,
         "method_hits": 1
       },
       {
-        "ticker": "ALEX",
-        "name": "Alexander & Baldwin, Inc.",
-        "sector": "Real Estate",
+        "ticker": "GLW",
+        "name": "Corning Incorporated",
+        "sector": "Technology",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
-          "ses": 20,
-          "ecr_rank": 61,
-          "canslim": 65,
-          "pf": 0.0,
-          "rs": 63,
-          "composite": 69.5
+          "vcp": 33,
+          "ses": 50,
+          "ecr_rank": 58,
+          "canslim": 85,
+          "pf": 3.53,
+          "rs": 97,
+          "composite": 68.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 0.18,
-        "pivot_dist_pct": -0.29,
-        "ma50_ratio": 1.7,
+        "canslim_grade": "A+",
+        "atr_pct": 5.72,
+        "pivot_dist_pct": -4.6,
+        "ma50_ratio": 32.8,
         "method_hits": 1
       },
       {
@@ -3860,75 +3816,31 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.57,
-        "pivot_dist_pct": -11.48,
-        "ma50_ratio": 20.9,
+        "atr_pct": 7.73,
+        "pivot_dist_pct": -12.23,
+        "ma50_ratio": 19.9,
         "method_hits": 1
       },
       {
-        "ticker": "HALO",
-        "name": "Halozyme Therapeutics, In",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 70,
-          "ses": 40,
-          "ecr_rank": 56,
-          "canslim": 75,
-          "pf": 1.5,
-          "rs": 75,
-          "composite": 67.0
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 3.24,
-        "pivot_dist_pct": -1.24,
-        "ma50_ratio": 14.6,
-        "method_hits": 1
-      },
-      {
-        "ticker": "FOLD",
-        "name": "Amicus Therapeutics, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 75,
-          "ses": 30,
-          "ecr_rank": 62,
-          "canslim": 55,
-          "pf": 2.57,
-          "rs": 87,
-          "composite": 66.1
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 0.23,
-        "pivot_dist_pct": -0.14,
-        "ma50_ratio": 6.9,
-        "method_hits": 1
-      },
-      {
-        "ticker": "CTRE",
-        "name": "CareTrust REIT, Inc.",
+        "ticker": "ALEX",
+        "name": "Alexander & Baldwin, Inc.",
         "sector": "Real Estate",
         "status": "ACTION",
         "scores": {
-          "vcp": 65,
-          "ses": 30,
-          "ecr_rank": 53,
-          "canslim": 75,
-          "pf": 3.75,
-          "rs": 79,
-          "composite": 65.8
+          "vcp": 100,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 65,
+          "pf": 0.0,
+          "rs": 63,
+          "composite": 68.0
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 2.45,
-        "pivot_dist_pct": -0.66,
-        "ma50_ratio": 9.6,
+        "canslim_grade": "B+",
+        "atr_pct": 0.18,
+        "pivot_dist_pct": -0.29,
+        "ma50_ratio": 1.7,
         "method_hits": 1
       },
       {
@@ -3941,16 +3853,16 @@
           "ses": 10,
           "ecr_rank": 52,
           "canslim": 75,
-          "pf": 3.42,
+          "pf": 3.4,
           "rs": 97,
           "composite": 65.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A",
-        "atr_pct": 5.7,
-        "pivot_dist_pct": -5.89,
-        "ma50_ratio": 17.7,
+        "atr_pct": 5.73,
+        "pivot_dist_pct": -6.47,
+        "ma50_ratio": 17.0,
         "method_hits": 1
       },
       {
@@ -3961,18 +3873,106 @@
         "scores": {
           "vcp": 40,
           "ses": 15,
-          "ecr_rank": 49,
+          "ecr_rank": 48,
           "canslim": 85,
-          "pf": 5.96,
-          "rs": 92,
-          "composite": 65.6
+          "pf": 5.73,
+          "rs": 91,
+          "composite": 65.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "A+",
-        "atr_pct": 7.2,
-        "pivot_dist_pct": -0.83,
-        "ma50_ratio": 35.9,
+        "atr_pct": 7.41,
+        "pivot_dist_pct": -3.59,
+        "ma50_ratio": 32.2,
+        "method_hits": 1
+      },
+      {
+        "ticker": "FOLD",
+        "name": "Amicus Therapeutics, Inc.",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 75,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 55,
+          "pf": 2.55,
+          "rs": 87,
+          "composite": 65.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 0.24,
+        "pivot_dist_pct": -0.42,
+        "ma50_ratio": 6.6,
+        "method_hits": 1
+      },
+      {
+        "ticker": "ASML",
+        "name": "ASML Holding N.V.",
+        "sector": "Technology",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 48,
+          "ses": 15,
+          "ecr_rank": 51,
+          "canslim": 75,
+          "pf": 1.78,
+          "rs": 90,
+          "composite": 64.3
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 3.87,
+        "pivot_dist_pct": -4.93,
+        "ma50_ratio": 13.7,
+        "method_hits": 1
+      },
+      {
+        "ticker": "TER",
+        "name": "Teradyne, Inc.",
+        "sector": "Technology",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 38,
+          "ses": 50,
+          "ecr_rank": 60,
+          "canslim": 65,
+          "pf": 3.2,
+          "rs": 97,
+          "composite": 64.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 6.59,
+        "pivot_dist_pct": -6.85,
+        "ma50_ratio": 32.1,
+        "method_hits": 1
+      },
+      {
+        "ticker": "CTRE",
+        "name": "CareTrust REIT, Inc.",
+        "sector": "Real Estate",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 55,
+          "ses": 40,
+          "ecr_rank": 52,
+          "canslim": 75,
+          "pf": 3.75,
+          "rs": 79,
+          "composite": 63.8
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 2.48,
+        "pivot_dist_pct": -0.58,
+        "ma50_ratio": 10.3,
         "method_hits": 1
       }
     ]
@@ -3980,26 +3980,26 @@
   "ecr_phases": {
     "WATCH": [
       {
-        "ticker": "FDX",
-        "name": "FedEx Corporation",
-        "sector": "Industrials",
+        "ticker": "CIEN",
+        "name": "Ciena Corporation",
+        "sector": "Technology",
         "status": "ACTION",
         "scores": {
-          "vcp": 50,
-          "ses": 75,
+          "vcp": 40,
+          "ses": 60,
           "ecr_rank": 64,
-          "canslim": 45,
-          "pf": 2.5,
-          "rs": 86,
-          "composite": 59.4
+          "canslim": 80,
+          "pf": 4.27,
+          "rs": 99,
+          "composite": 70.6
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 2.71,
-        "pivot_dist_pct": -1.09,
-        "ma50_ratio": 20.9,
-        "method_hits": 1
+        "canslim_grade": "A+",
+        "atr_pct": 7.72,
+        "pivot_dist_pct": -2.1,
+        "ma50_ratio": 24.1,
+        "method_hits": 2
       },
       {
         "ticker": "GPCR",
@@ -4011,16 +4011,16 @@
           "ses": 40,
           "ecr_rank": 64,
           "canslim": 25,
-          "pf": 2.56,
+          "pf": 2.55,
           "rs": 98,
           "composite": 56.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 6.64,
-        "pivot_dist_pct": -24.58,
-        "ma50_ratio": -2.4,
+        "atr_pct": 6.67,
+        "pivot_dist_pct": -24.65,
+        "ma50_ratio": -2.5,
         "method_hits": 0
       },
       {
@@ -4034,8 +4034,8 @@
           "ecr_rank": 64,
           "canslim": 30,
           "pf": 1.25,
-          "rs": 90,
-          "composite": 60.3
+          "rs": 89,
+          "composite": 60.1
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
@@ -4044,50 +4044,6 @@
         "pivot_dist_pct": -7.35,
         "ma50_ratio": -5.7,
         "method_hits": 1
-      },
-      {
-        "ticker": "NEOG",
-        "name": "Neogen Corporation",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 90,
-          "ecr_rank": 64,
-          "canslim": 25,
-          "pf": 1.25,
-          "rs": 86,
-          "composite": 51.8
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 3.72,
-        "pivot_dist_pct": -1.39,
-        "ma50_ratio": 27.0,
-        "method_hits": 1
-      },
-      {
-        "ticker": "VRT",
-        "name": "Vertiv Holdings Co",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 38,
-          "ses": 65,
-          "ecr_rank": 64,
-          "canslim": 85,
-          "pf": 1.7,
-          "rs": 94,
-          "composite": 70.8
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 6.61,
-        "pivot_dist_pct": -4.53,
-        "ma50_ratio": 34.7,
-        "method_hits": 2
       },
       {
         "ticker": "ALTM",
@@ -4134,6 +4090,72 @@
         "method_hits": 1
       },
       {
+        "ticker": "FDX",
+        "name": "FedEx Corporation",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 50,
+          "ses": 75,
+          "ecr_rank": 63,
+          "canslim": 45,
+          "pf": 2.5,
+          "rs": 85,
+          "composite": 58.9
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 2.73,
+        "pivot_dist_pct": -1.75,
+        "ma50_ratio": 20.2,
+        "method_hits": 1
+      },
+      {
+        "ticker": "NEOG",
+        "name": "Neogen Corporation",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 40,
+          "ses": 85,
+          "ecr_rank": 63,
+          "canslim": 25,
+          "pf": 1.25,
+          "rs": 86,
+          "composite": 51.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 3.76,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 26.9,
+        "method_hits": 1
+      },
+      {
+        "ticker": "VRT",
+        "name": "Vertiv Holdings Co",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 38,
+          "ses": 60,
+          "ecr_rank": 63,
+          "canslim": 85,
+          "pf": 1.69,
+          "rs": 94,
+          "composite": 70.5
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A+",
+        "atr_pct": 6.63,
+        "pivot_dist_pct": -4.7,
+        "ma50_ratio": 34.5,
+        "method_hits": 2
+      },
+      {
         "ticker": "ADI",
         "name": "Analog Devices, Inc.",
         "sector": "Technology",
@@ -4143,16 +4165,16 @@
           "ses": 55,
           "ecr_rank": 62,
           "canslim": 50,
-          "pf": 2.54,
+          "pf": 2.51,
           "rs": 86,
           "composite": 61.9
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 3.11,
-        "pivot_dist_pct": -1.26,
-        "ma50_ratio": 14.4,
+        "atr_pct": 3.24,
+        "pivot_dist_pct": -1.88,
+        "ma50_ratio": 13.7,
         "method_hits": 0
       },
       {
@@ -4188,82 +4210,16 @@
           "ecr_rank": 62,
           "canslim": 50,
           "pf": 0.83,
-          "rs": 63,
-          "composite": 57.0
+          "rs": 62,
+          "composite": 56.8
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 2.18,
-        "pivot_dist_pct": -1.76,
-        "ma50_ratio": 8.5,
+        "atr_pct": 2.19,
+        "pivot_dist_pct": -1.98,
+        "ma50_ratio": 8.2,
         "method_hits": 1
-      },
-      {
-        "ticker": "FOLD",
-        "name": "Amicus Therapeutics, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 75,
-          "ses": 30,
-          "ecr_rank": 62,
-          "canslim": 55,
-          "pf": 2.57,
-          "rs": 87,
-          "composite": 66.1
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 0.23,
-        "pivot_dist_pct": -0.14,
-        "ma50_ratio": 6.9,
-        "method_hits": 1
-      },
-      {
-        "ticker": "GLW",
-        "name": "Corning Incorporated",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 35,
-          "ses": 60,
-          "ecr_rank": 62,
-          "canslim": 90,
-          "pf": 3.6,
-          "rs": 97,
-          "composite": 71.7
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 5.6,
-        "pivot_dist_pct": -2.64,
-        "ma50_ratio": 35.5,
-        "method_hits": 2
-      },
-      {
-        "ticker": "IONS",
-        "name": "Ionis Pharmaceuticals, In",
-        "sector": "Healthcare",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 63,
-          "ses": 25,
-          "ecr_rank": 62,
-          "canslim": 45,
-          "pf": 5.0,
-          "rs": 95,
-          "composite": 62.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 3.0,
-        "pivot_dist_pct": -6.21,
-        "ma50_ratio": 0.6,
-        "method_hits": 0
       },
       {
         "ticker": "NKTR",
@@ -4275,16 +4231,16 @@
           "ses": 75,
           "ecr_rank": 62,
           "canslim": 60,
-          "pf": 3.72,
+          "pf": 3.75,
           "rs": 99,
           "composite": 61.4
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B+",
-        "atr_pct": 7.14,
-        "pivot_dist_pct": -0.49,
-        "ma50_ratio": 62.9,
+        "atr_pct": 7.35,
+        "pivot_dist_pct": -1.43,
+        "ma50_ratio": 62.7,
         "method_hits": 2
       },
       {
@@ -4297,105 +4253,39 @@
           "ses": 65,
           "ecr_rank": 62,
           "canslim": 55,
-          "pf": 3.49,
+          "pf": 3.43,
           "rs": 96,
           "composite": 60.7
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 6.53,
-        "pivot_dist_pct": -5.01,
-        "ma50_ratio": 31.0,
+        "atr_pct": 6.64,
+        "pivot_dist_pct": -6.57,
+        "ma50_ratio": 28.9,
         "method_hits": 1
       },
       {
-        "ticker": "ALEX",
-        "name": "Alexander & Baldwin, Inc.",
-        "sector": "Real Estate",
+        "ticker": "ROIV",
+        "name": "Roivant Sciences Ltd.",
+        "sector": "Healthcare",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
-          "ses": 20,
+          "vcp": 45,
+          "ses": 45,
           "ecr_rank": 61,
-          "canslim": 65,
-          "pf": 0.0,
-          "rs": 63,
-          "composite": 69.5
+          "canslim": 45,
+          "pf": 5.32,
+          "rs": 96,
+          "composite": 59.3
         },
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 0.18,
-        "pivot_dist_pct": -0.29,
-        "ma50_ratio": 1.7,
-        "method_hits": 1
-      },
-      {
-        "ticker": "RRX",
-        "name": "Regal Rexnord Corporation",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 38,
-          "ses": 70,
-          "ecr_rank": 61,
-          "canslim": 70,
-          "pf": 1.37,
-          "rs": 88,
-          "composite": 64.2
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A",
-        "atr_pct": 4.93,
-        "pivot_dist_pct": -4.09,
-        "ma50_ratio": 35.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "TER",
-        "name": "Teradyne, Inc.",
-        "sector": "Technology",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 38,
-          "ses": 55,
-          "ecr_rank": 61,
-          "canslim": 65,
-          "pf": 3.34,
-          "rs": 98,
-          "composite": 64.5
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B+",
-        "atr_pct": 6.48,
-        "pivot_dist_pct": -5.26,
-        "ma50_ratio": 34.3,
-        "method_hits": 1
-      },
-      {
-        "ticker": "O",
-        "name": "Realty Income Corporation",
-        "sector": "Real Estate",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 70,
-          "ses": 60,
-          "ecr_rank": 60,
-          "canslim": 50,
-          "pf": 2.03,
-          "rs": 65,
-          "composite": 59.2
-        },
-        "ecr_phase": "WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 1.65,
-        "pivot_dist_pct": -0.02,
-        "ma50_ratio": 11.8,
-        "method_hits": 1
+        "canslim_grade": "C",
+        "atr_pct": 4.41,
+        "pivot_dist_pct": -3.04,
+        "ma50_ratio": 19.1,
+        "method_hits": 0
       },
       {
         "ticker": "PTGX",
@@ -4414,9 +4304,119 @@
         "ecr_phase": "WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 4.31,
-        "pivot_dist_pct": -4.15,
-        "ma50_ratio": -3.3,
+        "atr_pct": 4.41,
+        "pivot_dist_pct": -4.23,
+        "ma50_ratio": -3.4,
+        "method_hits": 1
+      },
+      {
+        "ticker": "TER",
+        "name": "Teradyne, Inc.",
+        "sector": "Technology",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 38,
+          "ses": 50,
+          "ecr_rank": 60,
+          "canslim": 65,
+          "pf": 3.2,
+          "rs": 97,
+          "composite": 64.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 6.59,
+        "pivot_dist_pct": -6.85,
+        "ma50_ratio": 32.1,
+        "method_hits": 1
+      },
+      {
+        "ticker": "ALEX",
+        "name": "Alexander & Baldwin, Inc.",
+        "sector": "Real Estate",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 100,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 65,
+          "pf": 0.0,
+          "rs": 63,
+          "composite": 68.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B+",
+        "atr_pct": 0.18,
+        "pivot_dist_pct": -0.29,
+        "ma50_ratio": 1.7,
+        "method_hits": 1
+      },
+      {
+        "ticker": "AROC",
+        "name": "Archrock, Inc.",
+        "sector": "Energy",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 50,
+          "ses": 75,
+          "ecr_rank": 59,
+          "canslim": 70,
+          "pf": 1.83,
+          "rs": 76,
+          "composite": 63.4
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 3.25,
+        "pivot_dist_pct": -1.0,
+        "ma50_ratio": 19.0,
+        "method_hits": 2
+      },
+      {
+        "ticker": "FOLD",
+        "name": "Amicus Therapeutics, Inc.",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 75,
+          "ses": 20,
+          "ecr_rank": 59,
+          "canslim": 55,
+          "pf": 2.55,
+          "rs": 87,
+          "composite": 65.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 0.24,
+        "pivot_dist_pct": -0.42,
+        "ma50_ratio": 6.6,
+        "method_hits": 1
+      },
+      {
+        "ticker": "MNST",
+        "name": "Monster Beverage Corporat",
+        "sector": "Consumer Defensive",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 75,
+          "ses": 30,
+          "ecr_rank": 59,
+          "canslim": 40,
+          "pf": 1.45,
+          "rs": 84,
+          "composite": 60.0
+        },
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 1.77,
+        "pivot_dist_pct": -0.41,
+        "ma50_ratio": 6.1,
         "method_hits": 1
       }
     ],
@@ -4438,31 +4438,9 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 9.0,
-        "pivot_dist_pct": -25.84,
-        "ma50_ratio": -21.4,
-        "method_hits": 0
-      },
-      {
-        "ticker": "FIS",
-        "name": "Fidelity National Informa",
-        "sector": "Technology",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 0,
-          "ses": 15,
-          "ecr_rank": 4,
-          "canslim": 0,
-          "pf": 0.0,
-          "rs": 11,
-          "composite": 3.3
-        },
-        "ecr_phase": "REJECTED",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 4.1,
-        "pivot_dist_pct": -24.23,
-        "ma50_ratio": -22.2,
+        "atr_pct": 9.05,
+        "pivot_dist_pct": -26.28,
+        "ma50_ratio": -21.9,
         "method_hits": 0
       },
       {
@@ -4482,9 +4460,9 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 8.31,
-        "pivot_dist_pct": -17.1,
-        "ma50_ratio": -14.1,
+        "atr_pct": 8.37,
+        "pivot_dist_pct": -17.47,
+        "ma50_ratio": -14.5,
         "method_hits": 0
       },
       {
@@ -4504,9 +4482,9 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 7.12,
-        "pivot_dist_pct": -26.68,
-        "ma50_ratio": -21.0,
+        "atr_pct": 7.1,
+        "pivot_dist_pct": -26.45,
+        "ma50_ratio": -20.7,
         "method_hits": 0
       },
       {
@@ -4520,15 +4498,15 @@
           "ecr_rank": 4,
           "canslim": 0,
           "pf": 0.62,
-          "rs": 19,
-          "composite": 4.8
+          "rs": 18,
+          "composite": 4.6
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 5.53,
-        "pivot_dist_pct": -22.45,
-        "ma50_ratio": -6.7,
+        "atr_pct": 5.58,
+        "pivot_dist_pct": -23.05,
+        "ma50_ratio": -7.4,
         "method_hits": 0
       },
       {
@@ -4542,15 +4520,15 @@
           "ecr_rank": 4,
           "canslim": 20,
           "pf": 2.5,
-          "rs": 5,
-          "composite": 10.0
+          "rs": 6,
+          "composite": 10.1
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 7.63,
-        "pivot_dist_pct": -34.06,
-        "ma50_ratio": -20.8,
+        "atr_pct": 7.62,
+        "pivot_dist_pct": -33.97,
+        "ma50_ratio": -20.7,
         "method_hits": 0
       },
       {
@@ -4570,9 +4548,53 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 5.45,
-        "pivot_dist_pct": -30.99,
-        "ma50_ratio": -26.5,
+        "atr_pct": 5.5,
+        "pivot_dist_pct": -31.66,
+        "ma50_ratio": -27.2,
+        "method_hits": 0
+      },
+      {
+        "ticker": "ZS",
+        "name": "Zscaler, Inc.",
+        "sector": "Technology",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 5,
+          "ses": 5,
+          "ecr_rank": 4,
+          "canslim": 10,
+          "pf": 0.83,
+          "rs": 12,
+          "composite": 7.4
+        },
+        "ecr_phase": "REJECTED",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 6.01,
+        "pivot_dist_pct": -24.63,
+        "ma50_ratio": -19.2,
+        "method_hits": 0
+      },
+      {
+        "ticker": "AQMS",
+        "name": "Aqua Metals, Inc.",
+        "sector": "Industrials",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 0,
+          "ses": 10,
+          "ecr_rank": 3,
+          "canslim": 0,
+          "pf": 1.25,
+          "rs": 6,
+          "composite": 2.1
+        },
+        "ecr_phase": "REJECTED",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "D",
+        "atr_pct": 9.04,
+        "pivot_dist_pct": -39.48,
+        "ma50_ratio": -16.3,
         "method_hits": 0
       },
       {
@@ -4586,15 +4608,15 @@
           "ecr_rank": 3,
           "canslim": 0,
           "pf": 0.0,
-          "rs": 3,
-          "composite": 2.4
+          "rs": 2,
+          "composite": 2.2
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 10.26,
-        "pivot_dist_pct": -30.21,
-        "ma50_ratio": -30.1,
+        "atr_pct": 10.77,
+        "pivot_dist_pct": -31.92,
+        "ma50_ratio": -31.8,
         "method_hits": 0
       },
       {
@@ -4608,37 +4630,15 @@
           "ecr_rank": 3,
           "canslim": 15,
           "pf": 0.0,
-          "rs": 7,
-          "composite": 7.6
+          "rs": 8,
+          "composite": 7.8
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 6.78,
-        "pivot_dist_pct": -23.89,
-        "ma50_ratio": -24.2,
-        "method_hits": 0
-      },
-      {
-        "ticker": "ZS",
-        "name": "Zscaler, Inc.",
-        "sector": "Technology",
-        "status": "WAIT",
-        "scores": {
-          "vcp": 5,
-          "ses": 5,
-          "ecr_rank": 3,
-          "canslim": 10,
-          "pf": 0.83,
-          "rs": 12,
-          "composite": 7.0
-        },
-        "ecr_phase": "REJECTED",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 6.08,
-        "pivot_dist_pct": -25.49,
-        "ma50_ratio": -20.1,
+        "atr_pct": 6.67,
+        "pivot_dist_pct": -22.65,
+        "ma50_ratio": -22.9,
         "method_hits": 0
       },
       {
@@ -4658,9 +4658,9 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 9.18,
-        "pivot_dist_pct": -26.13,
-        "ma50_ratio": -20.8,
+        "atr_pct": 9.26,
+        "pivot_dist_pct": -26.76,
+        "ma50_ratio": -21.5,
         "method_hits": 0
       },
       {
@@ -4680,9 +4680,9 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 6.06,
-        "pivot_dist_pct": -16.51,
-        "ma50_ratio": -23.9,
+        "atr_pct": 6.12,
+        "pivot_dist_pct": -16.22,
+        "ma50_ratio": -23.6,
         "method_hits": 0
       },
       {
@@ -4702,9 +4702,9 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 9.41,
-        "pivot_dist_pct": -26.62,
-        "ma50_ratio": -26.7,
+        "atr_pct": 9.36,
+        "pivot_dist_pct": -26.24,
+        "ma50_ratio": -26.4,
         "method_hits": 0
       },
       {
@@ -4718,15 +4718,15 @@
           "ecr_rank": 2,
           "canslim": 25,
           "pf": 0.0,
-          "rs": 11,
-          "composite": 11.0
+          "rs": 13,
+          "composite": 11.3
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 7.05,
-        "pivot_dist_pct": -17.9,
-        "ma50_ratio": -18.1,
+        "atr_pct": 6.88,
+        "pivot_dist_pct": -15.5,
+        "ma50_ratio": -15.7,
         "method_hits": 0
       },
       {
@@ -4740,15 +4740,15 @@
           "ecr_rank": 2,
           "canslim": 0,
           "pf": 0.83,
-          "rs": 17,
-          "composite": 3.7
+          "rs": 16,
+          "composite": 3.5
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 5.12,
-        "pivot_dist_pct": -11.62,
-        "ma50_ratio": -5.7,
+        "atr_pct": 5.18,
+        "pivot_dist_pct": -12.79,
+        "ma50_ratio": -7.0,
         "method_hits": 0
       },
       {
@@ -4760,17 +4760,17 @@
           "vcp": 0,
           "ses": 0,
           "ecr_rank": 1,
-          "canslim": 30,
+          "canslim": 40,
           "pf": 0.0,
-          "rs": 15,
-          "composite": 12.0
+          "rs": 14,
+          "composite": 14.8
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
-        "canslim_grade": "D",
-        "atr_pct": 6.3,
-        "pivot_dist_pct": -10.25,
-        "ma50_ratio": -12.3,
+        "canslim_grade": "C",
+        "atr_pct": 6.36,
+        "pivot_dist_pct": -11.0,
+        "ma50_ratio": -13.0,
         "method_hits": 0
       },
       {
@@ -4784,15 +4784,15 @@
           "ecr_rank": 1,
           "canslim": 30,
           "pf": 0.83,
-          "rs": 4,
-          "composite": 10.1
+          "rs": 5,
+          "composite": 10.2
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 9.06,
-        "pivot_dist_pct": -32.99,
-        "ma50_ratio": -27.7,
+        "atr_pct": 9.14,
+        "pivot_dist_pct": -33.2,
+        "ma50_ratio": -27.9,
         "method_hits": 0
       },
       {
@@ -4806,15 +4806,37 @@
           "ecr_rank": 1,
           "canslim": 5,
           "pf": 2.5,
-          "rs": 6,
-          "composite": 2.9
+          "rs": 7,
+          "composite": 3.1
         },
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 10.02,
-        "pivot_dist_pct": -31.68,
-        "ma50_ratio": -21.4,
+        "atr_pct": 9.82,
+        "pivot_dist_pct": -30.32,
+        "ma50_ratio": -19.8,
+        "method_hits": 0
+      },
+      {
+        "ticker": "MARA",
+        "name": "Marathon Digital Holdings",
+        "sector": "Financial Services",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 0,
+          "ses": 0,
+          "ecr_rank": 0,
+          "canslim": 35,
+          "pf": 0.0,
+          "rs": 4,
+          "composite": 11.2
+        },
+        "ecr_phase": "REJECTED",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 11.12,
+        "pivot_dist_pct": -33.07,
+        "ma50_ratio": -24.6,
         "method_hits": 0
       },
       {
@@ -4834,33 +4856,55 @@
         "ecr_phase": "REJECTED",
         "ecr_strategy": "NONE",
         "canslim_grade": "D",
-        "atr_pct": 10.42,
-        "pivot_dist_pct": -23.15,
-        "ma50_ratio": -17.5,
+        "atr_pct": 10.52,
+        "pivot_dist_pct": -23.85,
+        "ma50_ratio": -18.3,
         "method_hits": 0
       }
     ],
     "HOLD/WATCH": [
+      {
+        "ticker": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 65,
+          "ses": 80,
+          "ecr_rank": 80,
+          "canslim": 35,
+          "pf": 2.67,
+          "rs": 94,
+          "composite": 65.9
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 4.75,
+        "pivot_dist_pct": -1.55,
+        "ma50_ratio": 8.9,
+        "method_hits": 2
+      },
       {
         "ticker": "WBD",
         "name": "Warner Bros. Discovery, I",
         "sector": "Communication Services",
         "status": "ACTION",
         "scores": {
-          "vcp": 105,
+          "vcp": 103,
           "ses": 25,
-          "ecr_rank": 79,
+          "ecr_rank": 78,
           "canslim": 40,
           "pf": 2.5,
           "rs": 97,
-          "composite": 74.3
+          "composite": 73.6
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 1.87,
-        "pivot_dist_pct": -0.22,
-        "ma50_ratio": 2.6,
+        "atr_pct": 1.88,
+        "pivot_dist_pct": -0.9,
+        "ma50_ratio": 1.9,
         "method_hits": 2
       },
       {
@@ -4886,28 +4930,6 @@
         "method_hits": 2
       },
       {
-        "ticker": "KYMR",
-        "name": "Kymera Therapeutics, Inc.",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 65,
-          "ses": 70,
-          "ecr_rank": 77,
-          "canslim": 35,
-          "pf": 2.68,
-          "rs": 94,
-          "composite": 64.9
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "C",
-        "atr_pct": 4.71,
-        "pivot_dist_pct": -1.5,
-        "ma50_ratio": 9.0,
-        "method_hits": 2
-      },
-      {
         "ticker": "SWAV",
         "name": "ShockWave Medical, Inc.",
         "sector": "Healthcare",
@@ -4918,8 +4940,8 @@
           "ecr_rank": 71,
           "canslim": 50,
           "pf": 5.0,
-          "rs": 81,
-          "composite": 66.7
+          "rs": 80,
+          "composite": 66.5
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -4928,28 +4950,6 @@
         "pivot_dist_pct": -0.04,
         "ma50_ratio": 3.0,
         "method_hits": 3
-      },
-      {
-        "ticker": "JNJ",
-        "name": "Johnson & Johnson",
-        "sector": "Healthcare",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 55,
-          "ses": 95,
-          "ecr_rank": 70,
-          "canslim": 50,
-          "pf": 3.33,
-          "rs": 83,
-          "composite": 63.3
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 1.52,
-        "pivot_dist_pct": -1.04,
-        "ma50_ratio": 12.1,
-        "method_hits": 2
       },
       {
         "ticker": "AMPS",
@@ -4962,8 +4962,8 @@
           "ecr_rank": 69,
           "canslim": 50,
           "pf": 1.49,
-          "rs": 78,
-          "composite": 69.6
+          "rs": 77,
+          "composite": 69.4
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
@@ -4972,6 +4972,28 @@
         "pivot_dist_pct": -0.2,
         "ma50_ratio": 2.0,
         "method_hits": 0
+      },
+      {
+        "ticker": "JNJ",
+        "name": "Johnson & Johnson",
+        "sector": "Healthcare",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 55,
+          "ses": 90,
+          "ecr_rank": 69,
+          "canslim": 45,
+          "pf": 3.33,
+          "rs": 83,
+          "composite": 61.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 1.52,
+        "pivot_dist_pct": -1.23,
+        "ma50_ratio": 11.9,
+        "method_hits": 1
       },
       {
         "ticker": "RPRX",
@@ -4990,9 +5012,9 @@
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 2.2,
-        "pivot_dist_pct": -0.97,
-        "ma50_ratio": 12.6,
+        "atr_pct": 2.21,
+        "pivot_dist_pct": -1.5,
+        "ma50_ratio": 12.0,
         "method_hits": 1
       },
       {
@@ -5005,61 +5027,17 @@
           "ses": 90,
           "ecr_rank": 67,
           "canslim": 50,
-          "pf": 0.99,
+          "pf": 0.96,
           "rs": 76,
           "composite": 61.9
         },
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "B",
-        "atr_pct": 2.15,
-        "pivot_dist_pct": -1.66,
-        "ma50_ratio": 14.2,
+        "atr_pct": 2.16,
+        "pivot_dist_pct": -2.12,
+        "ma50_ratio": 13.6,
         "method_hits": 1
-      },
-      {
-        "ticker": "CIEN",
-        "name": "Ciena Corporation",
-        "sector": "Technology",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 40,
-          "ses": 70,
-          "ecr_rank": 67,
-          "canslim": 80,
-          "pf": 4.3,
-          "rs": 99,
-          "composite": 71.6
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "A+",
-        "atr_pct": 7.62,
-        "pivot_dist_pct": -0.87,
-        "ma50_ratio": 25.6,
-        "method_hits": 2
-      },
-      {
-        "ticker": "CAT",
-        "name": "Caterpillar Inc.",
-        "sector": "Industrials",
-        "status": "ACTION",
-        "scores": {
-          "vcp": 50,
-          "ses": 55,
-          "ecr_rank": 66,
-          "canslim": 55,
-          "pf": 7.18,
-          "rs": 93,
-          "composite": 64.4
-        },
-        "ecr_phase": "HOLD/WATCH",
-        "ecr_strategy": "NONE",
-        "canslim_grade": "B",
-        "atr_pct": 3.94,
-        "pivot_dist_pct": -2.84,
-        "ma50_ratio": 20.4,
-        "method_hits": 0
       },
       {
         "ticker": "RDUS",
@@ -5084,6 +5062,72 @@
         "method_hits": 1
       },
       {
+        "ticker": "CAT",
+        "name": "Caterpillar Inc.",
+        "sector": "Industrials",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 50,
+          "ses": 50,
+          "ecr_rank": 65,
+          "canslim": 50,
+          "pf": 7.14,
+          "rs": 93,
+          "composite": 62.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "B",
+        "atr_pct": 3.96,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 20.0,
+        "method_hits": 0
+      },
+      {
+        "ticker": "GEV",
+        "name": "GE Vernova Inc.",
+        "sector": "Utilities",
+        "status": "ACTION",
+        "scores": {
+          "vcp": 45,
+          "ses": 60,
+          "ecr_rank": 65,
+          "canslim": 75,
+          "pf": 7.1,
+          "rs": 92,
+          "composite": 69.0
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "A",
+        "atr_pct": 5.08,
+        "pivot_dist_pct": -3.17,
+        "ma50_ratio": 18.5,
+        "method_hits": 2
+      },
+      {
+        "ticker": "IONS",
+        "name": "Ionis Pharmaceuticals, In",
+        "sector": "Healthcare",
+        "status": "WAIT",
+        "scores": {
+          "vcp": 63,
+          "ses": 35,
+          "ecr_rank": 65,
+          "canslim": 45,
+          "pf": 5.0,
+          "rs": 95,
+          "composite": 63.5
+        },
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_grade": "C",
+        "atr_pct": 3.0,
+        "pivot_dist_pct": -6.2,
+        "ma50_ratio": 0.6,
+        "method_hits": 0
+      },
+      {
         "ticker": "IPGP",
         "name": "IPG Photonics Corporation",
         "sector": "Technology",
@@ -5100,9 +5144,9 @@
         "ecr_phase": "HOLD/WATCH",
         "ecr_strategy": "NONE",
         "canslim_grade": "C",
-        "atr_pct": 8.08,
-        "pivot_dist_pct": -14.5,
-        "ma50_ratio": 51.7,
+        "atr_pct": 7.98,
+        "pivot_dist_pct": -13.45,
+        "ma50_ratio": 53.5,
         "method_hits": 1
       }
     ],
@@ -5117,16 +5161,16 @@
           "ses": 75,
           "ecr_rank": 66,
           "canslim": 70,
-          "pf": 8.42,
+          "pf": 8.36,
           "rs": 100,
           "composite": 67.6
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "A",
-        "atr_pct": 8.83,
-        "pivot_dist_pct": -0.61,
-        "ma50_ratio": 54.0,
+        "atr_pct": 9.01,
+        "pivot_dist_pct": -2.61,
+        "ma50_ratio": 51.4,
         "method_hits": 2
       },
       {
@@ -5136,19 +5180,19 @@
         "status": "ACTION",
         "scores": {
           "vcp": 45,
-          "ses": 40,
-          "ecr_rank": 60,
+          "ses": 50,
+          "ecr_rank": 63,
           "canslim": 45,
-          "pf": 1.73,
-          "rs": 95,
-          "composite": 58.8
+          "pf": 1.79,
+          "rs": 96,
+          "composite": 60.0
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "C",
-        "atr_pct": 8.95,
-        "pivot_dist_pct": 0.0,
-        "ma50_ratio": 43.0,
+        "atr_pct": 9.04,
+        "pivot_dist_pct": -2.11,
+        "ma50_ratio": 47.9,
         "method_hits": 0
       },
       {
@@ -5168,31 +5212,31 @@
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "C",
-        "atr_pct": 11.91,
-        "pivot_dist_pct": -17.11,
-        "ma50_ratio": 25.7,
+        "atr_pct": 12.0,
+        "pivot_dist_pct": -17.72,
+        "ma50_ratio": 24.8,
         "method_hits": 0
       },
       {
         "ticker": "CMPS",
         "name": "COMPASS Pathways plc",
         "sector": "Healthcare",
-        "status": "ACTION",
+        "status": "WAIT",
         "scores": {
-          "vcp": 33,
+          "vcp": 30,
           "ses": 25,
-          "ecr_rank": 46,
+          "ecr_rank": 44,
           "canslim": 30,
           "pf": 7.5,
-          "rs": 89,
-          "composite": 46.3
+          "rs": 88,
+          "composite": 45.0
         },
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "D",
-        "atr_pct": 7.09,
-        "pivot_dist_pct": -0.37,
-        "ma50_ratio": 15.9,
+        "atr_pct": 8.15,
+        "pivot_dist_pct": -13.3,
+        "ma50_ratio": 13.7,
         "method_hits": 0
       },
       {
@@ -5212,9 +5256,9 @@
         "ecr_phase": "IGNITION",
         "ecr_strategy": "ESE",
         "canslim_grade": "D",
-        "atr_pct": 10.18,
-        "pivot_dist_pct": -9.2,
-        "ma50_ratio": 8.2,
+        "atr_pct": 10.68,
+        "pivot_dist_pct": -13.09,
+        "ma50_ratio": 3.7,
         "method_hits": 0
       }
     ],
@@ -5230,8 +5274,8 @@
           "ecr_rank": 96,
           "canslim": 50,
           "pf": 1.09,
-          "rs": 91,
-          "composite": 82.2
+          "rs": 92,
+          "composite": 82.4
         },
         "ecr_phase": "ACCUMULATION",
         "ecr_strategy": "PBVH",
@@ -5281,7 +5325,7 @@
         "ecr_strategy": "PBVH",
         "canslim_grade": "B",
         "atr_pct": 0.34,
-        "pivot_dist_pct": -0.21,
+        "pivot_dist_pct": -0.22,
         "ma50_ratio": 1.2,
         "method_hits": 2
       }
@@ -5297,36 +5341,36 @@
         "FARO",
         "CDMO",
         "AMPS",
-        "ALEX",
-        "MRUS",
         "ROST",
+        "MRUS",
         "RDUS",
+        "ALEX",
         "FOLD",
         "JAZZ",
         "ATSG",
         "KYMR",
-        "IONS",
         "MNST",
+        "IONS",
         "PTGX",
         "EMKR",
-        "SWAV",
         "ALTM",
+        "SWAV",
         "GPCR",
-        "EGAN",
-        "GHLD",
         "RTX",
+        "GHLD",
+        "EGAN",
         "PTCT",
         "SMH",
-        "TSM",
-        "XBI",
         "UTHR",
-        "ADI"
+        "XBI",
+        "ADI",
+        "CMI"
       ],
       "avg_scores": {
-        "vcp": 79.2,
-        "ecr": 62.7,
-        "canslim": 40.5,
-        "ses": 30.7
+        "vcp": 78.9,
+        "ecr": 62.6,
+        "canslim": 39.8,
+        "ses": 30.8
       }
     },
     {
@@ -5335,55 +5379,55 @@
         "ITCI",
         "FARO",
         "EXAS",
+        "KYMR",
         "WBD",
         "CDMO",
-        "KYMR",
         "SWAV",
-        "JNJ",
         "AMPS",
+        "JNJ",
         "RPRX",
         "BRC",
-        "CIEN",
-        "CAT",
         "LITE",
         "RDUS",
+        "CAT",
+        "GEV",
+        "IONS",
         "IPGP",
-        "FDX",
+        "CIEN",
         "GPCR",
         "MRUS",
-        "NEOG",
-        "VRT",
         "ALTM",
         "CERE",
+        "EKSO",
+        "FDX",
+        "NEOG",
+        "VRT",
         "ADI",
         "BPMC",
         "CME",
-        "FOLD",
-        "GLW",
-        "IONS",
         "NKTR"
       ],
       "avg_scores": {
-        "vcp": 64.6,
-        "ecr": 68.6,
-        "canslim": 49.2,
-        "ses": 61.2
+        "vcp": 63.9,
+        "ecr": 68.7,
+        "canslim": 48.0,
+        "ses": 61.5
       }
     },
     {
       "method": "CANSLIM",
       "top_tickers": [
         "AEIS",
-        "GLW",
         "MU",
         "CODA",
+        "GLW",
         "VRT",
         "CIEN",
         "ACMR",
         "APH",
         "ASML",
         "CTRE",
-        "HALO",
+        "GEV",
         "LRCX",
         "AROC",
         "DLR",
@@ -5393,63 +5437,63 @@
         "ALEX",
         "AMGN",
         "CAMT",
+        "CBOE",
         "CPRX",
+        "GE",
         "GILD",
-        "NEM",
         "RGLD",
+        "RTX",
         "SCCO",
         "SPG",
         "TER",
-        "AMD",
-        "CBOE",
-        "CENT"
+        "AMD"
       ],
       "avg_scores": {
-        "vcp": 46.7,
-        "ecr": 51.2,
-        "canslim": 71.8,
-        "ses": 33.5
+        "vcp": 46.9,
+        "ecr": 50.9,
+        "canslim": 72.0,
+        "ses": 31.3
       }
     },
     {
       "method": "SES",
       "top_tickers": [
         "CLPS",
-        "JNJ",
+        "GURE",
         "BRC",
         "CME",
-        "GURE",
-        "NEOG",
+        "JNJ",
         "RPRX",
-        "TRGP",
+        "NEOG",
         "AM",
+        "DVN",
+        "KYMR",
+        "TRGP",
         "AROC",
         "CERE",
-        "DVN",
         "FDX",
         "LITE",
         "NKTR",
         "SWAV",
         "CENT",
-        "CENTA",
-        "CIEN",
-        "CMCSA",
         "EQIX",
         "INVA",
         "IPGP",
         "ITCI",
-        "KYMR",
-        "RRX",
         "TMUS",
         "VZ",
         "BMRN",
-        "BPMC"
+        "BPMC",
+        "CARR",
+        "CMCSA",
+        "DE",
+        "KMI"
       ],
       "avg_scores": {
-        "vcp": 48.0,
-        "ecr": 60.1,
-        "canslim": 46.5,
-        "ses": 76.3
+        "vcp": 47.1,
+        "ecr": 58.8,
+        "canslim": 42.8,
+        "ses": 76.2
       }
     }
   ]
