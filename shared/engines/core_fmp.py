@@ -2,9 +2,7 @@
 core_fmp.py — FMP API Client (Starter Plan)
 ============================================
 FMPの新エンドポイント (/stable/) 対応版。
-確認済み:
-  - 過去株価: /stable/historical-price-eod/full?symbol={ticker}
-  - ニュース: /stable/news/stock-latest?page=0&limit={limit}
+機関投資家データの取得ロジックを強化し、Mag7等の大型株に対応。
 """
 import os, requests, json, hashlib, time
 from pathlib import Path
@@ -27,16 +25,19 @@ def _get(url: str, params: dict = None, cache_key: str = None, ttl: int = 3600):
         h = hashlib.md5(cache_key.encode()).hexdigest()
         cache_file = CACHE_DIR / f"{h}.json"
         if cache_file.exists() and (time.time() - cache_file.stat().st_mtime < ttl):
-            return json.loads(cache_file.read_text())
+            try:
+                return json.loads(cache_file.read_text())
+            except:
+                pass  # キャッシュ破損時は無視
 
-    # --- 429対策: リクエスト前に常に短いウェイトを置く (300req/min = 0.2s間隔) ---
+    # --- 429対策: リクエスト前に常に短いウェイトを置く ---
     time.sleep(0.25)
 
     max_retries = 5
     for i in range(max_retries):
         try:
             resp = requests.get(url, params={**params, "apikey": FMP_API_KEY}, timeout=15)
-            
+
             # 429 (Too Many Requests) の場合は指数バックオフでリトライ
             if resp.status_code == 429:
                 wait_time = (2 ** i)
@@ -45,9 +46,9 @@ def _get(url: str, params: dict = None, cache_key: str = None, ttl: int = 3600):
                 continue
 
             if resp.status_code == 403:
-                print(f"HTTP 403: {url}")
+                # print(f"HTTP 403: {url}") # ノイズになるためコメントアウト
                 return None
-            
+
             resp.raise_for_status()
             data = resp.json()
             if cache_key and data:
@@ -73,29 +74,43 @@ def get_historical_data(ticker: str, days: int = 365) -> pd.DataFrame | None:
     返り値: DatetimeIndex付きDataFrame (OHLCV)
     """
     data = _get(f"{BASE_URL}/historical-price-eod/full", {"symbol": ticker})
-    
+
     # 【修正】Stable API はリストが直接返ってくる、それ以外は "historical" キーを探す
     hist = None
     if isinstance(data, list):
         hist = data
     elif isinstance(data, dict) and "historical" in data:
         hist = data["historical"]
-    
+
     if not hist:
         return None
-    
+
     df = pd.DataFrame(hist)
-    df["date"] = pd.to_datetime(df["date"])
+    
+    # 日付変換エラー対策
+    try:
+        df["date"] = pd.to_datetime(df["date"])
+    except Exception:
+        return None
+
     df = df.set_index("date").sort_index()
-    df = df.rename(columns={
+
+    # カラム名マッピング（存在チェック付き）
+    rename_map = {
         "open": "Open", "high": "High", "low": "Low",
         "close": "Close", "volume": "Volume"
-    })
+    }
     
+    # 必要なカラムが揃っているか確認
+    if not all(col in df.columns for col in rename_map.keys()):
+        return None
+
+    df = df.rename(columns=rename_map)
+
     # 直近days日分
     if len(df) > days:
         df = df.iloc[-days:]
-    
+
     return df[["Open", "High", "Low", "Close", "Volume"]]
 
 
@@ -113,16 +128,16 @@ def get_news(ticker: str, limit: int = 5) -> list:
     data = _get(f"{BASE_URL}/news/stock-latest",
                 {"page": 0, "limit": limit, "symbol": ticker},
                 cache_key=f"news_{ticker}", ttl=6*3600)
-    
+
     # 試行2: tickers=AAPL（v3互換）
     if not data or not isinstance(data, list):
         data = _get(f"{BASE_URL}/news/stock-latest",
                     {"page": 0, "limit": limit, "tickers": ticker},
                     cache_key=f"news2_{ticker}", ttl=6*3600)
-    
+
     if not isinstance(data, list):
         return []
-    
+
     return [{
         "title":        d.get("title", ""),
         "published_at": d.get("publishedDate", d.get("date", "")),
@@ -142,15 +157,15 @@ def get_quote(ticker: str) -> dict | None:
     Returns: {price, change, changesPercentage, volume, dayHigh, dayLow, ...}
     """
     data = _get(f"{BASE_URL}/quote", {"symbol": ticker})
-    
+
     # レスポンスが配列の場合
     if isinstance(data, list) and data:
         return data[0]
-    
+
     # レスポンスが単一オブジェクトの場合
     if isinstance(data, dict):
         return data
-    
+
     return None
 
 
@@ -167,7 +182,7 @@ def get_company_profile(ticker: str) -> dict | None:
                 cache_key=f"profile_{ticker}", ttl=24*3600)
     if data and isinstance(data, list) and data:
         return data[0]
-    
+
     # フォールバック: /v3/profile/{ticker}
     data = _get(f"{BASE_URL_V3}/profile/{ticker}",
                 cache_key=f"profile_v3_{ticker}", ttl=24*3600)
@@ -181,19 +196,19 @@ def get_company_profile(ticker: str) -> dict | None:
 def get_analyst_consensus(ticker: str) -> dict | None:
     """
     /stable/price-target-summary?symbol={ticker} — 目標株価平均
-    /stable/analyst-stock-recommendations?symbol={ticker} — Buy/Hold/Sell内訳（Hannah確認中）
+    /stable/analyst-stock-recommendations?symbol={ticker} — Buy/Hold/Sell内訳
     24時間キャッシュ
     """
-    # 目標株価サマリー（確認済み）
+    # 目標株価サマリー
     target = _get(f"{BASE_URL}/price-target-summary",
                   {"symbol": ticker},
                   cache_key=f"target_{ticker}", ttl=24*3600)
-    
-    # アナリスト内訳（試行 — 403ならスキップ）
+
+    # アナリスト内訳
     recommendations = _get(f"{BASE_URL}/analyst-stock-recommendations",
                            {"symbol": ticker},
                            cache_key=f"analyst_{ticker}", ttl=24*3600)
-    
+
     # Buy/Hold/Sell集計
     buy = sell = hold = 0
     if isinstance(recommendations, list) and recommendations:
@@ -201,34 +216,35 @@ def get_analyst_consensus(ticker: str) -> dict | None:
             buy  += r.get("analystRatingsbuy", 0) + r.get("analystRatingsStrongBuy", 0)
             hold += r.get("analystRatingsHold", 0)
             sell += r.get("analystRatingsSell", 0) + r.get("analystRatingsStrongSell", 0)
-    
+
     total = buy + hold + sell
     consensus = None
     if total > 0:
         consensus = "Buy" if buy > sell and buy > hold else \
                     "Sell" if sell > buy and sell > hold else "Hold"
+
+    # 目標株価の正規化（List or Dict）
+    target_data = {}
+    if isinstance(target, list) and target:
+        target_data = target[0]
+    elif isinstance(target, dict):
+        target_data = target
     
-    # 目標株価
-    target_mean = None
+    target_mean = target_data.get("lastMonthAvgPriceTarget")
     target_pct  = None
-    if isinstance(target, dict):
-        target_mean = target.get("lastMonthAvgPriceTarget")
-        # 現在値との乖離%計算
+
+    # 現在値との乖離%計算
+    if target_mean:
         quote = get_quote(ticker)
-        if target_mean and quote and quote.get("price"):
+        if quote and quote.get("price"):
             price = float(quote["price"])
-            target_pct = round((target_mean - price) / price * 100, 1)
-    elif isinstance(target, list) and target:
-        target_mean = target[0].get("lastMonthAvgPriceTarget")
-        quote = get_quote(ticker)
-        if target_mean and quote and quote.get("price"):
-            price = float(quote["price"])
-            target_pct = round((target_mean - price) / price * 100, 1)
-    
+            if price > 0:
+                target_pct = round((target_mean - price) / price * 100, 1)
+
     # どちらか片方でもデータがあれば返す
     if not consensus and not target_mean:
         return None
-    
+
     return {
         "consensus":     consensus or "N/A",
         "analyst_count": total if total > 0 else None,
@@ -257,18 +273,18 @@ def get_fundamentals(ticker: str) -> dict | None:
               {"symbol": ticker, "period": "annual", "limit": 1},
               cache_key=f"keymetrics_{ticker}", ttl=24*3600)
     km = km[0] if isinstance(km, list) and km else {}
-    
+
     # Income Statement Growth (最新年度)
     ig = _get(f"{BASE_URL}/income-statement-growth",
               {"symbol": ticker, "period": "annual", "limit": 1},
               cache_key=f"incgrowth_{ticker}", ttl=24*3600)
     ig = ig[0] if isinstance(ig, list) and ig else {}
-    
+
     def _pct(v):
         return round(float(v)*100, 1) if v is not None else None
     def _rnd(v, n=2):
         return round(float(v), n) if v is not None else None
-    
+
     # レスポンス構造に合わせてマッピング
     return {
         "pe_forward":          _rnd(km.get("peRatioTTM")),
@@ -286,20 +302,44 @@ def get_fundamentals(ticker: str) -> dict | None:
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 機関投資家保有（プロフィールから取得）
+# 機関投資家保有（修正版）
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def get_ownership(ticker: str) -> dict | None:
     """
-    プロフィールに含まれる機関保有率を使用
-    空売りデータはStarterでは取れないのでNone
+    1. プロフィールからの取得を試みる
+    2. 失敗した場合、/institutional-ownership エンドポイントを試みる（フォールバック）
+    ※Starterプランでは大型株のProfileにデータが入っていない場合があるため
     """
+    # 試行1: プロフィール (軽量)
     profile = get_company_profile(ticker) or {}
-    
     inst_pct = None
-    if profile.get("institutionalOwnershipPercentage"):
-        inst_pct = round(float(profile["institutionalOwnershipPercentage"]) * 100, 1)
     
+    if profile.get("institutionalOwnershipPercentage"):
+        val = profile["institutionalOwnershipPercentage"]
+        try:
+            inst_pct = round(float(val) * 100, 1)
+        except:
+            pass
+
+    # 試行2: 専用エンドポイント (フォールバック)
+    if inst_pct is None:
+        # キャッシュキーは inst_own_{ticker} で管理
+        own_data = _get(f"{BASE_URL}/institutional-ownership",
+                        {"symbol": ticker, "limit": 1},
+                        cache_key=f"inst_own_{ticker}", ttl=24*3600)
+        
+        # 形式: [{"symbol": "AAPL", "ownershipPercent": 0.58, ...}]
+        if own_data and isinstance(own_data, list):
+            item = own_data[0]
+            # フィールド名の揺れに対応 (ownershipPercent または institutionalOwnershipPercentage)
+            val = item.get("institutionalOwnershipPercentage") or item.get("ownershipPercent")
+            if val:
+                try:
+                    inst_pct = round(float(val) * 100, 1)
+                except:
+                    pass
+
     return {
         "institutional_pct":   inst_pct,
         "insider_pct":         None,  # Starterでは非対応
