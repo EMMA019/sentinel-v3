@@ -68,7 +68,7 @@ def diagnose_ticker(ticker):
     print(f"     👉 Final Verdict: {judge}")
 
     if status == "EXTENDED":
-        print(f"     ⚠️  理由: 株価がピボットより3%以上高いため「伸びすぎ(EXTENDED)」と判定されています。")
+        print(f"     ⚠️  理由: 株価が直近高値より3%以上高い (+{dist*100:.2f}%) ため、\n           「高値掴み防止」のロジックによりリストから除外されています。")
 
     # ---------------------------------------------------------
     # 3. スコアリングフェーズ（ファンダメンタルズ含む）
@@ -84,7 +84,9 @@ def diagnose_ticker(ticker):
         own = core_fmp.get_ownership(ticker)
         
         has_fund = "✅ Yes" if fund else "❌ No (None)"
-        has_own  = "✅ Yes" if own and own.get("institutional_pct") else "⚠️ Partial/No"
+        # Institutional OwnershipはStarterプランだと取れないことがある
+        inst_pct = own.get("institutional_pct") if own else None
+        has_own  = f"✅ Yes ({inst_pct}%)" if inst_pct is not None else "⚠️ Partial/No (None returned)"
 
         canslim = CANSLIMAnalyzer.calculate(ticker, df, fund=fund or {}, own=own or {})
         
