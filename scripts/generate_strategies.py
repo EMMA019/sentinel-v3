@@ -28,7 +28,7 @@ OUT     = CONTENT / "strategies.json"
 
 # 全銘柄を対象にする
 SCAN_TICKERS = TICKERS 
-MAX_WORKERS  = 5  # API制限を考慮し、同時接続数は5までに制限
+MAX_WORKERS  = 3  # API制限を考慮し、同時接続数は5までに制限
 
 def process_single_ticker(ticker):
     """1銘柄の全手法計算ユニット（並列実行用）"""
