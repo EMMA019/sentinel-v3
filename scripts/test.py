@@ -11,40 +11,48 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# API KEY
+# API KEY CHECK
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 if not os.getenv("FMP_API_KEY"):
     print("❌ FMP_API_KEY not set")
     sys.exit(1)
 
+print("✅ FMP_API_KEY detected")
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# パス設定
+# PATH FIX (GitHub Actions対応)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-sys.path.append(str(BASE_DIR))
 
-from engines import core_fmp
-from engines.analysis import VCPAnalyzer, RSAnalyzer, StrategyValidator
-from engines.sentinel_efficiency import SentinelEfficiencyAnalyzer
-from engines.ecr_strategy import ECRStrategyEngine
-from engines.canslim import CANSLIMAnalyzer
-from engines.config import CONFIG, TICKERS
+# ルートを追加
+sys.path.insert(0, str(BASE_DIR))
+
+# sharedを追加
+sys.path.insert(0, str(BASE_DIR / "shared"))
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 設定
+# IMPORTS
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+from shared.engines import core_fmp
+from shared.engines.analysis import VCPAnalyzer, RSAnalyzer, StrategyValidator
+from shared.engines.sentinel_efficiency import SentinelEfficiencyAnalyzer
+from shared.engines.ecr_strategy import ECRStrategyEngine
+from shared.engines.canslim import CANSLIMAnalyzer
+from shared.engines.config import CONFIG, TICKERS
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# SETTINGS
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 LOOKBACK_DAYS = 400
 START_DELAY = 200
-STOP_ATR_MULT = CONFIG["STOP_LOSS_ATR"]
-TARGET_R = CONFIG["TARGET_R_MULTIPLE"]
-
 MAX_WORKERS = 5
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# スコア取得
+# SCORE CALC
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def score_all(ticker, df):
@@ -66,18 +74,18 @@ def score_all(ticker, df):
             "rs_pct": rs_pct,
             "pf": pf
         }
-    except:
+    except Exception as e:
         return None
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 単銘柄バックテスト
+# SINGLE TICKER BACKTEST
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def backtest_ticker(ticker):
     trades = []
 
     df = core_fmp.get_historical_data(ticker, days=LOOKBACK_DAYS)
-    if df is None or len(df) < START_DELAY + 10:
+    if df is None or len(df) < START_DELAY + 5:
         return trades
 
     df = df.reset_index()
@@ -96,7 +104,6 @@ def backtest_ticker(ticker):
 
         entry = close
         exit_price = df.iloc[i+1]["Close"]
-
         pnl = (exit_price - entry) / entry * 100
 
         trades.append({
@@ -109,7 +116,7 @@ def backtest_ticker(ticker):
     return trades
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 統計
+# STATISTICS
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def calc_stats(trades):
@@ -118,19 +125,19 @@ def calc_stats(trades):
 
     df = pd.DataFrame(trades)
     wins = df[df["pnl_pct"] > 0]
-    loss = df[df["pnl_pct"] <= 0]
+    losses = df[df["pnl_pct"] <= 0]
 
-    pf = wins["pnl_pct"].sum() / abs(loss["pnl_pct"].sum()) if not loss.empty else float("inf")
+    pf = wins["pnl_pct"].sum() / abs(losses["pnl_pct"].sum()) if not losses.empty else float("inf")
 
     return {
         "total_trades": len(df),
-        "win_rate": round(len(wins)/len(df)*100,1),
-        "profit_factor": round(pf,2),
-        "expectancy": round(df["pnl_pct"].mean(),2)
+        "win_rate": round(len(wins)/len(df)*100, 1),
+        "profit_factor": round(pf, 2),
+        "expectancy": round(df["pnl_pct"].mean(), 2)
     }
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# メイン
+# MAIN
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def main():
@@ -157,8 +164,8 @@ def main():
 
     print("📊 Result:")
     print(json.dumps(stats, indent=2))
-    print(f"✅ Done in {(time.time()-start)/60:.1f} min")
     print(f"📁 JSON saved: {output}")
+    print(f"⏱ Done in {(time.time()-start)/60:.1f} min")
 
 if __name__ == "__main__":
     main()
