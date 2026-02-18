@@ -1,114 +1,176 @@
-"""
-scripts/debug_mag7_strategies.py
-Magnificent 7 が generate_strategies.py の処理フローの中で
-どのように判定され、なぜ最終出力から除外されているのかを特定する診断ツール。
-"""
-import sys, os
 import pandas as pd
 import numpy as np
-from pathlib import Path
+from typing import Dict, List
 
-# パス設定: shared を読み込めるようにする
-sys.path.append(str(Path(__file__).parent.parent / "shared"))
+# =========================
+# 設定
+# =========================
 
-from engines import core_fmp
-from engines.analysis import VCPAnalyzer, RSAnalyzer, StrategyValidator
-from engines.sentinel_efficiency import SentinelEfficiencyAnalyzer
-from engines.ecr_strategy import ECRStrategyEngine
-from engines.canslim import CANSLIMAnalyzer
-from engines.config import CONFIG
-
-# 診断対象：Magnificent 7
-TARGETS = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"]
-
-def diagnose_ticker(ticker):
-    print(f"\n{'='*60}")
-    print(f"🔍 Analyzing: {ticker}")
-    print(f"{'='*60}")
-
-    # ---------------------------------------------------------
-    # 1. データ取得フェーズ
-    # ---------------------------------------------------------
-    print(f"Step 1: Data Fetching...")
-    df = core_fmp.get_historical_data(ticker, days=700)
-    
-    if df is None or len(df) < 200:
-        print(f"  ❌ FAILED: データ取得失敗またはデータ不足 ({len(df) if df is not None else 'None'} rows)")
-        return
-    
-    latest_date = df.index[-1].strftime('%Y-%m-%d')
-    price = float(df["Close"].iloc[-1])
-    print(f"  ✅ SUCCESS: {len(df)} rows found. Latest: {latest_date}, Price: ${price:.2f}")
-
-    # ---------------------------------------------------------
-    # 2. ロジック判定フェーズ（Status決定）
-    # ---------------------------------------------------------
-    print(f"Step 2: Logic & Status Check...")
-    
-    # generate_strategies.py と同じロジック
-    pivot = float(df["High"].iloc[-20:].max())  # 直近20日の最高値
-    dist  = (price - pivot) / pivot             # ピボットからの乖離率
-    
-    # 判定ロジック
-    if -0.05 <= dist <= 0.03:
-        status = "ACTION"
-        judge = "✅ INCLUDED (Ranking対象)"
-    elif dist < -0.05:
-        status = "WAIT"
-        judge = "✅ INCLUDED (Ranking対象)"
-    else:
-        status = "EXTENDED"
-        judge = "❌ EXCLUDED (Ranking除外対象)"
-
-    print(f"  📊 Price Analysis:")
-    print(f"     - Current Price: ${price:.2f}")
-    print(f"     - Pivot (20d High): ${pivot:.2f}")
-    print(f"     - Distance: {dist*100:+.2f}%")
-    print(f"     👉 Determined Status: [{status}]")
-    print(f"     👉 Final Verdict: {judge}")
-
-    if status == "EXTENDED":
-        print(f"     ⚠️  理由: 株価が直近高値より3%以上高い (+{dist*100:.2f}%) ため、\n           「高値掴み防止」のロジックによりリストから除外されています。")
-
-    # ---------------------------------------------------------
-    # 3. スコアリングフェーズ（ファンダメンタルズ含む）
-    # ---------------------------------------------------------
-    print(f"Step 3: Scoring & Fundamentals...")
-    
-    try:
-        # VCP
-        vcp = VCPAnalyzer.calculate(df)
-        
-        # CANSLIM (Fundametal取得確認)
-        fund = core_fmp.get_fundamentals(ticker)
-        own = core_fmp.get_ownership(ticker)
-        
-        has_fund = "✅ Yes" if fund else "❌ No (None)"
-        # Institutional OwnershipはStarterプランだと取れないことがある
-        inst_pct = own.get("institutional_pct") if own else None
-        has_own  = f"✅ Yes ({inst_pct}%)" if inst_pct is not None else "⚠️ Partial/No (None returned)"
-
-        canslim = CANSLIMAnalyzer.calculate(ticker, df, fund=fund or {}, own=own or {})
-        
-        # ECR
-        ecr = ECRStrategyEngine.analyze_single(ticker, df)
-        
-        print(f"     - Fundamentals Data: {has_fund}")
-        print(f"     - Ownership Data:    {has_own}")
-        print(f"     - VCP Score: {vcp['score']}")
-        print(f"     - CANSLIM Score: {canslim['score']} (Grade: {canslim['grade']})")
-        print(f"     - ECR Rank: {ecr['sentinel_rank']}")
-        
-    except Exception as e:
-        print(f"  ❌ SCORING ERROR: 計算中にエラーが発生しました: {e}")
-
-def main():
-    print("=== STARTING MAG7 DIAGNOSIS ===")
-    for t in TARGETS:
-        diagnose_ticker(t)
-    print("\n=== DIAGNOSIS COMPLETE ===")
-
-if __name__ == "__main__":
-    main()
+INITIAL_CAPITAL = 100000
+RISK_PER_TRADE = 0.10
+MAX_HOLD_DAYS = 20
+STOP_LOSS = 0.07
+TAKE_PROFIT = 0.20
+MAX_CONCURRENT = 5
 
 
+# =========================
+# ユーティリティ
+# =========================
+
+def calculate_drawdown(equity_curve: pd.Series):
+    peak = equity_curve.cummax()
+    dd = (equity_curve - peak) / peak
+    return dd.min()
+
+
+def calc_metrics(trades: List[dict], equity_curve: pd.Series):
+    if len(trades) == 0:
+        return {}
+
+    df = pd.DataFrame(trades)
+    wins = df[df["return"] > 0]
+    losses = df[df["return"] <= 0]
+
+    pf = wins["return"].sum() / abs(losses["return"].sum()) if not losses.empty else np.inf
+    expectancy = df["return"].mean()
+    std = df["return"].std()
+    sharpe_like = expectancy / std if std > 0 else 0
+    win_rate = len(wins) / len(df)
+
+    max_dd = calculate_drawdown(equity_curve)
+
+    return {
+        "trades": len(df),
+        "win_rate": round(win_rate * 100, 2),
+        "pf": round(pf, 2),
+        "expectancy": round(expectancy, 4),
+        "sharpe_like": round(sharpe_like, 2),
+        "max_drawdown": round(max_dd * 100, 2),
+        "final_equity": round(equity_curve.iloc[-1], 2)
+    }
+
+
+# =========================
+# エントリーロジック例
+# =========================
+
+def vcp_signal(df):
+    ma50 = df["Close"].rolling(50).mean()
+    contraction = df["Close"].rolling(20).std()
+    return (df["Close"] > ma50) & (contraction < contraction.rolling(50).mean())
+
+
+def canslim_signal(df):
+    ma50 = df["Close"].rolling(50).mean()
+    volume_spike = df["Volume"] > df["Volume"].rolling(50).mean() * 1.5
+    return (df["Close"] > ma50) & volume_spike
+
+
+def ses_signal(df):
+    momentum = df["Close"].pct_change(20)
+    return momentum > 0.15
+
+
+def ecr_signal(df):
+    breakout = df["Close"] > df["High"].rolling(50).max().shift(1)
+    return breakout
+
+
+METHODS = {
+    "VCP": vcp_signal,
+    "CANSLIM": canslim_signal,
+    "SES": ses_signal,
+    "ECR": ecr_signal
+}
+
+
+# =========================
+# シミュレーション
+# =========================
+
+def run_backtest(data: Dict[str, pd.DataFrame], method_name: str):
+    capital = INITIAL_CAPITAL
+    equity_curve = []
+    open_positions = []
+    trades = []
+
+    for ticker, df in data.items():
+        df = df.copy().reset_index(drop=True)
+        signal = METHODS[method_name](df)
+
+        for i in range(50, len(df) - MAX_HOLD_DAYS - 1):
+
+            if len(open_positions) >= MAX_CONCURRENT:
+                break
+
+            if signal.iloc[i]:
+                entry_price = df["Open"].iloc[i + 1]
+                size = capital * RISK_PER_TRADE
+                shares = size / entry_price
+
+                exit_price = entry_price
+                exit_day = i + 1
+
+                for j in range(i + 1, min(i + 1 + MAX_HOLD_DAYS, len(df))):
+                    change = (df["Close"].iloc[j] - entry_price) / entry_price
+
+                    if change <= -STOP_LOSS:
+                        exit_price = entry_price * (1 - STOP_LOSS)
+                        exit_day = j
+                        break
+
+                    if change >= TAKE_PROFIT:
+                        exit_price = entry_price * (1 + TAKE_PROFIT)
+                        exit_day = j
+                        break
+
+                    exit_price = df["Close"].iloc[j]
+                    exit_day = j
+
+                pnl = (exit_price - entry_price) * shares
+                ret = pnl / capital
+
+                capital += pnl
+                equity_curve.append(capital)
+
+                trades.append({
+                    "ticker": ticker,
+                    "entry_index": i,
+                    "exit_index": exit_day,
+                    "return": ret
+                })
+
+    if len(equity_curve) == 0:
+        equity_curve = [INITIAL_CAPITAL]
+
+    equity_series = pd.Series(equity_curve)
+
+    metrics = calc_metrics(trades, equity_series)
+    return metrics
+
+
+# =========================
+# 実行
+# =========================
+
+def run_all_methods(data):
+    results = {}
+    for name in METHODS.keys():
+        metrics = run_backtest(data, name)
+        results[name] = metrics
+
+    return pd.DataFrame(results).T
+
+
+# =========================
+# 使用例
+# =========================
+
+# data = {
+#     "AAPL": pd.read_csv("AAPL.csv"),
+#     "MSFT": pd.read_csv("MSFT.csv"),
+# }
+
+# result = run_all_methods(data)
+# print(result)
