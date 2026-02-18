@@ -13,9 +13,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install requests
+      # pandas と numpy を追加インストール
+      - name: Install dependencies
+        run: pip install requests pandas numpy
 
       - name: Test FMP API
         env:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        # 実行するファイル名に合わせてください (例: scripts/test.py または scripts/debug_mag7_strategies.py)
         run: python scripts/test.py
+
