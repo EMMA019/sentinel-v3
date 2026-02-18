@@ -1,176 +1,164 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import json
+import time
 import pandas as pd
 import numpy as np
-from typing import Dict, List
+from pathlib import Path
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# =========================
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# API KEY
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+if not os.getenv("FMP_API_KEY"):
+    print("❌ FMP_API_KEY not set")
+    sys.exit(1)
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# パス設定
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(BASE_DIR))
+
+from engines import core_fmp
+from engines.analysis import VCPAnalyzer, RSAnalyzer, StrategyValidator
+from engines.sentinel_efficiency import SentinelEfficiencyAnalyzer
+from engines.ecr_strategy import ECRStrategyEngine
+from engines.canslim import CANSLIMAnalyzer
+from engines.config import CONFIG, TICKERS
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 設定
-# =========================
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-INITIAL_CAPITAL = 100000
-RISK_PER_TRADE = 0.10
-MAX_HOLD_DAYS = 20
-STOP_LOSS = 0.07
-TAKE_PROFIT = 0.20
-MAX_CONCURRENT = 5
+LOOKBACK_DAYS = 400
+START_DELAY = 200
+STOP_ATR_MULT = CONFIG["STOP_LOSS_ATR"]
+TARGET_R = CONFIG["TARGET_R_MULTIPLE"]
 
+MAX_WORKERS = 5
 
-# =========================
-# ユーティリティ
-# =========================
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# スコア取得
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-def calculate_drawdown(equity_curve: pd.Series):
-    peak = equity_curve.cummax()
-    dd = (equity_curve - peak) / peak
-    return dd.min()
+def score_all(ticker, df):
+    try:
+        vcp = VCPAnalyzer.calculate(df)
+        pf = StrategyValidator.run(df)
+        ses = SentinelEfficiencyAnalyzer.calculate(df)
+        ecr = ECRStrategyEngine.analyze_single(ticker, df)
+        canslim = CANSLIMAnalyzer.calculate(ticker, df)
 
+        rs_raw = RSAnalyzer.get_raw_score(df)
+        rs_pct = int(np.clip((rs_raw + 0.3) * 100, 0, 100)) if rs_raw != -999 else 0
 
-def calc_metrics(trades: List[dict], equity_curve: pd.Series):
-    if len(trades) == 0:
+        return {
+            "vcp": vcp["score"],
+            "ses": ses["score"],
+            "ecr": ecr["sentinel_rank"],
+            "canslim": canslim["score"],
+            "rs_pct": rs_pct,
+            "pf": pf
+        }
+    except:
+        return None
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 単銘柄バックテスト
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+def backtest_ticker(ticker):
+    trades = []
+
+    df = core_fmp.get_historical_data(ticker, days=LOOKBACK_DAYS)
+    if df is None or len(df) < START_DELAY + 10:
+        return trades
+
+    df = df.reset_index()
+
+    for i in range(START_DELAY, len(df)-1):
+        close = df.iloc[i]["Close"]
+        past = df.iloc[:i+1].set_index("date")
+
+        scores = score_all(ticker, past)
+        if not scores:
+            continue
+
+        # 最低条件
+        if scores["pf"] < 0.8 or scores["vcp"] < 40:
+            continue
+
+        entry = close
+        exit_price = df.iloc[i+1]["Close"]
+
+        pnl = (exit_price - entry) / entry * 100
+
+        trades.append({
+            "ticker": ticker,
+            "date": df.iloc[i]["date"].strftime("%Y-%m-%d"),
+            "pnl_pct": round(pnl, 2),
+            "scores": scores
+        })
+
+    return trades
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 統計
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+def calc_stats(trades):
+    if not trades:
         return {}
 
     df = pd.DataFrame(trades)
-    wins = df[df["return"] > 0]
-    losses = df[df["return"] <= 0]
+    wins = df[df["pnl_pct"] > 0]
+    loss = df[df["pnl_pct"] <= 0]
 
-    pf = wins["return"].sum() / abs(losses["return"].sum()) if not losses.empty else np.inf
-    expectancy = df["return"].mean()
-    std = df["return"].std()
-    sharpe_like = expectancy / std if std > 0 else 0
-    win_rate = len(wins) / len(df)
-
-    max_dd = calculate_drawdown(equity_curve)
+    pf = wins["pnl_pct"].sum() / abs(loss["pnl_pct"].sum()) if not loss.empty else float("inf")
 
     return {
-        "trades": len(df),
-        "win_rate": round(win_rate * 100, 2),
-        "pf": round(pf, 2),
-        "expectancy": round(expectancy, 4),
-        "sharpe_like": round(sharpe_like, 2),
-        "max_drawdown": round(max_dd * 100, 2),
-        "final_equity": round(equity_curve.iloc[-1], 2)
+        "total_trades": len(df),
+        "win_rate": round(len(wins)/len(df)*100,1),
+        "profit_factor": round(pf,2),
+        "expectancy": round(df["pnl_pct"].mean(),2)
     }
 
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# メイン
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-# =========================
-# エントリーロジック例
-# =========================
+def main():
+    print("🚀 Running Backtest...")
+    start = time.time()
 
-def vcp_signal(df):
-    ma50 = df["Close"].rolling(50).mean()
-    contraction = df["Close"].rolling(20).std()
-    return (df["Close"] > ma50) & (contraction < contraction.rolling(50).mean())
+    all_trades = []
 
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(backtest_ticker, t) for t in TICKERS]
+        for f in as_completed(futures):
+            all_trades.extend(f.result())
 
-def canslim_signal(df):
-    ma50 = df["Close"].rolling(50).mean()
-    volume_spike = df["Volume"] > df["Volume"].rolling(50).mean() * 1.5
-    return (df["Close"] > ma50) & volume_spike
+    stats = calc_stats(all_trades)
 
+    result = {
+        "generated_at": datetime.now().strftime("%Y-%m-%d"),
+        "overall": stats,
+        "sample_trades": all_trades[:200]
+    }
 
-def ses_signal(df):
-    momentum = df["Close"].pct_change(20)
-    return momentum > 0.15
+    output = BASE_DIR / "backtest.json"
+    output.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
 
+    print("📊 Result:")
+    print(json.dumps(stats, indent=2))
+    print(f"✅ Done in {(time.time()-start)/60:.1f} min")
+    print(f"📁 JSON saved: {output}")
 
-def ecr_signal(df):
-    breakout = df["Close"] > df["High"].rolling(50).max().shift(1)
-    return breakout
-
-
-METHODS = {
-    "VCP": vcp_signal,
-    "CANSLIM": canslim_signal,
-    "SES": ses_signal,
-    "ECR": ecr_signal
-}
-
-
-# =========================
-# シミュレーション
-# =========================
-
-def run_backtest(data: Dict[str, pd.DataFrame], method_name: str):
-    capital = INITIAL_CAPITAL
-    equity_curve = []
-    open_positions = []
-    trades = []
-
-    for ticker, df in data.items():
-        df = df.copy().reset_index(drop=True)
-        signal = METHODS[method_name](df)
-
-        for i in range(50, len(df) - MAX_HOLD_DAYS - 1):
-
-            if len(open_positions) >= MAX_CONCURRENT:
-                break
-
-            if signal.iloc[i]:
-                entry_price = df["Open"].iloc[i + 1]
-                size = capital * RISK_PER_TRADE
-                shares = size / entry_price
-
-                exit_price = entry_price
-                exit_day = i + 1
-
-                for j in range(i + 1, min(i + 1 + MAX_HOLD_DAYS, len(df))):
-                    change = (df["Close"].iloc[j] - entry_price) / entry_price
-
-                    if change <= -STOP_LOSS:
-                        exit_price = entry_price * (1 - STOP_LOSS)
-                        exit_day = j
-                        break
-
-                    if change >= TAKE_PROFIT:
-                        exit_price = entry_price * (1 + TAKE_PROFIT)
-                        exit_day = j
-                        break
-
-                    exit_price = df["Close"].iloc[j]
-                    exit_day = j
-
-                pnl = (exit_price - entry_price) * shares
-                ret = pnl / capital
-
-                capital += pnl
-                equity_curve.append(capital)
-
-                trades.append({
-                    "ticker": ticker,
-                    "entry_index": i,
-                    "exit_index": exit_day,
-                    "return": ret
-                })
-
-    if len(equity_curve) == 0:
-        equity_curve = [INITIAL_CAPITAL]
-
-    equity_series = pd.Series(equity_curve)
-
-    metrics = calc_metrics(trades, equity_series)
-    return metrics
-
-
-# =========================
-# 実行
-# =========================
-
-def run_all_methods(data):
-    results = {}
-    for name in METHODS.keys():
-        metrics = run_backtest(data, name)
-        results[name] = metrics
-
-    return pd.DataFrame(results).T
-
-
-# =========================
-# 使用例
-# =========================
-
-# data = {
-#     "AAPL": pd.read_csv("AAPL.csv"),
-#     "MSFT": pd.read_csv("MSFT.csv"),
-# }
-
-# result = run_all_methods(data)
-# print(result)
+if __name__ == "__main__":
+    main()
