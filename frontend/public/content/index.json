@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "daily-2026-02-19",
+      "type": "daily",
+      "date": "2026-02-19",
+      "published_at": "2026-02-20T16:26:00.901603+09:00",
+      "title_ja": "2026-02-19 米国株レポート — SPY -0.26% / ACTION 41銘柄",
+      "title_en": "US Market 2026-02-19 — SPY -0.26% / 41 ACTION"
+    },
+    {
       "slug": "daily-2026-02-18",
       "type": "daily",
       "date": "2026-02-18",
