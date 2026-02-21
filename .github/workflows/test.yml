@@ -1,69 +1,56 @@
-name: Run Backtest
+name: Sentinel Historical Data Update
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *"   # 毎日UTC 03:00（必要なければ削除可）
+    # 米国市場のクローズ後（日本時間 AM 9:00 / UTC 0:00）に実行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # 手動でいつでも実行可能
 
 jobs:
-  backtest:
+  update-history:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      # ───────────────
-      # Checkout
-      # ───────────────
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ───────────────
-      # Python Setup
-      # ───────────────
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-          cache: "pip"
+          python-version: '3.10'
+          cache: 'pip'
 
-      - name: Upgrade pip
-        run: python -m pip install --upgrade pip
-
-      # ───────────────
-      # Install Dependencies
-      # ───────────────
       - name: Install dependencies
         run: |
-          pip install requests
-          pip install pandas
-          pip install numpy
-
-      # ───────────────
-      # API Key Check
-      # ───────────────
-      - name: Verify API Key
-        env:
-          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-        run: |
-          if [ -z "$FMP_API_KEY" ]; then
-            echo "❌ FMP_API_KEY not set"
-            exit 1
+          python -m pip install --upgrade pip
+          # scriptsディレクトリ内の専用requirementsファイルを指定
+          if [ -f scripts/requirements-scripts.txt ]; then
+            pip install -r scripts/requirements-scripts.txt
+          else
+            pip install yfinance pandas
           fi
-          echo "✅ API Key detected"
 
-      # ───────────────
-      # Run Backtest
-      # ───────────────
-      - name: Run Backtest Script
-        env:
-          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+      - name: Run History Generation
         run: |
-          python scripts/test.py
+          # scriptsフォルダ内のスクリプトを実行
+          # スクリプト内部で ../shared を見に行く設定なのでパスはこれでOK
+          python scripts/generate_historical_20yf_full.py
 
-      # ───────────────
-      # Upload JSON Artifact
-      # ───────────────
-      - name: Upload Backtest JSON
-        uses: actions/upload-artifact@v4
-        with:
-          name: backtest-json
-          path: backtest.json
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 生成されたJSONをインデックスに追加
+          git add frontend/public/content/strategies_history/*.json
+          
+          # 変更がある場合のみコミット
+          if ! git diff --cached --exit-code; then
+            git commit -m "chore: auto-update historical analysis [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
