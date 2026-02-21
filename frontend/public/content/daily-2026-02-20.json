@@ -1,0 +1,904 @@
+{
+  "slug": "daily-2026-02-20",
+  "type": "daily",
+  "date": "2026-02-20",
+  "published_at": "2026-02-21T10:08:40.971426+09:00",
+  "ja": {
+    "title": "2026-02-20 米国株レポート — SPY 0.72% / ACTION 44銘柄",
+    "summary": "S&P500 0.72%、強いセクター:Utilities。VCPシグナルACTION 44銘柄。",
+    "body": "### ①指数動向\n主要指数は堅調な上昇基調を維持しました。広範な市場を代表する指数は小幅ながらプラス圏で取引を終え、大型株を中心とした買いが優勢であったことを示しています。特にハイテク株に比重が高い指数は、その他の主要指数を上回る上昇率を示し、市場における成長株への選好が継続している様子が窺えます。一方、小型株を対象とする指数は前日比で横ばいとなりました。これは、市場全体のリスク選好が一定の温度感を持ちつつも、資金がより流動性の高い大型株に集中している可能性を示唆しています。全体的に見て、主要指数の上昇は緩やかながらも着実であり、市場の基調は堅調であると評価できます。\n\n### ②VCP×RSシグナル\nボラティリティ・コントラクション・パターン（VCP）の形成と相対力（RS）の上昇という組み合わせシグナルを発している銘柄数は、前日に引き続き一定の水準を保っています。これは、市場内で個別銘柄の基盤整備が進み、上昇への準備段階にある銘柄が存在することを示しています。特定の銘柄名が挙がっていますが、これらは医療・バイオテクノロジーや特定の産業分野など、多様なセクターに分散している点が注目されます。このシグナルは、市場全体が単純に上昇するのではなく、セクターや銘柄ごとに異なるテーマやファンダメンタルズに基づいた動きが生じている可能性を反映していると考えられます。投資家は、こうした個別銘柄の技術的な基盤形成に注目しつつ、広範な市場動向と合わせて分析を深めることが重要です。\n\n### ③セクター分析\n本日のセクター別パフォーマンスでは、公益事業、不動産、エネルギーといったセクターが相対的に強い動きを見せました。これらのセクターは、一般的に景気敏感株とは異なる特性を持ち、安定した配当や実物資産への投資テーマと関連付けられることが多いです。このようなセクターの堅調さは、市場参加者の間に、長期的な視点や一定の防御的な姿勢が併存していることを示している可能性があります。一方で、成長を牽引するテクノロジーセクターも主要指数を押し上げる原動力となっており、市場では「成長」と「安定・防御」という異なるテーマへの資金配分が同時進行している様子が窺えます。このセクター間の動向は、市場が単一のテーマに集中するのではなく、多様な投資家のニーズやマクロ経済見通しに対する複合的な期待を反映していると考えられます。今後の展開を占う上で、どのセクターの動きが持続性を持つか、あるいはセクター・ローテーションが発生するかどうかに注意を払う必要があります。"
+  },
+  "en": {
+    "title": "US Market 2026-02-20 — SPY 0.72% / 44 ACTION",
+    "summary": "S&P500 0.72%, top sectors:Utilities. 44 ACTION signals.",
+    "body": "## ① Index\nThe major equity indices exhibited a split performance on Friday, February 20, 2026, highlighting a clear divergence between large-cap and small-cap segments. The S&P 500 advanced, led by strength in its mega-cap components, while the NASDAQ 100 outperformed, suggesting a resurgence in investor appetite for large-cap growth and technology-oriented names. In stark contrast, the Russell 2000 index of small-cap stocks closed flat, failing to participate in the day's broader market gains. This divergence indicates a selective risk environment where capital is flowing toward established, large-cap companies, potentially at the expense of smaller firms. The overall positive tone for large caps suggests a degree of underlying market resilience, but the lack of breadth, as evidenced by the stagnant small-cap index, tempers the strength of the rally.\n\n## ② Signals\nMarket internals, as measured by the volume confirmation pattern (VCP) scan, showed a notable uptick in constructive technical setups. The number of stocks triggering VCP signals increased significantly to 44. This rise suggests a growing cohort of individual equities are consolidating in a healthy manner on declining volume, a pattern often interpreted as a precursor to potential breakout moves. The increase in these signals, particularly on a day where major indices rose, points to improving underlying technical health beneath the surface for select names. It indicates that the recent market activity is fostering orderly consolidation phases for many stocks, which can be a foundation for future advances if broader market conditions remain supportive.\n\n## ③ Sectors\nSector performance revealed a pronounced defensive and cyclical tilt, with Utilities, Real Estate, and Energy leading the market. The strength in Utilities and Real Estate, traditionally considered bond-proxy and defensive sectors, suggests some investors are seeking income and stability. This could reflect lingering concerns about economic growth or a response to movements in the interest rate landscape. Concurrently, the leadership from the Energy sector introduces a cyclical element, potentially driven by firming commodity prices or specific geopolitical supply factors. This combination of defensive and commodity-sensitive sectors leading the advance, while technology participated through the NASDAQ's rise, paints a picture of a market in a rotational phase. Investors appear to be balancing exposure between safety-oriented plays and select cyclical opportunities, rather than pursuing a uniform growth-oriented strategy."
+  },
+  "data": {
+    "action_count": 44,
+    "wait_count": 11,
+    "actions": [
+      {
+        "ticker": "WBD",
+        "status": "ACTION",
+        "rs": 96,
+        "vcp": 103,
+        "pf": 3.75,
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "name": "Warner Bros. Discovery, Inc.",
+        "vcp_detail": {
+          "score": 103,
+          "atr": 0.529285714285715,
+          "signals": [
+            "Tight Base (VCP)",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.0884,
+          "vol_ratio": 0.33,
+          "breakdown": {
+            "tight": 40,
+            "vol": 30,
+            "ma": 30,
+            "pivot": 3
+          }
+        },
+        "atr_pct": 1.84,
+        "pivot_dist_pct": -1.51,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 1.3,
+        "ma200_ratio": 55.5,
+        "ses": 25,
+        "ses_breakdown": {
+          "fractal_efficiency": 0,
+          "true_force": 10,
+          "volatility_squeeze": 15,
+          "bar_quality": 0
+        },
+        "ecr_rank": 78,
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_score": 40,
+        "canslim_grade": "C",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 0,
+          "N_new_high": 15,
+          "S_volume": 10,
+          "L_rs_leader": 15,
+          "I_inst": 0
+        },
+        "composite": 73.6,
+        "_price": 28.75,
+        "_entry": 29.25,
+        "_stop": 28.19,
+        "_target": 31.9
+      },
+      {
+        "ticker": "EXAS",
+        "status": "ACTION",
+        "rs": 92,
+        "vcp": 105,
+        "pf": 10.0,
+        "sector": "Healthcare",
+        "industry": "Medical - Diagnostics & Research",
+        "name": "Exact Sciences Corporation",
+        "vcp_detail": {
+          "score": 105,
+          "atr": 0.3414285714285715,
+          "signals": [
+            "Tight Base (VCP)",
+            "V-Contraction Detected",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.0137,
+          "vol_ratio": 0.35,
+          "breakdown": {
+            "tight": 40,
+            "vol": 30,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.33,
+        "pivot_dist_pct": -0.11,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 1.2,
+        "ma200_ratio": 48.8,
+        "ses": 40,
+        "ses_breakdown": {
+          "fractal_efficiency": 20,
+          "true_force": 20,
+          "volatility_squeeze": 0,
+          "bar_quality": 0
+        },
+        "ecr_rank": 84,
+        "ecr_phase": "ACCUMULATION",
+        "ecr_strategy": "PBVH",
+        "canslim_score": 55,
+        "canslim_grade": "B",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 10,
+          "N_new_high": 20,
+          "S_volume": 10,
+          "L_rs_leader": 15,
+          "I_inst": 0
+        },
+        "composite": 80.9,
+        "_price": 103.43,
+        "_entry": 103.75,
+        "_stop": 103.07,
+        "_target": 105.45
+      },
+      {
+        "ticker": "FARO",
+        "status": "ACTION",
+        "rs": 95,
+        "vcp": 100,
+        "pf": 1.76,
+        "sector": "Technology",
+        "industry": "Hardware, Equipment & Parts",
+        "name": "FARO Technologies, Inc.",
+        "vcp_detail": {
+          "score": 100,
+          "atr": 0.09785714285714318,
+          "signals": [
+            "Tight Base (VCP)",
+            "V-Contraction Detected",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.0073,
+          "vol_ratio": 0.47,
+          "breakdown": {
+            "tight": 40,
+            "vol": 25,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.22,
+        "pivot_dist_pct": -0.16,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 2.1,
+        "ma200_ratio": 43.4,
+        "ses": 60,
+        "ses_breakdown": {
+          "fractal_efficiency": 10,
+          "true_force": 30,
+          "volatility_squeeze": 20,
+          "bar_quality": 0
+        },
+        "ecr_rank": 88,
+        "ecr_phase": "ACCUMULATION",
+        "ecr_strategy": "PBVH",
+        "canslim_score": 45,
+        "canslim_grade": "C",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 0,
+          "N_new_high": 20,
+          "S_volume": 10,
+          "L_rs_leader": 15,
+          "I_inst": 0
+        },
+        "composite": 77.6,
+        "_price": 43.99,
+        "_entry": 44.15,
+        "_stop": 43.95,
+        "_target": 44.65
+      },
+      {
+        "ticker": "FOLD",
+        "status": "ACTION",
+        "rs": 87,
+        "vcp": 105,
+        "pf": 2.57,
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "name": "Amicus Therapeutics, Inc.",
+        "vcp_detail": {
+          "score": 105,
+          "atr": 0.03785714285714281,
+          "signals": [
+            "Tight Base (VCP)",
+            "V-Contraction Detected",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.007,
+          "vol_ratio": 0.41,
+          "breakdown": {
+            "tight": 40,
+            "vol": 30,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.26,
+        "pivot_dist_pct": -0.14,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 4.9,
+        "ma200_ratio": 59.3,
+        "ses": 60,
+        "ses_breakdown": {
+          "fractal_efficiency": 10,
+          "true_force": 20,
+          "volatility_squeeze": 20,
+          "bar_quality": 10
+        },
+        "ecr_rank": 84,
+        "ecr_phase": "ACCUMULATION",
+        "ecr_strategy": "PBVH",
+        "canslim_score": 55,
+        "canslim_grade": "B",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 15,
+          "N_new_high": 20,
+          "S_volume": 10,
+          "L_rs_leader": 10,
+          "I_inst": 0
+        },
+        "composite": 80.9,
+        "_price": 14.34,
+        "_entry": 14.39,
+        "_stop": 14.31,
+        "_target": 14.59
+      },
+      {
+        "ticker": "CDMO",
+        "status": "ACTION",
+        "rs": 86,
+        "vcp": 100,
+        "pf": 1.17,
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "name": "Avid Bioservices, Inc.",
+        "vcp_detail": {
+          "score": 100,
+          "atr": 0.03571428571428597,
+          "signals": [
+            "Tight Base (VCP)",
+            "V-Contraction Detected",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.0128,
+          "vol_ratio": 0.53,
+          "breakdown": {
+            "tight": 40,
+            "vol": 25,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.29,
+        "pivot_dist_pct": -0.16,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 1.0,
+        "ma200_ratio": 21.5,
+        "ses": 50,
+        "ses_breakdown": {
+          "fractal_efficiency": 10,
+          "true_force": 20,
+          "volatility_squeeze": 20,
+          "bar_quality": 0
+        },
+        "ecr_rank": 77,
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_score": 40,
+        "canslim_grade": "C",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 0,
+          "N_new_high": 20,
+          "S_volume": 15,
+          "L_rs_leader": 5,
+          "I_inst": 0
+        },
+        "composite": 72.3,
+        "_price": 12.49,
+        "_entry": 12.54,
+        "_stop": 12.47,
+        "_target": 12.71
+      },
+      {
+        "ticker": "AMPS",
+        "status": "ACTION",
+        "rs": 78,
+        "vcp": 100,
+        "pf": 1.49,
+        "sector": "Utilities",
+        "industry": "Renewable Utilities",
+        "name": "Altus Power, Inc.",
+        "vcp_detail": {
+          "score": 100,
+          "atr": 0.026428571428571183,
+          "signals": [
+            "Tight Base (VCP)",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.02,
+          "vol_ratio": 0.59,
+          "breakdown": {
+            "tight": 40,
+            "vol": 25,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.53,
+        "pivot_dist_pct": -0.2,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 2.0,
+        "ma200_ratio": 25.7,
+        "ses": 40,
+        "ses_breakdown": {
+          "fractal_efficiency": 0,
+          "true_force": 20,
+          "volatility_squeeze": 20,
+          "bar_quality": 0
+        },
+        "ecr_rank": 69,
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_score": 50,
+        "canslim_grade": "B",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 15,
+          "N_new_high": 20,
+          "S_volume": 15,
+          "L_rs_leader": 0,
+          "I_inst": 0
+        },
+        "composite": 72.5,
+        "_price": 4.99,
+        "_entry": 5.01,
+        "_stop": 4.96,
+        "_target": 5.13
+      },
+      {
+        "ticker": "PTGX",
+        "status": "ACTION",
+        "rs": 88,
+        "vcp": 80,
+        "pf": 1.67,
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "name": "Protagonist Therapeutics, Inc.",
+        "vcp_detail": {
+          "score": 80,
+          "atr": 3.2835714285714266,
+          "signals": [
+            "Tight Base (VCP)",
+            "V-Contraction Detected",
+            "Volume Dry-up Detected",
+            "Trend Alignment OK"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.0977,
+          "vol_ratio": 0.58,
+          "breakdown": {
+            "tight": 35,
+            "vol": 25,
+            "ma": 20,
+            "pivot": 0
+          }
+        },
+        "atr_pct": 3.97,
+        "pivot_dist_pct": -3.88,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": -2.6,
+        "ma200_ratio": 21.8,
+        "ses": 10,
+        "ses_breakdown": {
+          "fractal_efficiency": 0,
+          "true_force": 0,
+          "volatility_squeeze": 0,
+          "bar_quality": 10
+        },
+        "ecr_rank": 60,
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_score": 50,
+        "canslim_grade": "B",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 20,
+          "N_new_high": 5,
+          "S_volume": 15,
+          "L_rs_leader": 10,
+          "I_inst": 0
+        },
+        "composite": 62.7,
+        "_price": 82.76,
+        "_entry": 86.27,
+        "_stop": 79.7,
+        "_target": 102.69
+      },
+      {
+        "ticker": "RDUS",
+        "status": "ACTION",
+        "rs": 90,
+        "vcp": 75,
+        "pf": 5.32,
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "name": "Radius Recycling, Inc.",
+        "vcp_detail": {
+          "score": 75,
+          "atr": 0.12214285714285746,
+          "signals": [
+            "Tight Base (VCP)",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": false,
+          "range_pct": 0.0233,
+          "vol_ratio": 0.91,
+          "breakdown": {
+            "tight": 40,
+            "vol": 0,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.41,
+        "pivot_dist_pct": -0.13,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 1.5,
+        "ma200_ratio": 40.5,
+        "ses": 30,
+        "ses_breakdown": {
+          "fractal_efficiency": 10,
+          "true_force": 20,
+          "volatility_squeeze": 0,
+          "bar_quality": 0
+        },
+        "ecr_rank": 66,
+        "ecr_phase": "HOLD/WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_score": 35,
+        "canslim_grade": "C",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 0,
+          "N_new_high": 20,
+          "S_volume": 0,
+          "L_rs_leader": 15,
+          "I_inst": 0
+        },
+        "composite": 58.6,
+        "_price": 30.0,
+        "_entry": 30.1,
+        "_stop": 29.86,
+        "_target": 30.7
+      },
+      {
+        "ticker": "KYMR",
+        "status": "ACTION",
+        "rs": 94,
+        "vcp": 68,
+        "pf": 2.85,
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "name": "Kymera Therapeutics, Inc.",
+        "vcp_detail": {
+          "score": 68,
+          "atr": 4.207142857142858,
+          "signals": [
+            "Volume Dry-up Detected",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": true,
+          "range_pct": 0.2351,
+          "vol_ratio": 0.52,
+          "breakdown": {
+            "tight": 10,
+            "vol": 25,
+            "ma": 30,
+            "pivot": 3
+          }
+        },
+        "atr_pct": 4.81,
+        "pivot_dist_pct": -2.11,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 11.3,
+        "ma200_ratio": 55.2,
+        "ses": 85,
+        "ses_breakdown": {
+          "fractal_efficiency": 25,
+          "true_force": 20,
+          "volatility_squeeze": 20,
+          "bar_quality": 20
+        },
+        "ecr_rank": 82,
+        "ecr_phase": "ACCUMULATION",
+        "ecr_strategy": "PBVH",
+        "canslim_score": 35,
+        "canslim_grade": "C",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 0,
+          "N_new_high": 10,
+          "S_volume": 10,
+          "L_rs_leader": 15,
+          "I_inst": 0
+        },
+        "composite": 61.9,
+        "_price": 87.4,
+        "_entry": 89.46,
+        "_stop": 81.05,
+        "_target": 110.48
+      },
+      {
+        "ticker": "ATSG",
+        "status": "ACTION",
+        "rs": 84,
+        "vcp": 75,
+        "pf": 1.67,
+        "sector": "Industrials",
+        "industry": "Airlines, Airports & Air Services",
+        "name": "Air Transport Services Group, Inc.",
+        "vcp_detail": {
+          "score": 75,
+          "atr": 0.07499999999999954,
+          "signals": [
+            "Tight Base (VCP)",
+            "Trend Alignment OK",
+            "Near Pivot Point"
+          ],
+          "is_dryup": false,
+          "range_pct": 0.0227,
+          "vol_ratio": 1.63,
+          "breakdown": {
+            "tight": 40,
+            "vol": 0,
+            "ma": 30,
+            "pivot": 5
+          }
+        },
+        "atr_pct": 0.33,
+        "pivot_dist_pct": -0.04,
+        "stop_atr_mult": 2.0,
+        "target_r": 2.5,
+        "ma50_ratio": 0.7,
+        "ma200_ratio": 17.6,
+        "ses": 5,
+        "ses_breakdown": {
+          "fractal_efficiency": 10,
+          "true_force": 0,
+          "volatility_squeeze": -5,
+          "bar_quality": 0
+        },
+        "ecr_rank": 51,
+        "ecr_phase": "WATCH",
+        "ecr_strategy": "NONE",
+        "canslim_score": 30,
+        "canslim_grade": "D",
+        "canslim_breakdown": {
+          "C_earnings": 0,
+          "A_sales": 0,
+          "N_new_high": 20,
+          "S_volume": 10,
+          "L_rs_leader": 0,
+          "I_inst": 0
+        },
+        "composite": 51.8,
+        "_price": 22.48,
+        "_entry": 22.53,
+        "_stop": 22.38,
+        "_target": 22.91
+      }
+    ],
+    "index": {
+      "SPY": {
+        "name": "S&P500",
+        "ret_1d": 0.72,
+        "ret_5d": 1.2,
+        "ret_1m": 0.07
+      },
+      "QQQ": {
+        "name": "NASDAQ100",
+        "ret_1d": 0.88,
+        "ret_5d": 1.36,
+        "ret_1m": -1.93
+      },
+      "IWM": {
+        "name": "Russell2000",
+        "ret_1d": 0.0,
+        "ret_5d": 1.95,
+        "ret_1m": -1.92
+      }
+    },
+    "sector": [
+      {
+        "sector": "Utilities",
+        "avg_vcp": 52.4,
+        "avg_rs": 60.1,
+        "count": 17,
+        "action_count": 14
+      },
+      {
+        "sector": "Real Estate",
+        "avg_vcp": 51.0,
+        "avg_rs": 47.7,
+        "count": 23,
+        "action_count": 19
+      },
+      {
+        "sector": "Energy",
+        "avg_vcp": 47.1,
+        "avg_rs": 70.4,
+        "count": 34,
+        "action_count": 24
+      },
+      {
+        "sector": "Financial Services",
+        "avg_vcp": 46.1,
+        "avg_rs": 48.4,
+        "count": 88,
+        "action_count": 36
+      },
+      {
+        "sector": "Basic Materials",
+        "avg_vcp": 45.6,
+        "avg_rs": 65.8,
+        "count": 25,
+        "action_count": 6
+      },
+      {
+        "sector": "Healthcare",
+        "avg_vcp": 44.2,
+        "avg_rs": 51.6,
+        "count": 123,
+        "action_count": 46
+      },
+      {
+        "sector": "Consumer Defensive",
+        "avg_vcp": 40.9,
+        "avg_rs": 46.8,
+        "count": 19,
+        "action_count": 12
+      },
+      {
+        "sector": "Industrials",
+        "avg_vcp": 40.6,
+        "avg_rs": 59.2,
+        "count": 66,
+        "action_count": 30
+      },
+      {
+        "sector": "Consumer Cyclical",
+        "avg_vcp": 38.5,
+        "avg_rs": 40.6,
+        "count": 60,
+        "action_count": 22
+      },
+      {
+        "sector": "Technology",
+        "avg_vcp": 28.3,
+        "avg_rs": 43.8,
+        "count": 138,
+        "action_count": 26
+      },
+      {
+        "sector": "Communication Services",
+        "avg_vcp": 25.5,
+        "avg_rs": 31.3,
+        "count": 18,
+        "action_count": 4
+      }
+    ],
+    "vcp_ranking": [
+      {
+        "rank": 1,
+        "ticker": "WBD",
+        "name": "Warner Bros. Discovery, Inc.",
+        "vcp": 103,
+        "rs": 96,
+        "pf": 3.75,
+        "status": "ACTION"
+      },
+      {
+        "rank": 2,
+        "ticker": "EXAS",
+        "name": "Exact Sciences Corporation",
+        "vcp": 105,
+        "rs": 92,
+        "pf": 10.0,
+        "status": "ACTION"
+      },
+      {
+        "rank": 3,
+        "ticker": "ITCI",
+        "name": "Intra-Cellular Therapies, Inc.",
+        "vcp": 105,
+        "rs": 91,
+        "pf": 1.09,
+        "status": "ACTION"
+      },
+      {
+        "rank": 4,
+        "ticker": "FARO",
+        "name": "FARO Technologies, Inc.",
+        "vcp": 100,
+        "rs": 95,
+        "pf": 1.76,
+        "status": "ACTION"
+      },
+      {
+        "rank": 5,
+        "ticker": "FOLD",
+        "name": "Amicus Therapeutics, Inc.",
+        "vcp": 105,
+        "rs": 87,
+        "pf": 2.57,
+        "status": "ACTION"
+      },
+      {
+        "rank": 6,
+        "ticker": "CDMO",
+        "name": "Avid Bioservices, Inc.",
+        "vcp": 100,
+        "rs": 86,
+        "pf": 1.17,
+        "status": "ACTION"
+      },
+      {
+        "rank": 7,
+        "ticker": "AMPS",
+        "name": "Altus Power, Inc.",
+        "vcp": 100,
+        "rs": 78,
+        "pf": 1.49,
+        "status": "ACTION"
+      },
+      {
+        "rank": 8,
+        "ticker": "PTGX",
+        "name": "Protagonist Therapeutics, Inc.",
+        "vcp": 80,
+        "rs": 88,
+        "pf": 1.67,
+        "status": "ACTION"
+      },
+      {
+        "rank": 9,
+        "ticker": "MRUS",
+        "name": "Merus N.V.",
+        "vcp": 78,
+        "rs": 89,
+        "pf": 1.25,
+        "status": "WAIT"
+      },
+      {
+        "rank": 10,
+        "ticker": "ALEX",
+        "name": "Alexander & Baldwin, Inc.",
+        "vcp": 100,
+        "rs": 65,
+        "pf": 0.0,
+        "status": "ACTION"
+      },
+      {
+        "rank": 11,
+        "ticker": "RDUS",
+        "name": "Radius Recycling, Inc.",
+        "vcp": 75,
+        "rs": 90,
+        "pf": 5.32,
+        "status": "ACTION"
+      },
+      {
+        "rank": 12,
+        "ticker": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
+        "vcp": 68,
+        "rs": 94,
+        "pf": 2.85,
+        "status": "ACTION"
+      },
+      {
+        "rank": 13,
+        "ticker": "ATSG",
+        "name": "Air Transport Services Group, Inc.",
+        "vcp": 75,
+        "rs": 84,
+        "pf": 1.67,
+        "status": "ACTION"
+      },
+      {
+        "rank": 14,
+        "ticker": "JAZZ",
+        "name": "Jazz Pharmaceuticals plc",
+        "vcp": 90,
+        "rs": 68,
+        "pf": 1.32,
+        "status": "ACTION"
+      },
+      {
+        "rank": 15,
+        "ticker": "UTHR",
+        "name": "United Therapeutics Corporation",
+        "vcp": 85,
+        "rs": 72,
+        "pf": 0.62,
+        "status": "ACTION"
+      },
+      {
+        "rank": 16,
+        "ticker": "MNST",
+        "name": "Monster Beverage Corporation",
+        "vcp": 75,
+        "rs": 82,
+        "pf": 2.5,
+        "status": "ACTION"
+      },
+      {
+        "rank": 17,
+        "ticker": "EMKR",
+        "name": "EMCORE Corporation",
+        "vcp": 75,
+        "rs": 82,
+        "pf": 0.07,
+        "status": "ACTION"
+      },
+      {
+        "rank": 18,
+        "ticker": "RTX",
+        "name": "RTX Corporation",
+        "vcp": 75,
+        "rs": 82,
+        "pf": 1.43,
+        "status": "ACTION"
+      },
+      {
+        "rank": 19,
+        "ticker": "IONS",
+        "name": "Ionis Pharmaceuticals, Inc.",
+        "vcp": 63,
+        "rs": 94,
+        "pf": 5.0,
+        "status": "ACTION"
+      },
+      {
+        "rank": 20,
+        "ticker": "BIIB",
+        "name": "Biogen Inc.",
+        "vcp": 78,
+        "rs": 78,
+        "pf": 2.5,
+        "status": "WAIT"
+      }
+    ]
+  }
+}

@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "daily-2026-02-20",
+      "type": "daily",
+      "date": "2026-02-20",
+      "published_at": "2026-02-21T10:08:40.971426+09:00",
+      "title_ja": "2026-02-20 米国株レポート — SPY 0.72% / ACTION 44銘柄",
+      "title_en": "US Market 2026-02-20 — SPY 0.72% / 44 ACTION"
+    },
+    {
       "slug": "daily-2026-02-19",
       "type": "daily",
       "date": "2026-02-19",
